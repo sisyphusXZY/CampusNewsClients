@@ -9,7 +9,7 @@ public class NewsEntity implements Serializable {
 	/** 新闻类型 */
 	private String newsCategory;
 	/** 标记状态，如推荐之类的 */
-	private Integer mark;;
+	private Integer mark;
 	/** 评论数量 */
 	private Integer commentNum;
 	/** ID */
@@ -45,9 +45,9 @@ public class NewsEntity implements Serializable {
 	/** 图片类型是否为大图 */
 	private Boolean isLarge = false;
 	/** 阅读状态 ，读过的话显示灰色背景 */
-	private Boolean readStatus;
+	private Boolean readStatus = false;
 	/** 收藏状态 */
-	private Boolean collectStatus;
+	private Boolean collectStatus = false;
 	/** 喜欢 状态 */
 	private Boolean likeStatus;
 	/** 感兴趣状态 */

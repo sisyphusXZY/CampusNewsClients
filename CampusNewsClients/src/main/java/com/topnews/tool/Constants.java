@@ -50,6 +50,7 @@ public class Constants {
 				news.setSource_url("http://it.sohu.com/20161025/n471268409.shtml");
 				String url = "http://img.mp.itc.cn/upload/20161025/3d4db678cffd41fcb2be4a7f094dfc98_th.jpg";
 				news.setPicOne(url);
+//				news.setReadStatus(false);
 				url_list.add(url);
 				news.setComment("我是评论！！这个APP做的真好！！");
 			}else if(i%4 == 3){

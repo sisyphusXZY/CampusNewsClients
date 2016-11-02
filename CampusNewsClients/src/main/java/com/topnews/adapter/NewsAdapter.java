@@ -2,7 +2,9 @@ package com.topnews.adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -41,13 +43,16 @@ public class NewsAdapter extends BaseAdapter implements SectionIndexer, HeaderAd
      * 弹出的更多选择框
      */
     private PopupWindow popupWindow;
+    private View popDislike;
+    private View popFavor;
+    private TextView popTextFavor;
 
     public NewsAdapter(Activity activity, ArrayList<NewsEntity> newsList) {
         this.activity = activity;
         this.newsList = newsList;
         inflater = LayoutInflater.from(activity);
         options = Options.getListOptions();
-        initPopWindow();
+//        initPopWindow();
         initDateHead();
     }
 
@@ -203,9 +208,10 @@ public class NewsAdapter extends BaseAdapter implements SectionIndexer, HeaderAd
         }
         //判断该新闻是否已读
         if (!news.getReadStatus()) {
-            mHolder.item_layout.setSelected(true);
+//            mHolder.item_layout.setSelected(true);
         } else {
-            mHolder.item_layout.setSelected(false);
+            mHolder.item_title.setTextColor(Color.GRAY);
+//            mHolder.item_layout.setSelected(false);
         }
         //设置+按钮点击效果
         mHolder.popicon.setOnClickListener(new popAction(position));
@@ -293,20 +299,31 @@ public class NewsAdapter extends BaseAdapter implements SectionIndexer, HeaderAd
 
     /**
      * 初始化弹出的pop
+     * @param position
      */
-    private void initPopWindow() {
+    private void initPopWindow(int position) {
         View popView = inflater.inflate(R.layout.list_item_pop, null);
         popupWindow = new PopupWindow(popView, LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         popupWindow.setBackgroundDrawable(new ColorDrawable(0));
         //设置popwindow出现和消失动画
         popupWindow.setAnimationStyle(R.style.PopMenuAnimation);
         btn_pop_close = (ImageView) popView.findViewById(R.id.btn_pop_close);
+        popDislike = popView.findViewById(R.id.ll_pop_dislike);
+        popFavor = popView.findViewById(R.id.ll_pop_favor);
+        popTextFavor = (TextView) popView.findViewById(R.id.tv_pop_favor);
+        if (getItem(position).getCollectStatus()) {
+            Drawable drawable = popFavor.getResources().getDrawable(R.drawable.listpage_more_like_seleted_normal);
+            drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+            popTextFavor.setCompoundDrawables(drawable, null, null, null);
+            popTextFavor.setText("已收藏");
+        }
     }
 
     /**
      * 显示popWindow
      */
-    public void showPop(View parent, int x, int y, int postion) {
+    public void showPop(View parent, int x, int y, final int position) {
+        initPopWindow(position);
         //设置popwindow显示位置
         popupWindow.showAtLocation(parent, 0, x, y);
         //获取popwindow焦点
@@ -320,6 +337,25 @@ public class NewsAdapter extends BaseAdapter implements SectionIndexer, HeaderAd
         btn_pop_close.setOnClickListener(new OnClickListener() {
             public void onClick(View paramView) {
                 popupWindow.dismiss();
+            }
+        });
+
+        popFavor.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("newsId3", String.valueOf(getItem(position)));
+                getItem(position).setCollectStatus(true);
+                Drawable drawable = popFavor.getResources().getDrawable(R.drawable.listpage_more_like_seleted_normal);
+                drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+                popTextFavor.setCompoundDrawables(drawable, null, null, null);
+                popTextFavor.setText("已收藏");
+            }
+        });
+
+        popDislike.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }

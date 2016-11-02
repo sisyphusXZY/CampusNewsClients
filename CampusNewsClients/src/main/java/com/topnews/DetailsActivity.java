@@ -16,6 +16,8 @@ import android.webkit.WebSettings.LayoutAlgorithm;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -24,6 +26,7 @@ import com.topnews.bean.NewsEntity;
 import com.topnews.service.NewsDetailsService;
 import com.topnews.tool.DateTools;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 @SuppressLint("JavascriptInterface")
@@ -38,6 +41,13 @@ public class DetailsActivity extends BaseActivity {
     private NewsEntity news;
     private TextView action_comment_count;
     WebView webView;
+    private ImageButton toolFavor;
+    private ImageView toolRepost;
+    private ImageView toolShare;
+    private ImageView toolViewComment;
+    private ImageView toolWriteComment;
+    private boolean isSelected = false;
+    private boolean collectStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +63,7 @@ public class DetailsActivity extends BaseActivity {
     /* 获取传递过来的数据 */
     private void getData() {
         news = (NewsEntity) getIntent().getSerializableExtra("news");
+        collectStatus = getIntent().getBooleanExtra("collectStatus", false);
         news_url = news.getSource_url();
         news_title = news.getTitle();
         news_source = news.getSource();
@@ -87,6 +98,65 @@ public class DetailsActivity extends BaseActivity {
         customview_layout = (FrameLayout) findViewById(R.id.customview_layout);
         //底部栏目
         action_comment_count = (TextView) findViewById(R.id.action_comment_count);
+
+        toolFavor = (ImageButton) findViewById(R.id.action_favor);
+        toolRepost = (ImageView) findViewById(R.id.action_report);
+        toolShare = (ImageView) findViewById(R.id.action_share);
+        toolViewComment = (ImageView) findViewById(R.id.action_view_comment);
+        toolWriteComment = (ImageView) findViewById(R.id.action_write_comment);
+//        Log.d("boolean11", String.valueOf(news.getCollectStatus()));
+        Log.d("newsId2", String.valueOf(news));
+
+        if (news.getCollectStatus()) {
+            toolFavor.setImageResource(R.drawable.ic_action_favor_on_normal);
+        }else{
+            toolFavor.setImageResource(R.drawable.ic_action_favor_pressed);
+        }
+//收藏功能还没有关联起来！！！
+        toolFavor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Log.d("boolean", String.valueOf(news.getCollectStatus()));
+                Log.d("newsId", String.valueOf(news));
+
+                if (news.getCollectStatus()) {
+                    news.setCollectStatus(false);
+                    toolFavor.setImageResource(R.drawable.ic_action_favor_pressed);
+                }else{
+                    news.setCollectStatus(true);
+                    toolFavor.setImageResource(R.drawable.ic_action_favor_on_normal);
+                }
+//                Log.d("boolean", String.valueOf(news.getCollectStatus()));
+            }
+        });
+
+        toolWriteComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        toolViewComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        toolShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        toolRepost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         progressBar.setVisibility(View.VISIBLE);
         title.setTextSize(13);

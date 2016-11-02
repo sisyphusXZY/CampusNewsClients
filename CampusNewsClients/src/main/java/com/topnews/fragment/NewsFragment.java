@@ -189,10 +189,14 @@ public class NewsFragment extends Fragment {
 //                            Log.d("position", String.valueOf(newsList.size()));
 //                            禁点第一个和最后一个
                             if (position >= 0 && position != newsList.size()) {
+                                mAdapter.getItem(position).setReadStatus(true);
+//                                本应该用getSharedPreferences记录点击过与否，但是因为是内置数据没有唯一的item标识符，无法保证标记准确。暂时不考虑。
+//                                activity.getSharedPreferences("publishTime", Context.MODE_PRIVATE).edit().putBoolean(String.valueOf(position-1), true).commit();
                                 Intent intent = new Intent(activity, DetailsActivity.class);
                                 if (channel_id == Constants.CHANNEL_CITY) {
                                     if (position != 0) {
                                         intent.putExtra("news", mAdapter.getItem(position - 1));
+                                        intent.putExtra("collectStatus", mAdapter.getItem(position - 1).getCollectStatus());
                                         startActivity(intent);
                                         activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                                     }
