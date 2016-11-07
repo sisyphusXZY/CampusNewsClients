@@ -23,8 +23,9 @@ public class refresh{
      }
 
     public static void refreshHeadView(NewsFragment fragmentByTag){
-        HeadListView headListView = fragmentByTag.getmListView();
+        HeadListView headListView = fragmentByTag.getmHeadListView();
 //                headListView.mCurrentState = STATE_REFRESHING;
+//        ((TextView) headListView.findViewById(R.id.tv_title)).setText("æ­£åœ¨åˆ·æ–°...");
         ((TextView) headListView.findViewById(R.id.tv_title)).setText("ÕýÔÚË¢ÐÂ...");
         (headListView.findViewById(R.id.iv_arrow)).clearAnimation();
         (headListView.findViewById(R.id.iv_arrow)).setVisibility(View.INVISIBLE);

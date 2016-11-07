@@ -16,11 +16,11 @@ public class Constants {
 	/*
 	 * 获取新闻列表
 	 */
-	public static ArrayList<NewsEntity> getNewsList(Activity activity) {
+	public static ArrayList<NewsEntity> getNewsList(Activity activity, int position) {
 		ArrayList<NewsEntity> newsList = new ArrayList<NewsEntity>();
 		for(int i =1 ; i <= 10 ; i++){
 			NewsEntity news = new NewsEntity();
-			news.setId(i);
+			news.setId(i + position);
 			news.setNewsId(i);
 			news.setCollectStatus(false);
 			news.setCommentNum(i + 115);

@@ -178,7 +178,7 @@ public class MainActivity extends FragmentActivity {
                 rotateTopRefresh();
 //                某些未知的情况下，此处会强退。猜测是因为fragment还没有完全加载完成
                 NewsFragment fragmentByTag = (NewsFragment) getSupportFragmentManager().findFragmentByTag(fragments.get(mViewPager.getCurrentItem()).getTag());
-//                HeadListView headListView = fragmentByTag.getmListView();
+//                HeadListView headListView = fragmentByTag.getmHeadListView();
 ////                headListView.mCurrentState = STATE_REFRESHING;
 //                ((TextView) headListView.findViewById(R.id.tv_title)).setText("正在刷新...");
 //                (headListView.findViewById(R.id.iv_arrow)).clearAnimation();

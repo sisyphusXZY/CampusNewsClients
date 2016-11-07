@@ -26,7 +26,6 @@ import com.topnews.bean.NewsEntity;
 import com.topnews.service.NewsDetailsService;
 import com.topnews.tool.DateTools;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 @SuppressLint("JavascriptInterface")
@@ -46,8 +45,11 @@ public class DetailsActivity extends BaseActivity {
     private ImageView toolShare;
     private ImageView toolViewComment;
     private ImageView toolWriteComment;
-    private boolean isSelected = false;
-    private boolean collectStatus;
+//    private boolean isSelected = false;
+//    private boolean collectStatus;
+    private final static  int COLLECTED = 1;
+    private final static  int NON_COLLECTED = 0;
+    private int itemId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +65,8 @@ public class DetailsActivity extends BaseActivity {
     /* 获取传递过来的数据 */
     private void getData() {
         news = (NewsEntity) getIntent().getSerializableExtra("news");
-        collectStatus = getIntent().getBooleanExtra("collectStatus", false);
+//        collectStatus = getIntent().getBooleanExtra("collectStatus", false);
+        itemId = getIntent().getIntExtra("itemId", -1);
         news_url = news.getSource_url();
         news_title = news.getTitle();
         news_source = news.getSource();
@@ -107,7 +110,7 @@ public class DetailsActivity extends BaseActivity {
 //        Log.d("boolean11", String.valueOf(news.getCollectStatus()));
         Log.d("newsId2", String.valueOf(news));
 
-        if (news.getCollectStatus()) {
+        if (getSharedPreferences("collect", Context.MODE_PRIVATE).getBoolean(String.valueOf(itemId), false)) {
             toolFavor.setImageResource(R.drawable.ic_action_favor_on_normal);
         }else{
             toolFavor.setImageResource(R.drawable.ic_action_favor_pressed);
@@ -117,13 +120,17 @@ public class DetailsActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
 //                Log.d("boolean", String.valueOf(news.getCollectStatus()));
-                Log.d("newsId", String.valueOf(news));
+//                Log.d("newsId", String.valueOf(news));
 
-                if (news.getCollectStatus()) {
-                    news.setCollectStatus(false);
+                if (getSharedPreferences("collect", Context.MODE_PRIVATE).getBoolean(String.valueOf(itemId), false)) {
+//                    news.setCollectStatus(false);
+                    getSharedPreferences("collect", Context.MODE_PRIVATE).edit().putBoolean(String.valueOf(itemId), false).commit();
+                    setResult(NON_COLLECTED);
                     toolFavor.setImageResource(R.drawable.ic_action_favor_pressed);
                 }else{
-                    news.setCollectStatus(true);
+//                    news.setCollectStatus(true);
+                    getSharedPreferences("collect", Context.MODE_PRIVATE).edit().putBoolean(String.valueOf(itemId), true).commit();
+                    setResult(COLLECTED);
                     toolFavor.setImageResource(R.drawable.ic_action_favor_on_normal);
                 }
 //                Log.d("boolean", String.valueOf(news.getCollectStatus()));
