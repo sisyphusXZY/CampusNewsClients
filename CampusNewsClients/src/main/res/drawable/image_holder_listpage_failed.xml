@@ -7,6 +7,6 @@
         </shape>
     </item>
     <item>
-        <bitmap android:gravity="center" android:src="@drawable/big_loadpic_empty_listpage" />
+        <bitmap android:gravity="center" android:src="@drawable/csdn" />
     </item>
 </layer-list>

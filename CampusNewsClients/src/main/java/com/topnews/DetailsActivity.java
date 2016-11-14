@@ -24,7 +24,6 @@ import android.widget.TextView;
 import com.topnews.base.BaseActivity;
 import com.topnews.bean.NewsEntity;
 import com.topnews.service.NewsDetailsService;
-import com.topnews.tool.DateTools;
 
 import java.util.ArrayList;
 
@@ -36,7 +35,7 @@ public class DetailsActivity extends BaseActivity {
     private String news_url;
     private String news_title;
     private String news_source;
-    private String news_date;
+//    private String news_date;
     private NewsEntity news;
     private TextView action_comment_count;
     WebView webView;
@@ -70,7 +69,7 @@ public class DetailsActivity extends BaseActivity {
         news_url = news.getSource_url();
         news_title = news.getTitle();
         news_source = news.getSource();
-        news_date = DateTools.getNewsDetailsDate(String.valueOf(news.getPublishTime()));
+//        news_date = DateTools.getNewsDetailsDate(String.valueOf(news.getPublishTime()));
     }
 
     private void initWebView() {

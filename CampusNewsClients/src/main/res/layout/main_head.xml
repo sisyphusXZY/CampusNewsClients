@@ -79,10 +79,10 @@
 
             <ImageView
                 android:id="@+id/title_recent"
-                android:layout_width="wrap_content"
+                android:layout_width="95dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/title" />
+                android:src="@drawable/big_loadpic_empty_listpage" />
 
             <TextView
                 android:id="@+id/title"

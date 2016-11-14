@@ -4,13 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/newsbg_listpage"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include layout="@layout/list_item_section" />
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/article_layout"
@@ -20,28 +20,70 @@
             android:orientation="vertical"
             android:paddingLeft="@dimen/list_item_horizontal_padding"
             android:paddingRight="8.0dip"
-            android:paddingTop="10.0dip" >
+            android:paddingTop="10.0dip">
 
             <RelativeLayout
                 android:id="@+id/article_top_layout"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" >
-
+                android:layout_height="wrap_content">
                 <RelativeLayout
                     android:id="@+id/title_layout"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:paddingRight="7.0dip" >
+                    android:paddingRight="7.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true">
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/favicon"-->
+                    <!--android:layout_width="50.0dip"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_marginLeft="4.0dip"-->
+                    <!--android:layout_marginTop="3.0dip"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/right_image"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40.0dip"-->
+                    <!--android:background="@drawable/small_image_holder_listpage"-->
+                    <!--android:scaleType="centerCrop" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/item_source"-->
+                    <!--style="@style/item_secondary_text"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="1111" />-->
+                    <!--</LinearLayout>-->
 
                     <ImageView
                         android:id="@+id/right_image"
-                        android:layout_width="@dimen/right_image_width"
-                        android:layout_height="@dimen/right_image_height"
-                        android:layout_alignParentRight="true"
+                        android:layout_width="60.0dip"
+                        android:layout_height="60.0dip"
+                        android:layout_alignParentLeft="true"
                         android:layout_marginLeft="4.0dip"
                         android:layout_marginTop="3.0dip"
+                        android:layout_marginRight="4dp"
                         android:background="@drawable/small_image_holder_listpage"
                         android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/item_source"
+                        style="@style/item_secondary_text"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:layout_alignLeft="@id/right_image"
+                        android:layout_below="@id/right_image"
+                        android:gravity="center"
+                        android:text="11111"
+                        android:singleLine="true"
+                        />
 
                     <ImageView
                         android:id="@+id/ic_video"
@@ -58,7 +100,8 @@
                         style="@style/item_title"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toLeftOf="@id/right_image" />
+                        android:layout_alignTop="@id/right_image"
+                        android:layout_toRightOf="@id/right_image" />
                 </RelativeLayout>
 
                 <LinearLayout
@@ -67,16 +110,8 @@
                     android:layout_height="30.0dip"
                     android:layout_below="@id/title_layout"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/item_source"
-                        style="@style/item_secondary_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.0"
-                        android:ellipsize="end"
-                        android:singleLine="true" />
 
                     <TextView
                         android:id="@+id/list_item_local"
@@ -98,8 +133,6 @@
                         style="@style/item_secondary_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
-                        android:text="11111111111111111111"
                         android:layout_weight="0.0" />
 
                     <TextView
@@ -134,6 +167,8 @@
                     android:duplicateParentState="false"
                     android:scaleType="center"
                     android:src="@drawable/popicon_listpage" />
+
+
             </RelativeLayout>
 
             <TextView
@@ -151,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6.0dip"
                 android:orientation="horizontal"
-                android:paddingRight="8.0dip" >
+                android:paddingRight="8.0dip">
 
                 <ImageView
                     android:id="@+id/item_image_0"
@@ -200,7 +235,7 @@
             android:paddingBottom="14.0dip"
             android:paddingLeft="8.0dip"
             android:paddingRight="8.0dip"
-            android:paddingTop="8.0dip" >
+            android:paddingTop="8.0dip">
 
             <ImageView
                 android:id="@+id/comment_arrow"
@@ -212,15 +247,17 @@
                 android:layout_marginRight="5dp"
                 android:src="@drawable/arrow_listpage"
                 android:visibility="visible" />
+
             <TextView
                 android:id="@+id/hot_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/comment_arrow"
                 android:layout_centerVertical="true"
-                android:text="热门评论: "
-                android:textColor="@color/red"
-                android:maxLines="3" />
+                android:layout_toRightOf="@id/comment_arrow"
+                android:maxLines="3"
+                android:text="CSDN推荐: "
+                android:textColor="@color/red" />
+
             <TextView
                 android:id="@+id/comment_content"
                 style="@style/item_comment_content"

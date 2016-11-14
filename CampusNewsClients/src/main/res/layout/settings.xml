@@ -4,11 +4,7 @@
     android:layout_height="fill_parent"
     android:background="@color/activity_bg_color" >
 
-    <include
-        android:id="@+id/title_bar"
-        layout="@layout/title_bar" />
-
-<!--     <com.ss.android.common.ui.view.SwipeOverlayFrameLayout -->
+    <!--     <com.ss.android.common.ui.view.SwipeOverlayFrameLayout -->
 <!--         android:id="@+id/swipe_overlay" -->
 <!--         android:layout_width="fill_parent" -->
 <!--         android:layout_height="wrap_content" -->
@@ -400,6 +396,12 @@
                     style="@style/setting_release_info" />
             </LinearLayout>
         </ScrollView>
-<!--     </com.ss.android.common.ui.view.SwipeOverlayFrameLayout> -->
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <!--     </com.ss.android.common.ui.view.SwipeOverlayFrameLayout> -->
 
 </RelativeLayout>

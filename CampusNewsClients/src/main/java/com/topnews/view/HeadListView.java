@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.os.Handler;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -182,10 +181,10 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
                     refreshState();
 
                     mHeaderView.setPadding(0, 0, 0, 0);
-//                    if (mListener != null) {
+                    if (mListener != null) {
                     //                用回调解决了调用的问题
                     mListener.onRefresh();
-//                    }
+                    }
 //					松开刷新时，禁止触摸事件传递
 //                    return true;
                 } else if (mCurrentState == STATE_PULL_TO_REFRESH) {
@@ -230,6 +229,7 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
     }
 
     //这个函数没有调用notifyDataSetChanged()，却更新了ui，刷新了数据？？？why！？
+//    傻逼
 //    本函数中的延时函数仅作延时展示效果用，实际项目中要删除。
     public void onRefreshComplete() {
         if (!isLoadMore) {
@@ -242,10 +242,8 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
                     pbProgress.setVisibility(INVISIBLE);
                     ivArrow.setVisibility(VISIBLE);
                     Toast.makeText(getContext(), "刷新成功", Toast.LENGTH_SHORT).show();
-
                 }
             }, 2000);
-
         } else {
             isLoadMore = false;
             new Handler().postDelayed(new Runnable() {
@@ -256,7 +254,6 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
             }, 2000);
 //            footTitle.setText("没有更多新闻");
         }
-
     }
 
     protected void onLayout(boolean changed, int left, int top, int right,
@@ -296,6 +293,7 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
             return;
         }
 //		Log.d("position", String.valueOf(position));
+//  ——————————————————————————————————该句仍然在造成刷新bug
         int state = mAdapter.getHeaderState(position);
         switch (state) {
             case HeaderAdapter.HEADER_GONE: {
@@ -364,7 +362,7 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
         if (scrollState == SCROLL_STATE_IDLE) {
             int lastVisiblePosition = getLastVisiblePosition();
             if (lastVisiblePosition == this.getCount() - 1 && !isLoadMore) {
-                Log.d("main", "！！！！！！！！");
+//                Log.d("main", "！！！！！！！！");
                 isLoadMore = true;
                 mFooterView.setPadding(0, 0, 0, 0);
                 setSelection(this.getCount() - 1);
@@ -384,7 +382,7 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
                          int visibleItemCount, int totalItemCount) {
         // TODO Auto-generated method stub
         if (view instanceof HeadListView) {
-            Log.d("first", "first:" + view.getFirstVisiblePosition());
+//            Log.d("first", "first:" + view.getFirstVisiblePosition());
             if (isCityChannel) {
                 if (view.getFirstVisiblePosition() == 0) {
                     isfirst = true;

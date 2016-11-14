@@ -8,6 +8,8 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 
+import com.topnews.bean.ChannelManage;
+
 public class Welcome extends Activity {
 	private AlphaAnimation start_anima;
 	View view;
@@ -21,6 +23,7 @@ public class Welcome extends Activity {
 		initData();
 	}
 	private void initData() {
+		new ChannelManage(this);
 		start_anima = new AlphaAnimation(0.3f, 1.0f);
 		start_anima.setDuration(2000);
 		view.startAnimation(start_anima);

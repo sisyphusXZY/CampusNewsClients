@@ -105,11 +105,17 @@ public class MainActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        StrictMode.setThreadPolicy(new
+//                StrictMode.ThreadPolicy.Builder().detectDiskReads().detectDiskWrites().detectNetwork().penaltyLog().build());
+//        StrictMode.setVmPolicy(
+//                new StrictMode.VmPolicy.Builder().detectLeakedSqlLiteObjects().detectLeakedClosableObjects().penaltyLog().penaltyDeath().build());
         setContentView(R.layout.main);
         mScreenWidth = BaseTools.getWindowsWidth(this);
-        mItemWidth = mScreenWidth / 7;// 一个Item宽度为屏幕的1/7
+        mItemWidth = mScreenWidth / 4;// 一个Item宽度为屏幕的1/4
         initView();
         initSlidingMenu();
+
+
     }
 
     /**
@@ -307,6 +313,7 @@ public class MainActivity extends FragmentActivity {
             Bundle data = new Bundle();
             data.putString("text", userChannelList.get(i).getName());
             data.putInt("id", userChannelList.get(i).getId());
+//            data.putString("source", this.getSharedPreferences("channelSource", Context.MODE_PRIVATE).getString(String.valueOf(i+1), "null"));
             NewsFragment newFragment = new NewsFragment();
 //            currentFragment = newFragment;
             newFragment.setArguments(data);
@@ -317,6 +324,7 @@ public class MainActivity extends FragmentActivity {
 //		mViewPager.setOffscreenPageLimit(0);
         mViewPager.setAdapter(mAdapter);
         mViewPager.setOnPageChangeListener(pageListener);
+
     }
 
     /**

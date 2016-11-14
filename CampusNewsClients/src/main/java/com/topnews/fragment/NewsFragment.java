@@ -24,6 +24,7 @@ import com.topnews.MainActivity;
 import com.topnews.R;
 import com.topnews.adapter.NewsAdapter;
 import com.topnews.bean.NewsEntity;
+import com.topnews.crawler.CrawlerChannel;
 import com.topnews.tool.Constants;
 import com.topnews.view.HeadListView;
 
@@ -46,6 +47,7 @@ public class NewsFragment extends Fragment {
     private TextView footTitle;
     private int currentPosition;
     private TextView item_title;
+    CrawlerChannel crawlerChannel;
     //    //初始化item时根据id初始化
 //    private ArrayList<Integer> isReaded =new ArrayList<Integer>();
 //    private ImageView popicon;
@@ -76,23 +78,25 @@ public class NewsFragment extends Fragment {
     public void setUserVisibleHint(boolean isVisibleToUser) {
         if (isVisibleToUser) {
             //fragment可见时加载数据
-            if (newsList != null && newsList.size() != 0) {
-                handler.obtainMessage(SET_NEWSLIST).sendToTarget();
-            } else {
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        // TODO Auto-generated method stub
-                        try {
-                            Thread.sleep(2);
-                        } catch (InterruptedException e) {
-                            // TODO Auto-generated catch block
-                            e.printStackTrace();
-                        }
-                        handler.obtainMessage(SET_NEWSLIST).sendToTarget();
+//            if (newsList != null && newsList.size() != 0) {
+//                handler.obtainMessage(SET_NEWSLIST).sendToTarget();
+//            } else {
+
+//            注释掉以上3行，使得每次载入必须延时2秒，以此等待listview的刷新
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    // TODO Auto-generated method stub
+                    try {
+                        Thread.sleep(1500);
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
                     }
-                }).start();
-            }
+                    handler.obtainMessage(SET_NEWSLIST).sendToTarget();
+                }
+            }).start();
+//            }
         } else {
             //fragment不可见时不执行操作
         }
@@ -131,8 +135,12 @@ public class NewsFragment extends Fragment {
     }
 
     private void initData() {
-        newsList = Constants.getNewsList(activity, NEWSITEM_ID);
+//        下面这两句不能调换顺序，需要先初始化！！！
+        crawlerChannel = new CrawlerChannel(activity);
+        handler.obtainMessage(SET_NEWSLIST).sendToTarget();
+        newsList = Constants.getNewsList(NEWSITEM_ID, channel_id, crawlerChannel);
     }
+
 
     private int loadTime = 0;
     Handler handler = new Handler() {
@@ -151,12 +159,24 @@ public class NewsFragment extends Fragment {
                             mAdapter.setCityChannel(true);
                             initCityChannel();
                         }
+                        mHeadListView.setAdapter(mAdapter);
+                    } else {
+                        mAdapter.notifyDataSetChanged();
                     }
-                    mHeadListView.setAdapter(mAdapter);
-//				mHeadListView.setOnScrollListener(mAdapter);
 //                  设置滑动channel（频道）条
                     mHeadListView.setPinnedHeaderView(LayoutInflater.from(activity).inflate(R.layout.list_item_section, mHeadListView, false));
 
+                    crawlerChannel.setOnRefreshListener(new CrawlerChannel.OnRefreshListener() {
+
+                        @Override
+                        public void refreshItem(int i) {
+//                            0代表下来刷新没有新的动态了
+                            if (i == 0) {
+                                Toast.makeText(activity, "没有更多新闻啦~", Toast.LENGTH_SHORT).show();
+                            }
+                            handler.obtainMessage(SET_NEWSLIST).sendToTarget();
+                        }
+                    });
 
                     mHeadListView.setOnRefreshListener(new HeadListView.OnRefreshListener() {
                         @Override
@@ -168,25 +188,15 @@ public class NewsFragment extends Fragment {
 
                         @Override
                         public void onLoadMore() {
-                            if (loadTime++ <= 1) {
-//                                new Thread(new Runnable() {
-//                                    public void run() {
-//                                        try {
-//                                            Thread.sleep(5000);
-//                                        } catch (InterruptedException e) {
-//                                            e.printStackTrace();
-//                                        }
-//                                        handler.sendMessage(handler.obtainMessage(SET_NEWSLIST));
-//                                    }
-//                                });
-                                NEWSITEM_ID += 10;
-                                newsList.addAll(Constants.getNewsList(activity, NEWSITEM_ID));
-                            } else {
-                                Toast.makeText(activity, "没有新闻啦~", Toast.LENGTH_SHORT).show();
-
-                            }
-//                            mAdapter.notifyDataSetChanged();
+//  -------------------------  loadTime表示下来2次，待会改成有数据就继续刷新
+//                            if (loadTime++ <= 1) {
+                            NEWSITEM_ID += 10;
+                            newsList.addAll(Constants.getNewsList(NEWSITEM_ID, channel_id, crawlerChannel));
+//                            } else {
+//                                Toast.makeText(activity, "没有新闻啦~", Toast.LENGTH_SHORT).show();
+//                            }
                             mHeadListView.onRefreshComplete();
+                            handler.obtainMessage(SET_NEWSLIST).sendToTarget();
                         }
 
                     });
@@ -245,124 +255,15 @@ public class NewsFragment extends Fragment {
             super.handleMessage(msg);
         }
     };
-//
-//    /**
-//     * 弹出的更多选择框
-//     */
-//    private PopupWindow popupWindow;
-//    private View popDislike;
-//    private View popFavor;
-//    private TextView popTextFavor;
-//    private List<Integer> isCollect;
-//
-//    /**
-//     * popWindow 关闭按钮
-//     */
-//    private ImageView btn_pop_close;
-//
-//    /**
-//     * 初始化弹出的pop
-//     * @param position
-//     */
-//    private void initPopWindow(int position) {
-//        Log.d("log", "here");
-//        //可能有问题
-//        View popView = LayoutInflater.from(activity).inflate(R.layout.list_item_pop, null);
-//        popupWindow = new PopupWindow(popView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-//        popupWindow.setBackgroundDrawable(new ColorDrawable(0));
-//        //设置popwindow出现和消失动画
-//        popupWindow.setAnimationStyle(R.style.PopMenuAnimation);
-//        btn_pop_close = (ImageView) popView.findViewById(R.id.btn_pop_close);
-//        popDislike = popView.findViewById(R.id.ll_pop_dislike);
-//        popFavor = popView.findViewById(R.id.ll_pop_favor);
-//        popTextFavor = (TextView) popView.findViewById(R.id.tv_pop_favor);
-//        if (mAdapter.getItem(position).getCollectStatus()) {
-//            Drawable drawable = popFavor.getResources().getDrawable(R.drawable.listpage_more_like_seleted_normal);
-//            drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-//            popTextFavor.setCompoundDrawables(drawable, null, null, null);
-//            popTextFavor.setText("已收藏");
-//        }
-//    }
-//
-//    /**
-//     * 显示popWindow
-//     */
-//    public void showPop(View parent, int x, int y, final int position) {
-//        initPopWindow(position);
-//        //设置popwindow显示位置
-//        popupWindow.showAtLocation(parent, 0, x, y);
-//        //获取popwindow焦点
-//        popupWindow.setFocusable(true);
-//        //设置popwindow如果点击外面区域，便关闭。
-//        popupWindow.setOutsideTouchable(true);
-//        popupWindow.update();
-//        if (popupWindow.isShowing()) {
-//
-//        }
-//        btn_pop_close.setOnClickListener(new OnClickListener() {
-//            public void onClick(View paramView) {
-//                popupWindow.dismiss();
-//            }
-//        });
-//
-//        popFavor.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                Log.d("newsId3", String.valueOf(getItem(position)));
-//                mAdapter.getItem(position).setCollectStatus(true);
-//                isCollect.add(mAdapter.getItem(position).getId());
-//                Drawable drawable = popFavor.getResources().getDrawable(R.drawable.listpage_more_like_seleted_normal);
-//                drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-//                popTextFavor.setCompoundDrawables(drawable, null, null, null);
-//                popTextFavor.setText("已收藏");
-//            }
-//        });
-//
-//        popDislike.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-//
-//    }
-//
-//    /**
-//     * 每个ITEM中more按钮对应的点击动作
-//     */
-//    public class popAction implements OnClickListener {
-//        int position;
-//
-//        public popAction(int position) {
-//            this.position = position;
-//        }
-//
-//        @Override
-//        public void onClick(View v) {
-//            int[] arrayOfInt = new int[2];
-//            //获取点击按钮的坐标
-//            v.getLocationOnScreen(arrayOfInt);
-//            int x = arrayOfInt[0];
-//            int y = arrayOfInt[1];
-//            showPop(v, x, y, position);
-//        }
-//    }
-//
-//    @Override
-//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        Log.d("collect", String.valueOf(resultCode));
-//        if (resultCode == 0) {
-//            mAdapter.getItem(currentPosition).setCollectStatus(false);
-//        } else {
-//            mAdapter.getItem(currentPosition).setCollectStatus(true);
-//        }
-//    }
 
     public void refreshData() {
-        NEWSITEM_ID += 10;
-        ArrayList<NewsEntity> moreNewsList = Constants.getNewsList(activity, NEWSITEM_ID);
+        ArrayList<NewsEntity> moreNewsList = Constants.getNewsList(-1, channel_id, crawlerChannel);
         this.newsList.addAll(0, moreNewsList);
-        initNotify(moreNewsList.size());
+        if (moreNewsList.size() != 0) {
+            initNotify(moreNewsList.size());
+        } else {
+            initNotify(0);
+        }
         mHeadListView.onRefreshComplete();
     }
 
@@ -389,7 +290,11 @@ public class NewsFragment extends Fragment {
             @Override
             public void run() {
                 // TODO Auto-generated method stub
-                notify_view_text.setText(String.format(getString(R.string.ss_pattern_update), count));
+                if (count == 0) {
+                    notify_view_text.setText("暂无更新");
+                } else {
+                    notify_view_text.setText(String.format(getString(R.string.ss_pattern_update), count));
+                }
                 notify_view.setVisibility(View.VISIBLE);
                 new Handler().postDelayed(new Runnable() {
 
@@ -402,17 +307,6 @@ public class NewsFragment extends Fragment {
             }
         }, 1000);
     }
-//
-//    private void initNotifyNoMoreNews() {
-//        Log.d("initNotifyNoMoreNews", "here");
-//        new Handler().postDelayed(new Runnable() {
-//
-//            @Override
-//            public void run() {
-//                footTitle.setText("没有更多新闻");
-//            }
-//        }, 1000);
-//    }
 
 
     /* 摧毁视图 */

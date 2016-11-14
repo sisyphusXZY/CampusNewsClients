@@ -23,7 +23,10 @@ public class NewsEntity implements Serializable {
 	/** 新闻源地址 URL */
 	private String source_url;
 	/** 发布时间 */
-	private Long publishTime;
+	private String publishTime;
+
+	/** 刷新时间 */
+	private long refreshTime;
 	/** 总结 */
 	private String summary;
 	/** 摘要 */
@@ -52,6 +55,16 @@ public class NewsEntity implements Serializable {
 	private Boolean likeStatus;
 	/** 感兴趣状态 */
 	private Boolean interestedStatus;
+
+
+	public long getRefreshTime() {
+		return refreshTime;
+	}
+
+	public void setRefreshTime(long refreshTime) {
+		this.refreshTime = refreshTime;
+	}
+
 
 	public Integer getNewsCategoryId() {
 		return newsCategoryId;
@@ -117,11 +130,11 @@ public class NewsEntity implements Serializable {
 		this.source = source;
 	}
 
-	public Long getPublishTime() {
+	public String getPublishTime() {
 		return publishTime;
 	}
 
-	public void setPublishTime(Long publishTime) {
+	public void setPublishTime(String publishTime) {
 		this.publishTime = publishTime;
 	}
 
