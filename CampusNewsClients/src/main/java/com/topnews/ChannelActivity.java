@@ -26,7 +26,6 @@ import com.topnews.app.AppApplication;
 import com.topnews.base.BaseActivity;
 import com.topnews.bean.ChannelItem;
 import com.topnews.bean.ChannelManage;
-import com.topnews.crawler.CrawlerChannel;
 import com.topnews.view.DragGrid;
 import com.topnews.view.OtherGridView;
 
@@ -60,7 +59,7 @@ public class ChannelActivity extends BaseActivity implements OnItemClickListener
 
 	/** 初始化数据*/
 	private void initData() {
-		CrawlerChannel crawlerChannel = new CrawlerChannel(this);
+//		CrawlerChannel crawlerChannel = new CrawlerChannel(this);
 //		crawlerChannel.getChannel();
 		userChannelList = ((ArrayList<ChannelItem>)ChannelManage.getManage(AppApplication.getApp().getSQLHelper()).getUserChannel());
 		otherChannelList = ((ArrayList<ChannelItem>)ChannelManage.getManage(AppApplication.getApp().getSQLHelper()).getOtherChannel());

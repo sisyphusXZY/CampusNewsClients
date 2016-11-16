@@ -59,6 +59,7 @@ public class NewsFragment extends Fragment {
         Bundle args = getArguments();
         text = args != null ? args.getString("text") : "";
         channel_id = args != null ? args.getInt("id", 0) : 0;
+        Log.d("channel", String.valueOf(channel_id));
         initData();
 //        getFragmentManager().beginTransaction()
         super.onCreate(savedInstanceState);
@@ -137,6 +138,7 @@ public class NewsFragment extends Fragment {
     private void initData() {
 //        下面这两句不能调换顺序，需要先初始化！！！
         crawlerChannel = new CrawlerChannel(activity);
+//        先初始化回调函数！！否则空指针
         handler.obtainMessage(SET_NEWSLIST).sendToTarget();
         newsList = Constants.getNewsList(NEWSITEM_ID, channel_id, crawlerChannel);
     }

@@ -8,7 +8,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 
-import com.topnews.bean.ChannelManage;
+import com.topnews.crawler.CrawlerChannel;
 
 public class Welcome extends Activity {
 	private AlphaAnimation start_anima;
@@ -20,10 +20,13 @@ public class Welcome extends Activity {
 		view = View.inflate(this, R.layout.welcome, null);
 		setContentView(view);
 		initView();
+		    /*开启线程取得数据*/
+		CrawlerChannel crawlerChannel = new CrawlerChannel(this);
+		crawlerChannel.getItem();
 		initData();
 	}
 	private void initData() {
-		new ChannelManage(this);
+//		new ChannelManage(this);
 		start_anima = new AlphaAnimation(0.3f, 1.0f);
 		start_anima.setDuration(2000);
 		view.startAnimation(start_anima);

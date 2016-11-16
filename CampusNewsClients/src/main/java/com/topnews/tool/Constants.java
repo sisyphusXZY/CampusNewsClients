@@ -5,26 +5,27 @@ import com.topnews.bean.NewsEntity;
 import com.topnews.crawler.CrawlerChannel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 //import com.topnews.bean.NewsClassify;
 
 public class Constants {
-	/*
-	 * 获取新闻列表
-	 */
-	public static ArrayList<NewsEntity> getNewsList(int position, int channelID, CrawlerChannel crawlerChannel) {
-		ArrayList<NewsEntity> newsList = new ArrayList<NewsEntity>();
-		for(int i =position ; i < 10+position ; i++){
-			NewsEntity news = new NewsEntity();
-			news.setId(position);
+    /*
+     * 获取新闻列表
+     */
+    public static ArrayList<NewsEntity> getNewsList(int position, int channelID, CrawlerChannel crawlerChannel) {
+        ArrayList<NewsEntity> newsList = new ArrayList<NewsEntity>();
+        for (int i = position; i < 10 + position; i++) {
+            NewsEntity news = new NewsEntity();
+            news.setId(position);
 //			news.setNewsId(i);
-			news.setCollectStatus(false);
+            news.setCollectStatus(false);
 //			news.setCommentNum(i + 115);
-			news.setInterestedStatus(true);
-			news.setLikeStatus(true);
-			news.setReadStatus(false);
-			news.setNewsCategory("推荐");
-			news.setNewsCategoryId(1);
+            news.setInterestedStatus(true);
+            news.setLikeStatus(true);
+            news.setReadStatus(false);
+            news.setNewsCategory("推荐");
+            news.setNewsCategoryId(1);
 //			news.setSource_url("http://news.ifeng.com/a/20161026/50157377_0.shtml?_zbs_baidu_news");
 //			List<String> url_list = new ArrayList<String>();
 //
@@ -73,69 +74,93 @@ public class Constants {
 //			}
 //			news.setPicList(url_list);
 //			news.setPublishTime(Long.valueOf(i));
-			news.setReadStatus(false);
+            news.setReadStatus(false);
 
-			news.setMark(i);
+            news.setMark(i);
 
-			long currentTimeMillis = System.currentTimeMillis();
+            long currentTimeMillis = System.currentTimeMillis();
 //			Log.d("time1", String.valueOf(currentTimeMillis));
-			news.setRefreshTime(currentTimeMillis);
+            news.setRefreshTime(currentTimeMillis);
 
 //			activity.getSharedPreferences("publishTime", Context.MODE_PRIVATE).edit().putLong("lastTime", currentTimeMillis).commit();
 //			以上是基本设置，以下是爬虫设置。
-			newsList.add(crawlerChannel.ConstantsAdapter(i, channelID, news));
-		}
-		return newsList;
-	}
+            newsList.add(crawlerChannel.ConstantsAdapter(i, channelID, news));
+        }
+        NewsEntity adsItem = new NewsEntity();
+        adsItem.setTitle("Android系统源代码情景分析(修订版)");
+//        adsItem.setSource("亚马逊");
+        List<String> url_list = new ArrayList<String>();
+        String url = "https://images-cn-8.ssl-images-amazon.com/images/I/41f6IhXOn4L._SX373_BO1,204,203,200_.jpg";
+        url_list.add(url);
+        adsItem.setMark(0);
+        adsItem.setPicList(url_list);
+        adsItem.setSource_url("https://www.amazon.cn/Android%E7%B3%BB%E7%BB%9F%E6%BA%90%E4%BB%A3%E7%A0%81%E6%83%85%E6%99%AF%E5%88%86%E6%9E%90-%E7%BD%97%E5%8D%87%E9%98%B3/dp/B019FSLVUU");
+        adsItem.setLocal("推广");
+        adsItem.setIsLarge(true);
+        adsItem.setComment("本书的内容，初稿自于笔者的CSDN博客——老罗的Android之旅，使用的源代码是Android 2.3，本书自2012年上市以来，获得很多热心读者的肯定，也有热心读者细心指出书中的不妥之处，作者结合各位读者的勘误，对 版做了修订版本。");
+        newsList.add(adsItem);
+        return newsList;
+    }
 
 //	private static void getRefreshTime() {
 //
 //	}
 
-	/** mark=0 ：推荐 */
-	public final static int mark_recom = 0;
-	/** mark=1 ：热门 */
-	public final static int mark_hot = 1;
-	/** mark=2 ：首发 */
-	public final static int mark_frist = 2;
-	/** mark=3 ：独家 */
-	public final static int mark_exclusive = 3;
-	/** mark=4 ：收藏 */
-	public final static int mark_favor = 4;
-	
-	/*
-	 * 获取城市列表
-	 */
-	public static ArrayList<CityEntity> getCityList(){
-		ArrayList<CityEntity> cityList =new ArrayList<CityEntity>();
-		CityEntity city1 = new CityEntity(1, "安吉", 'A');
-		CityEntity city2 = new CityEntity(2, "北京", 'B');
-		CityEntity city3 = new CityEntity(3, "长春", 'C');
-		CityEntity city4 = new CityEntity(4, "长沙", 'C');
-		CityEntity city5 = new CityEntity(5, "大连", 'D');
-		CityEntity city6 = new CityEntity(6, "哈尔滨", 'H');
-		CityEntity city7 = new CityEntity(7, "杭州", 'H');
-		CityEntity city8 = new CityEntity(8, "金沙江", 'J');
-		CityEntity city9 = new CityEntity(9, "江门", 'J');
-		CityEntity city10 = new CityEntity(10, "山东", 'S');
-		CityEntity city11 = new CityEntity(11, "三亚", 'S');
-		CityEntity city12 = new CityEntity(12, "义乌", 'Y');
-		CityEntity city13 = new CityEntity(13, "舟山", 'Z');
-		cityList.add(city1);
-		cityList.add(city2);
-		cityList.add(city3);
-		cityList.add(city4);
-		cityList.add(city5);
-		cityList.add(city6);
-		cityList.add(city7);
-		cityList.add(city8);
-		cityList.add(city9);
-		cityList.add(city10);
-		cityList.add(city11);
-		cityList.add(city12);
-		cityList.add(city13);
-		return cityList;
-	}
-	/* 频道中区域 如杭州 对应的栏目ID */
-	public final static int CHANNEL_CITY = 1;
+    /**
+     * mark=0 ：推荐
+     */
+    public final static int mark_recom = 0;
+    /**
+     * mark=1 ：热门
+     */
+    public final static int mark_hot = 1;
+    /**
+     * mark=2 ：首发
+     */
+    public final static int mark_frist = 2;
+    /**
+     * mark=3 ：独家
+     */
+    public final static int mark_exclusive = 3;
+    /**
+     * mark=4 ：收藏
+     */
+    public final static int mark_favor = 4;
+
+    /*
+     * 获取城市列表
+     */
+    public static ArrayList<CityEntity> getCityList() {
+        ArrayList<CityEntity> cityList = new ArrayList<CityEntity>();
+        CityEntity city1 = new CityEntity(1, "安吉", 'A');
+        CityEntity city2 = new CityEntity(2, "北京", 'B');
+        CityEntity city3 = new CityEntity(3, "长春", 'C');
+        CityEntity city4 = new CityEntity(4, "长沙", 'C');
+        CityEntity city5 = new CityEntity(5, "大连", 'D');
+        CityEntity city6 = new CityEntity(6, "哈尔滨", 'H');
+        CityEntity city7 = new CityEntity(7, "杭州", 'H');
+        CityEntity city8 = new CityEntity(8, "金沙江", 'J');
+        CityEntity city9 = new CityEntity(9, "江门", 'J');
+        CityEntity city10 = new CityEntity(10, "山东", 'S');
+        CityEntity city11 = new CityEntity(11, "三亚", 'S');
+        CityEntity city12 = new CityEntity(12, "义乌", 'Y');
+        CityEntity city13 = new CityEntity(13, "舟山", 'Z');
+        cityList.add(city1);
+        cityList.add(city2);
+        cityList.add(city3);
+        cityList.add(city4);
+        cityList.add(city5);
+        cityList.add(city6);
+        cityList.add(city7);
+        cityList.add(city8);
+        cityList.add(city9);
+        cityList.add(city10);
+        cityList.add(city11);
+        cityList.add(city12);
+        cityList.add(city13);
+        return cityList;
+    }
+
+    /* 频道中区域 如杭州 对应的栏目ID */
+    public final static int CHANNEL_CITY = 1;
 }

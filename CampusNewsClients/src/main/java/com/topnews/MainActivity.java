@@ -114,8 +114,6 @@ public class MainActivity extends FragmentActivity {
         mItemWidth = mScreenWidth / 4;// 一个Item宽度为屏幕的1/4
         initView();
         initSlidingMenu();
-
-
     }
 
     /**
