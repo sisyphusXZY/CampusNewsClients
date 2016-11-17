@@ -233,7 +233,7 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
 //    本函数中的延时函数仅作延时展示效果用，实际项目中要删除。
     public void onRefreshComplete() {
         if (!isLoadMore) {
-            new Handler().postDelayed(new Runnable() {
+            new Handler(getContext().getMainLooper()).postDelayed(new Runnable() {
                 public void run() {
                     //execute the task
                     mHeaderView.setPadding(0, -mHeaderViewMeasuredHeight, 0, 0);
@@ -241,11 +241,11 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
                     tvTitle.setText("下拉刷新");
                     pbProgress.setVisibility(INVISIBLE);
                     ivArrow.setVisibility(VISIBLE);
-                    Toast.makeText(getContext(), "刷新成功", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "刷新完成", Toast.LENGTH_SHORT).show();
                 }
-            }, 2000);
+            }, 1500);
         } else {
-            isLoadMore = false;
+             isLoadMore = false;
             new Handler().postDelayed(new Runnable() {
                 public void run() {
                     //execute the task
@@ -293,7 +293,7 @@ public class HeadListView extends ListView implements AbsListView.OnScrollListen
             return;
         }
 //		Log.d("position", String.valueOf(position));
-//  ——————————————————————————————————该句仍然在造成刷新bug
+//  ——————————————————————————————————在极个别情况下该句仍然在造成刷新bug
         int state = mAdapter.getHeaderState(position);
         switch (state) {
             case HeaderAdapter.HEADER_GONE: {

@@ -165,6 +165,16 @@ public class NewsFragment extends Fragment {
                     } else {
                         mAdapter.notifyDataSetChanged();
                     }
+
+                    ((MainActivity) activity).setOnRefreshListener(new MainActivity.OnRefreshListener() {
+                        @Override
+                        public void onRefresh() {
+//						getDataFromServer();
+                            ((MainActivity) getActivity()).rotateTopRefresh();
+                            crawlerChannel.pullToRefresh(channel_id);
+                        }
+                    });
+
 //                  设置滑动channel（频道）条
                     mHeadListView.setPinnedHeaderView(LayoutInflater.from(activity).inflate(R.layout.list_item_section, mHeadListView, false));
 
@@ -176,7 +186,18 @@ public class NewsFragment extends Fragment {
                             if (i == 0) {
                                 Toast.makeText(activity, "没有更多新闻啦~", Toast.LENGTH_SHORT).show();
                             }
+
                             handler.obtainMessage(SET_NEWSLIST).sendToTarget();
+                        }
+
+                        @Override
+                        public void pullRefreshItem(int i) {
+                            newsList.clear();
+                            NEWSITEM_ID = 0;
+                            newsList.addAll(0, Constants.getNewsList(NEWSITEM_ID, channel_id, crawlerChannel));
+                            initNotify(i);
+                            mHeadListView.onRefreshComplete();
+//                            handler.obtainMessage(SET_NEWSLIST).sendToTarget();
                         }
                     });
 
@@ -185,7 +206,7 @@ public class NewsFragment extends Fragment {
                         public void onRefresh() {
 //						getDataFromServer();
                             ((MainActivity) getActivity()).rotateTopRefresh();
-                            refreshData();
+                            crawlerChannel.pullToRefresh(channel_id);
                         }
 
                         @Override
@@ -258,16 +279,19 @@ public class NewsFragment extends Fragment {
         }
     };
 
-    public void refreshData() {
-        ArrayList<NewsEntity> moreNewsList = Constants.getNewsList(-1, channel_id, crawlerChannel);
-        this.newsList.addAll(0, moreNewsList);
-        if (moreNewsList.size() != 0) {
-            initNotify(moreNewsList.size());
-        } else {
-            initNotify(0);
-        }
-        mHeadListView.onRefreshComplete();
-    }
+//    public void refreshData() {
+////        ArrayList<NewsEntity> moreNewsList = Constants.getNewsList(-1, channel_id, crawlerChannel);
+////        ArrayList<NewsEntity> moreNewsList = new ArrayList<NewsEntity>();
+////                moreNewsList.add(crawlerChannel.ConstantsAdapter(-1, channel_id, new NewsEntity()));
+////        this.newsList.addAll(0, moreNewsList);
+//
+//        if (moreNewsList.size() != 0) {
+//            initNotify(moreNewsList.size());
+//        } else {
+//            initNotify(0);
+//        }
+//        mHeadListView.onRefreshComplete();
+//    }
 
     /* 初始化选择城市的header*/
     public void initCityChannel() {
@@ -287,7 +311,7 @@ public class NewsFragment extends Fragment {
 
     /* 初始化通知栏目，发送刷新通知*/
     private void initNotify(final int count) {
-        new Handler().postDelayed(new Runnable() {
+        new Handler(activity.getMainLooper()).postDelayed(new Runnable() {
 
             @Override
             public void run() {

@@ -116,6 +116,16 @@ public class MainActivity extends FragmentActivity {
         initSlidingMenu();
     }
 
+    public interface OnRefreshListener {
+        public void onRefresh();
+    }
+
+    private MainActivity.OnRefreshListener mListener;
+
+    public void setOnRefreshListener(MainActivity.OnRefreshListener listener) {
+        mListener = listener;
+    }
+
     /**
      * ³õÊ¼»¯layout¿Ø¼þ
      */
@@ -189,7 +199,8 @@ public class MainActivity extends FragmentActivity {
 //                (headListView.findViewById(R.id.iv_arrow)).setVisibility(View.INVISIBLE);
 //                headListView.findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
                 refresh.refreshHeadView(fragmentByTag);
-                fragmentByTag.refreshData();
+                mListener.onRefresh();
+//                fragmentByTag.refreshData();
 //                top_refresh.clearAnimation();
 //                ivArrow.clearAnimation();
 //                pbProgress.setVisibility(VISIBLE);
