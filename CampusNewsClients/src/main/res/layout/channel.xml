@@ -4,7 +4,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/subscribe_activity_bg" >
-    <include
+
+    <include
         android:id="@+id/title_bar"
         layout="@layout/title_bar" />
 
@@ -48,7 +49,7 @@
                 android:id="@+id/seperate_line"
                 style="@style/subscribe_seperate_line" />
 
-            <com.topnews.view.DragGrid
+            <com.baibian.view.DragGrid
                 android:id="@+id/userGridView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -73,7 +74,7 @@
                 android:layout_marginLeft="10.0dip"
                 android:text="@string/subscribe_more_category" />
 
-            <com.topnews.view.OtherGridView
+            <com.baibian.view.OtherGridView
                 android:id="@+id/otherGridView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

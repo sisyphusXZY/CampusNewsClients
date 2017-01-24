@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\TopNews1\TopNews\CampusNewsClients\libs\universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e33324b770223932d467e4ec39639b0c15f3b94e">
+        <dex dex="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.2-SNAPSHOT-with-sources_45bcd6480096b1391f315acc863db91a130e35e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\pre-dexed\debug\support-v4-18.0.0_5c13dae993a3a70564280b74f4a6300075997e8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\exploded-aar\TopNews\library_SlidingMenu\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7eebec9eb9d4ed08813c82c8c57f53735de49a8c">
+        <dex dex="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\pre-dexed\debug\TopNews-library_SlidingMenu-unspecified_5abfaa0f47c702d5eddb8271d1ecb9ce37d37605.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TopNews1\TopNews\CampusNewsClients\libs\jsoup-1.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="872693211fd68d1c4e116cf90021603207725e19">
+        <dex dex="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\pre-dexed\debug\jsoup-1.7.2_cef2b8576dd8830f68d747ed20b434a67c0b7b60.jar" />
+    </item>
+
+</items>
