@@ -702,6 +702,7 @@
     <item name="selected_view" type="id"/>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="config_slideAnimTime">300</integer>
+    <string name="Press_again_to_exit">再按一次退出</string>
     <string name="REGISTER">注册</string>
     <string name="action_day_mode">日间模式</string>
     <string name="action_night_mode">夜间模式</string>
@@ -773,43 +774,11 @@
     <string name="switch_off"/>
     <string name="switch_on"/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
 
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
         <item name="android:windowNoTitle">true</item>
     </style>
     <style name="PopMenuAnimation" parent="@android:style/Animation">

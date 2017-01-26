@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -102,6 +103,14 @@ public class MainActivity extends FragmentActivity {
 
     private NewsFragmentPagerAdapter mAdapter;
     private int position1 = 0;
+
+    /**
+     * 实现登陆后更改UI为圆形头像
+     */
+    private ImageView baibian_btn;//通过百辩账号登录
+    private final int LOGIN4_REQUEST=11;//进入login4activity的请求码
+    private LinearLayout logout_layout_not_login;//未登录布局
+    private LinearLayout login_layout;//带有圆形头像的布局，用来更换原来的布局
 
     /**
      *????????viewpager
@@ -376,6 +385,19 @@ public class MainActivity extends FragmentActivity {
 
     protected void initSlidingMenu() {
         side_drawer = new DrawerView(this).initSlidingMenu();
+        /**
+         * 登录切换顶部布局
+         */
+       login_layout=(LinearLayout) side_drawer.findViewById(R.id.login_layout);
+        baibian_btn=(ImageView) side_drawer.findViewById(R.id.baibian_btn);//百辩登录按钮
+        logout_layout_not_login=(LinearLayout) side_drawer.findViewById(R.id.logout_layout_not_login);//未登录布局
+        baibian_btn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_baibian_btn=new Intent(MainActivity.this,Login4Activity.class);
+                startActivityForResult(intent_baibian_btn,LOGIN4_REQUEST);
+            }
+        });
     }
 
     private long mExitTime;
@@ -388,7 +410,7 @@ public class MainActivity extends FragmentActivity {
                 side_drawer.showContent();
             } else {
                 if ((System.currentTimeMillis() - mExitTime) > 2000) {
-                    Toast.makeText(this, "?????????",
+                    Toast.makeText(this, R.string.Press_again_to_exit,
                             Toast.LENGTH_SHORT).show();
                     mExitTime = System.currentTimeMillis();
                 } else {
@@ -411,6 +433,15 @@ public class MainActivity extends FragmentActivity {
             case CHANNELREQUEST:
                 if (resultCode == CHANNELRESULT) {
                     setChangelView();
+                }
+                break;
+            case LOGIN4_REQUEST:
+                if(resultCode==LOGIN4_REQUEST){
+                    /**
+                     * 登录切换布局部分
+                     */
+                    logout_layout_not_login.setVisibility(View.GONE);//旧布局消失
+                    login_layout.setVisibility(View.VISIBLE);//新布局出现
                 }
                 break;
 

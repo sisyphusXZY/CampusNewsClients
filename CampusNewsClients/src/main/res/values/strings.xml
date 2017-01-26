@@ -70,5 +70,6 @@
     <string name="frindly_reminder">友情提示</string>
     <string name="sure">确定</string>
     <string name="cancel">取消</string>
+    <string name="Press_again_to_exit">再按一次退出</string>
 
 </resources>

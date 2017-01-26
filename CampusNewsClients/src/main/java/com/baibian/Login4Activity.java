@@ -60,7 +60,6 @@ public class Login4Activity extends Activity {
                     Toast.makeText(Login4Activity.this, R.string.please7to16,Toast.LENGTH_SHORT).show();
                 }
                 else{
-                     Toast.makeText(Login4Activity.this, R.string.login_succeed,Toast.LENGTH_SHORT).show();
                      Intent intent1=new Intent();
                      setResult(LOGIN4_REQUEST,intent1);
                      finish();

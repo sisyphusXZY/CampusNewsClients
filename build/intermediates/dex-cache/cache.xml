@@ -2,40 +2,49 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="D:\TopNews1\TopNews\CampusNewsClients\libs\universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b01254d9c0410ca1fee0f985442b913d57c95f93">
+        <dex dex="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cd5ef24a2b85d8043160834caf7bd086decaab34\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="64099089f60c556e86d766eb642ef3da261f64a6">
+        <dex dex="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_033f0f78ebbde162f820ca53afac5af21191e111\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Github\CampusNewsClients\CampusNewsClients\libs\universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar"
+        jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="e33324b770223932d467e4ec39639b0c15f3b94e">
-        <dex dex="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.2-SNAPSHOT-with-sources_45bcd6480096b1391f315acc863db91a130e35e6.jar" />
+        <dex dex="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.2-SNAPSHOT-with-sources_bef8d62ce97001e365457a90cb34a3f2fc2c1043\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\pre-dexed\debug\support-v4-18.0.0_5c13dae993a3a70564280b74f4a6300075997e8b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\exploded-aar\TopNews\library_SlidingMenu\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7eebec9eb9d4ed08813c82c8c57f53735de49a8c">
-        <dex dex="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\pre-dexed\debug\TopNews-library_SlidingMenu-unspecified_5abfaa0f47c702d5eddb8271d1ecb9ce37d37605.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\TopNews1\TopNews\CampusNewsClients\libs\jsoup-1.7.2.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\Github\CampusNewsClients\CampusNewsClients\libs\jsoup-1.7.2.jar"
+        jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="872693211fd68d1c4e116cf90021603207725e19">
-        <dex dex="D:\TopNews1\TopNews\CampusNewsClients\build\intermediates\pre-dexed\debug\jsoup-1.7.2_cef2b8576dd8830f68d747ed20b434a67c0b7b60.jar" />
+        <dex dex="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\2\jsoup-1.7.2_3807437588366ae560799775c00e6dd641a7aeab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_efcc5b9d5a7060ed2fe267b4f93f5aa94c668034\classes.dex" />
     </item>
 
 </items>
