@@ -5,63 +5,39 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="62970549946266"
+    timestamp="171965173819710"
     token="801623605105588978"
-    verifier="R_CLASS_CHANGE" >
+    verifier="FIELD_REMOVED" >
 
     <task
         name="javac"
-        duration="355" />
+        duration="389" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="66" />
+        duration="28" />
     <task
         name="verifier"
-        duration="16" />
+        duration="7" />
 
-    <artifact
-        location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-        type="DEX" />
-    <artifact
-        location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-        type="DEX" />
     <artifact
         location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
         type="DEX" />
-    <artifact
-        location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
-        type="DEX" />
 
     <build
-        timestamp="60597458806630"
-        verifier="BINARY_MANIFEST_FILE_CHANGE" >
+        timestamp="170182707721073"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Github\CampusNewsClients\CampusNewsClients\build\outputs\apk\CampusNewsClients-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="62970549946266"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-        <artifact
-            location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
+        timestamp="171965173819710"
+        verifier="FIELD_REMOVED" >
         <artifact
             location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-            type="DEX" />
-        <artifact
-            location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
             type="DEX" />
     </build>
 

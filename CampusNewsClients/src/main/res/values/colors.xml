@@ -698,6 +698,24 @@
     <color name="ss_top_progressbar_start">#10ffffff</color>
     <color name="ss_top_progressbar_end">#ffffffff</color>
 
+    <color name="si_default_text_color">#FF0000</color>
+    <color name="si_default_text_color_selected">#FF00FF</color>
+    <color name="si_default_indicator_bg">#ee9999</color>
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorPrimaryLight">#cfd8dc</color>
+    <color name="colorAccent">#ffc107</color>
+
+    <color name="black_light">#99444444</color>
+    <color name="gray_dark">#616161</color>
+    <color name="gray_light">#9e9e9e</color>
+    <color name="brown">#5d4037</color>
+
+    <color name="indicator_1">#00a0e9</color>
+    <color name="indicator_2">#2dde80</color>
+    <color name="indicator_3">#c2e72e</color>
+    <color name="indicator_4">#FDBC7D</color>
+
     <!--<item name="bg_row_normal_start" type="color">@color/bg_row_normal</item>-->
     <!--<item name="bg_row_normal_center" type="color">@color/bg_row_normal</item>-->
     <!--<item name="bg_row_normal_end" type="color">@color/bg_row_normal</item>-->

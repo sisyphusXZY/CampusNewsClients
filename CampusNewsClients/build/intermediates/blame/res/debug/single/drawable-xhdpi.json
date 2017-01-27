@@ -56,6 +56,10 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_action_report_normal.png"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login3_visitorbtn.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\login3_visitorbtn.png"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_kaixin_normal.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\btn_kaixin_normal.png"
     },
@@ -162,6 +166,10 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_write_pressed.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_action_write_pressed.png"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login3_registerbtn.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\login3_registerbtn.png"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_more_normal.png",
@@ -304,6 +312,10 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\review_toolbar_normal.png"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login3.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\login3.png"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer_search_normal.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_drawer_search_normal.png"
     },
@@ -424,6 +436,10 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\left_drawer_pgc_normal.png"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login3_loginbtn.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\login3_loginbtn.png"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\listpage_more_dislike_selected_pressed.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\listpage_more_dislike_selected_pressed.png"
     },
@@ -468,6 +484,10 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\btn_tencent_pressed.png"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login1.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\login1.png"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_qq_pressed.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\btn_qq_pressed.png"
     },
@@ -494,6 +514,10 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_renren_pressed.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\btn_renren_pressed.png"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login2.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\login2.png"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_mark_exclusive.png",

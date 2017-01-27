@@ -1,11 +1,19 @@
 [
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview3.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview3.xml"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\register_layout.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\register_layout.xml"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\tool_bar.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\tool_bar.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview1.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview1.xml"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\left_drawer_fragment.xml",
@@ -30,6 +38,10 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\details_imageshow.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\details_imageshow.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_layout.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_layout.xml"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\login4_layout.xml",
@@ -58,6 +70,10 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city_category_list_tip.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city_category_list_tip.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview2.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview2.xml"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_footer.xml",

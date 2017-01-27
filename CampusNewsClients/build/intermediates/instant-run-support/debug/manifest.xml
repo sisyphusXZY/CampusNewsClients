@@ -49,6 +49,8 @@
         </activity>
         <activity android:name="com.baibian.registerActivity" >
         </activity>
+        <activity android:name="com.baibian.GuideActivity" >
+        </activity>
     </application>
 
 </manifest>

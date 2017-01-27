@@ -39,6 +39,8 @@
         </activity>
         <activity android:name="com.baibian.registerActivity">
         </activity>
+        <activity android:name="com.baibian.GuideActivity">
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
