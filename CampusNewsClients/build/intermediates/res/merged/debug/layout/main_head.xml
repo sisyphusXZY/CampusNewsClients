@@ -43,7 +43,7 @@
         android:background="@drawable/badge_titlebar"
         android:visibility="gone" />
 
-    <TextView
+    <ImageView
         android:id="@+id/top_more"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
@@ -52,8 +52,7 @@
         android:gravity="center"
         android:scaleType="centerInside"
         android:paddingRight="15dip"
-        android:text="更多>"
-        android:textColor="#b4b7bd"/>
+        android:src="@drawable/bubble"/>
 
     <TextView
         android:id="@+id/top_right_count"

@@ -1,6 +1,5 @@
 package com.baibian.tool.springindicator;
 
-
 /**
  * Created by chenupt@gmail.com on 2/28/15.
  * Description : Listener for tab

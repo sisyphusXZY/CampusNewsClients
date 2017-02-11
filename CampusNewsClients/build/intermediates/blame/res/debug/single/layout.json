@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_bubble.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_bubble.xml"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview3.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview3.xml"
     },
@@ -84,6 +88,14 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\title_bar.xml"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\profile_drawers_right_pagerview2.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\profile_drawers_right_pagerview2.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_base.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_base.xml"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\main.xml"
     },
@@ -126,6 +138,10 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\left_drawer_top_linearlayout.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\left_drawer_top_linearlayout.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\profile_drawers_right_pagerview1.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\profile_drawers_right_pagerview1.xml"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city_item_content.xml",

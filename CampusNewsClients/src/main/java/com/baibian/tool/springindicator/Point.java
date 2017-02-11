@@ -16,7 +16,6 @@
 
 package com.baibian.tool.springindicator;
 
-
 /**
  * Created by chenupt@gmail.com on 2015/1/31.
  * Description : SpringView point

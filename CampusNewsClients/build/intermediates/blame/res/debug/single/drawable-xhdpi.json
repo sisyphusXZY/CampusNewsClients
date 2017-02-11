@@ -4,6 +4,10 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_drawer_message_normal.png"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\periodicals_img.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\periodicals_img.png"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\arrow_channel.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\arrow_channel.png"
     },
@@ -46,6 +50,10 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\wiper_switch_on_btn.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\wiper_switch_on_btn.png"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\data_img.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\data_img.png"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_favor_on_pressed.png",
@@ -96,6 +104,10 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\titlebar_refresh_detail_cancel.png"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\homepage_img.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\homepage_img.png"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_mark_hot.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_mark_hot.png"
     },
@@ -106,6 +118,10 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\listpage_more_like_normal.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\listpage_more_like_normal.png"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\imformation_img.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\imformation_img.png"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\popicon_listpage_pressed.png",
@@ -162,6 +178,10 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_common_disabled.9.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\btn_common_disabled.9.png"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\forums_img.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\forums_img.png"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_write_pressed.png",
@@ -568,12 +588,24 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\left_drawer_activity.png"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bubble.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\bubble.png"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\titlebar_review_normal.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\titlebar_review_normal.png"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer_feedback_pressed.png",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_drawer_feedback_pressed.png"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\competition_img.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\competition_img.png"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\video_img.png",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\video_img.png"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_next_disabled.png",

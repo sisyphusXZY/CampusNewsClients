@@ -19,6 +19,7 @@ uses-sdk
 ADDED from D:\Github\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:7:5-9:41
 MERGED from [CampusNewsClients:library_SlidingMenu:unspecified] D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\exploded-aar\CampusNewsClients\library_SlidingMenu\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.chenupt.android:springindicator:1.0.2] D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\exploded-aar\com.github.chenupt.android\springindicator\1.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.flyco.dialog:FlycoDialog_Lib:1.3.2] D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\exploded-aar\com.flyco.dialog\FlycoDialog_Lib\1.3.2\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from D:\Github\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from D:\Github\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml

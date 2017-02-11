@@ -71,5 +71,11 @@
     <string name="sure">确定</string>
     <string name="cancel">取消</string>
     <string name="Press_again_to_exit">再按一次退出</string>
+    <string name="close_Baibai">关闭Bai辩</string>
+    <string name="exit_not_account">注销当前账号</string>
+
+
+    <string name="titleA">联系人</string>
+    <string name="titleB">消息</string>
 
 </resources>

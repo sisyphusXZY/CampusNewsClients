@@ -738,6 +738,7 @@
     <string name="city_category_list_header">点击选择其他城市</string>
     <string name="city_category_list_hint">选择城市，立即查看本地新闻</string>
     <string name="city_category_list_notify_no_city">请先选择您关注的城市</string>
+    <string name="close_Baibai">关闭Bai辩</string>
     <string name="day_before">前天</string>
     <string name="day_today">今天</string>
     <string name="day_yesterday">昨天</string>
@@ -746,6 +747,7 @@
     <string name="drawer_btn_rss">频道管理</string>
     <string name="drawer_right_logout_hint_text">"登录后 可关注好友评论和收藏        （测试项目，严禁传播；如有侵权请联系QQ1142182057删除。）"</string>
     <string name="drawer_right_tip_no_login">未登录</string>
+    <string name="exit_not_account">注销当前账号</string>
     <string name="favorite_btn_cancel">取消</string>
     <string name="favorite_btn_delete">删除</string>
     <string name="favorite_btn_edit">编辑</string>
@@ -798,6 +800,8 @@
     <string name="sure_exit">确定要退出Bai辩吗？</string>
     <string name="switch_off"/>
     <string name="switch_on"/>
+    <string name="titleA">联系人</string>
+    <string name="titleB">消息</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in

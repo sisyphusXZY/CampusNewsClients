@@ -15,6 +15,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+
 import com.baibian.R;
 
 import java.util.ArrayList;
@@ -24,7 +25,8 @@ import github.chenupt.springindicator.SpringView;
 import github.chenupt.springindicator.TabClickListener;
 
 /**
- * 这个类是用来引导界面的小圆点
+ * Created by chenupt@gmail.com on 2015/1/31.
+ * Description : Tab layout container
  */
 public class SpringIndicator extends FrameLayout {
 

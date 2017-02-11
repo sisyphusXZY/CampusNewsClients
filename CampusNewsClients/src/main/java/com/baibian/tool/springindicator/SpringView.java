@@ -16,7 +16,6 @@
 
 package com.baibian.tool.springindicator;
 
-
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;

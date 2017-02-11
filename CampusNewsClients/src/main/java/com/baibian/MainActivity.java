@@ -1,6 +1,8 @@
 package com.baibian;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -21,6 +23,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.baibian.adapter.Guide_adapter;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.baibian.adapter.NewsFragmentPagerAdapter;
 import com.baibian.app.AppApplication;
@@ -32,6 +35,7 @@ import com.baibian.tool.BaseTools;
 import com.baibian.view.ColumnHorizontalScrollView;
 import com.baibian.view.DrawerView;
 
+import java.io.OutputStream;
 import java.util.ArrayList;
 
 /**
@@ -90,7 +94,7 @@ public class MainActivity extends FragmentActivity {
     /**
      * head ??? ??????? ???
      */
-    private TextView top_more;
+    private ImageView top_more;
     /**
      * ????CODE
      */
@@ -113,9 +117,10 @@ public class MainActivity extends FragmentActivity {
     private LinearLayout login_layout;//带有圆形头像的布局，用来更换原来的布局
 
     /**
-     *????????viewpager
+     * 引导界面添加内容
      */
-    private ViewPager imformation_viewPager;
+    private SharedPreferences preferences;
+    private SharedPreferences.Editor editor;//判断是否是第一次登陆使用
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,6 +133,8 @@ public class MainActivity extends FragmentActivity {
         mItemWidth = mScreenWidth / 4;// ???Item?????????1/4
         initView();
         initSlidingMenu();
+        init_guide();//引导界面的初始化
+
     }
 
     public interface OnRefreshListener {
@@ -153,7 +160,7 @@ public class MainActivity extends FragmentActivity {
         shade_left = (ImageView) findViewById(R.id.shade_left);
         shade_right = (ImageView) findViewById(R.id.shade_right);
         top_head = (ImageView) findViewById(R.id.top_head);
-        top_more = (TextView) findViewById(R.id.top_more);
+        top_more = (ImageView) findViewById(R.id.top_more);
         top_refresh = (ImageView) findViewById(R.id.top_refresh);
         top_progress = (ProgressBar) findViewById(R.id.top_progress);
 
@@ -234,6 +241,22 @@ public class MainActivity extends FragmentActivity {
         setChangelView();
     }
 
+    /**
+     * 引导界面初始化部分
+     */
+    private void init_guide(){
+        preferences = getSharedPreferences("phone", Context.MODE_PRIVATE);
+        if (preferences.getBoolean("firststart", true)) {
+            editor = preferences.edit();
+            //将登录标志位设置为false，下次登录时不在显示首次登录界面
+            editor.putBoolean("firststart", false);
+            editor.commit();
+            Intent intent = new Intent(MainActivity.this, GuideActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
     public void rotateTopRefresh() {
         RotateAnimation rotateAnimation = refresh.refreshAnimation();
         top_refresh.startAnimation(rotateAnimation);
@@ -301,7 +324,7 @@ public class MainActivity extends FragmentActivity {
     }
 
     /**
-     * ????Column?????Tab
+     * ????Column????? Tab
      */
     private void selectTab(int tab_postion) {
         columnSelectIndex = tab_postion;
@@ -394,6 +417,7 @@ public class MainActivity extends FragmentActivity {
         baibian_btn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent_baibian_btn=new Intent(MainActivity.this,Login4Activity.class);
                 startActivityForResult(intent_baibian_btn,LOGIN4_REQUEST);
             }

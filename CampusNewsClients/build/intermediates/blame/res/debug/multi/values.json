@@ -13499,8 +13499,27 @@
                     "startLine": 740,
                     "startColumn": 4,
                     "startOffset": 49211,
+                    "endColumn": 47,
+                    "endOffset": 49254
+                },
+                "from": {
+                    "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 4066,
+                        "endColumn": 47,
+                        "endOffset": 4109
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 741,
+                    "startColumn": 4,
+                    "startOffset": 49259,
                     "endColumn": 41,
-                    "endOffset": 49248
+                    "endOffset": 49296
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13515,11 +13534,11 @@
             },
             {
                 "to": {
-                    "startLine": 741,
+                    "startLine": 742,
                     "startColumn": 4,
-                    "startOffset": 49253,
+                    "startOffset": 49301,
                     "endColumn": 40,
-                    "endOffset": 49289
+                    "endOffset": 49337
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13534,11 +13553,11 @@
             },
             {
                 "to": {
-                    "startLine": 742,
+                    "startLine": 743,
                     "startColumn": 4,
-                    "startOffset": 49294,
+                    "startOffset": 49342,
                     "endColumn": 44,
-                    "endOffset": 49334
+                    "endOffset": 49382
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13553,11 +13572,11 @@
             },
             {
                 "to": {
-                    "startLine": 743,
+                    "startLine": 744,
                     "startColumn": 4,
-                    "startOffset": 49339,
+                    "startOffset": 49387,
                     "endColumn": 57,
-                    "endOffset": 49392
+                    "endOffset": 49440
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13572,11 +13591,11 @@
             },
             {
                 "to": {
-                    "startLine": 744,
+                    "startLine": 745,
                     "startColumn": 4,
-                    "startOffset": 49397,
+                    "startOffset": 49445,
                     "endColumn": 56,
-                    "endOffset": 49449
+                    "endOffset": 49497
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13591,11 +13610,11 @@
             },
             {
                 "to": {
-                    "startLine": 745,
+                    "startLine": 746,
                     "startColumn": 4,
-                    "startOffset": 49454,
+                    "startOffset": 49502,
                     "endColumn": 47,
-                    "endOffset": 49497
+                    "endOffset": 49545
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13610,11 +13629,11 @@
             },
             {
                 "to": {
-                    "startLine": 746,
+                    "startLine": 747,
                     "startColumn": 4,
-                    "startOffset": 49502,
+                    "startOffset": 49550,
                     "endColumn": 116,
-                    "endOffset": 49614
+                    "endOffset": 49662
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13629,11 +13648,11 @@
             },
             {
                 "to": {
-                    "startLine": 747,
+                    "startLine": 748,
                     "startColumn": 4,
-                    "startOffset": 49619,
+                    "startOffset": 49667,
                     "endColumn": 57,
-                    "endOffset": 49672
+                    "endOffset": 49720
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13648,11 +13667,30 @@
             },
             {
                 "to": {
-                    "startLine": 748,
+                    "startLine": 749,
                     "startColumn": 4,
-                    "startOffset": 49677,
+                    "startOffset": 49725,
+                    "endColumn": 51,
+                    "endOffset": 49772
+                },
+                "from": {
+                    "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 4115,
+                        "endColumn": 51,
+                        "endOffset": 4162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 750,
+                    "startColumn": 4,
+                    "startOffset": 49777,
                     "endColumn": 50,
-                    "endOffset": 49723
+                    "endOffset": 49823
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13667,11 +13705,11 @@
             },
             {
                 "to": {
-                    "startLine": 749,
+                    "startLine": 751,
                     "startColumn": 4,
-                    "startOffset": 49728,
+                    "startOffset": 49828,
                     "endColumn": 50,
-                    "endOffset": 49774
+                    "endOffset": 49874
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13686,11 +13724,11 @@
             },
             {
                 "to": {
-                    "startLine": 750,
+                    "startLine": 752,
                     "startColumn": 4,
-                    "startOffset": 49779,
+                    "startOffset": 49879,
                     "endColumn": 48,
-                    "endOffset": 49823
+                    "endOffset": 49923
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13705,11 +13743,11 @@
             },
             {
                 "to": {
-                    "startLine": 751,
+                    "startLine": 753,
                     "startColumn": 4,
-                    "startOffset": 49828,
+                    "startOffset": 49928,
                     "endColumn": 48,
-                    "endOffset": 49872
+                    "endOffset": 49972
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13724,11 +13762,11 @@
             },
             {
                 "to": {
-                    "startLine": 752,
+                    "startLine": 754,
                     "startColumn": 4,
-                    "startOffset": 49877,
+                    "startOffset": 49977,
                     "endColumn": 49,
-                    "endOffset": 49922
+                    "endOffset": 50022
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13743,11 +13781,11 @@
             },
             {
                 "to": {
-                    "startLine": 753,
+                    "startLine": 755,
                     "startColumn": 4,
-                    "startOffset": 49927,
+                    "startOffset": 50027,
                     "endColumn": 52,
-                    "endOffset": 49975
+                    "endOffset": 50075
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13762,11 +13800,11 @@
             },
             {
                 "to": {
-                    "startLine": 754,
+                    "startLine": 756,
                     "startColumn": 4,
-                    "startOffset": 49980,
+                    "startOffset": 50080,
                     "endColumn": 51,
-                    "endOffset": 50027
+                    "endOffset": 50127
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13781,11 +13819,11 @@
             },
             {
                 "to": {
-                    "startLine": 755,
+                    "startLine": 757,
                     "startColumn": 4,
-                    "startOffset": 50032,
+                    "startOffset": 50132,
                     "endColumn": 56,
-                    "endOffset": 50084
+                    "endOffset": 50184
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13800,11 +13838,11 @@
             },
             {
                 "to": {
-                    "startLine": 756,
+                    "startLine": 758,
                     "startColumn": 4,
-                    "startOffset": 50089,
+                    "startOffset": 50189,
                     "endColumn": 58,
-                    "endOffset": 50143
+                    "endOffset": 50243
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13819,11 +13857,11 @@
             },
             {
                 "to": {
-                    "startLine": 757,
+                    "startLine": 759,
                     "startColumn": 4,
-                    "startOffset": 50148,
+                    "startOffset": 50248,
                     "endColumn": 56,
-                    "endOffset": 50200
+                    "endOffset": 50300
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13838,11 +13876,11 @@
             },
             {
                 "to": {
-                    "startLine": 758,
+                    "startLine": 760,
                     "startColumn": 4,
-                    "startOffset": 50205,
+                    "startOffset": 50305,
                     "endColumn": 56,
-                    "endOffset": 50257
+                    "endOffset": 50357
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13857,11 +13895,11 @@
             },
             {
                 "to": {
-                    "startLine": 759,
+                    "startLine": 761,
                     "startColumn": 4,
-                    "startOffset": 50262,
+                    "startOffset": 50362,
                     "endColumn": 55,
-                    "endOffset": 50313
+                    "endOffset": 50413
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13876,11 +13914,11 @@
             },
             {
                 "to": {
-                    "startLine": 760,
+                    "startLine": 762,
                     "startColumn": 4,
-                    "startOffset": 50318,
+                    "startOffset": 50418,
                     "endColumn": 55,
-                    "endOffset": 50369
+                    "endOffset": 50469
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13895,11 +13933,11 @@
             },
             {
                 "to": {
-                    "startLine": 761,
+                    "startLine": 763,
                     "startColumn": 4,
-                    "startOffset": 50374,
+                    "startOffset": 50474,
                     "endColumn": 64,
-                    "endOffset": 50434
+                    "endOffset": 50534
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13914,11 +13952,11 @@
             },
             {
                 "to": {
-                    "startLine": 762,
+                    "startLine": 764,
                     "startColumn": 4,
-                    "startOffset": 50439,
+                    "startOffset": 50539,
                     "endColumn": 54,
-                    "endOffset": 50489
+                    "endOffset": 50589
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13933,11 +13971,11 @@
             },
             {
                 "to": {
-                    "startLine": 763,
+                    "startLine": 765,
                     "startColumn": 4,
-                    "startOffset": 50494,
+                    "startOffset": 50594,
                     "endColumn": 55,
-                    "endOffset": 50545
+                    "endOffset": 50645
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13952,11 +13990,11 @@
             },
             {
                 "to": {
-                    "startLine": 764,
+                    "startLine": 766,
                     "startColumn": 4,
-                    "startOffset": 50550,
+                    "startOffset": 50650,
                     "endColumn": 70,
-                    "endOffset": 50616
+                    "endOffset": 50716
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13971,11 +14009,11 @@
             },
             {
                 "to": {
-                    "startLine": 765,
+                    "startLine": 767,
                     "startColumn": 4,
-                    "startOffset": 50621,
+                    "startOffset": 50721,
                     "endColumn": 46,
-                    "endOffset": 50663
+                    "endOffset": 50763
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -13990,11 +14028,11 @@
             },
             {
                 "to": {
-                    "startLine": 766,
+                    "startLine": 768,
                     "startColumn": 4,
-                    "startOffset": 50668,
+                    "startOffset": 50768,
                     "endColumn": 52,
-                    "endOffset": 50716
+                    "endOffset": 50816
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14009,11 +14047,11 @@
             },
             {
                 "to": {
-                    "startLine": 767,
+                    "startLine": 769,
                     "startColumn": 4,
-                    "startOffset": 50721,
+                    "startOffset": 50821,
                     "endColumn": 50,
-                    "endOffset": 50767
+                    "endOffset": 50867
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14028,11 +14066,11 @@
             },
             {
                 "to": {
-                    "startLine": 768,
+                    "startLine": 770,
                     "startColumn": 4,
-                    "startOffset": 50772,
+                    "startOffset": 50872,
                     "endColumn": 50,
-                    "endOffset": 50818
+                    "endOffset": 50918
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14047,11 +14085,11 @@
             },
             {
                 "to": {
-                    "startLine": 769,
+                    "startLine": 771,
                     "startColumn": 4,
-                    "startOffset": 50823,
+                    "startOffset": 50923,
                     "endColumn": 115,
-                    "endOffset": 50934
+                    "endOffset": 51034
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14066,11 +14104,11 @@
             },
             {
                 "to": {
-                    "startLine": 770,
+                    "startLine": 772,
                     "startColumn": 4,
-                    "startOffset": 50939,
+                    "startOffset": 51039,
                     "endColumn": 62,
-                    "endOffset": 50997
+                    "endOffset": 51097
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14085,11 +14123,11 @@
             },
             {
                 "to": {
-                    "startLine": 771,
+                    "startLine": 773,
                     "startColumn": 4,
-                    "startOffset": 51002,
+                    "startOffset": 51102,
                     "endColumn": 54,
-                    "endOffset": 51052
+                    "endOffset": 51152
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14104,11 +14142,11 @@
             },
             {
                 "to": {
-                    "startLine": 772,
+                    "startLine": 774,
                     "startColumn": 4,
-                    "startOffset": 51057,
+                    "startOffset": 51157,
                     "endColumn": 46,
-                    "endOffset": 51099
+                    "endOffset": 51199
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14123,11 +14161,11 @@
             },
             {
                 "to": {
-                    "startLine": 773,
+                    "startLine": 775,
                     "startColumn": 4,
-                    "startOffset": 51104,
+                    "startOffset": 51204,
                     "endColumn": 64,
-                    "endOffset": 51164
+                    "endOffset": 51264
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14142,11 +14180,11 @@
             },
             {
                 "to": {
-                    "startLine": 774,
+                    "startLine": 776,
                     "startColumn": 4,
-                    "startOffset": 51169,
+                    "startOffset": 51269,
                     "endColumn": 49,
-                    "endOffset": 51214
+                    "endOffset": 51314
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14161,11 +14199,11 @@
             },
             {
                 "to": {
-                    "startLine": 775,
+                    "startLine": 777,
                     "startColumn": 4,
-                    "startOffset": 51219,
+                    "startOffset": 51319,
                     "endColumn": 50,
-                    "endOffset": 51265
+                    "endOffset": 51365
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14180,11 +14218,11 @@
             },
             {
                 "to": {
-                    "startLine": 776,
+                    "startLine": 778,
                     "startColumn": 4,
-                    "startOffset": 51270,
+                    "startOffset": 51370,
                     "endColumn": 52,
-                    "endOffset": 51318
+                    "endOffset": 51418
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14199,11 +14237,11 @@
             },
             {
                 "to": {
-                    "startLine": 777,
+                    "startLine": 779,
                     "startColumn": 4,
-                    "startOffset": 51323,
+                    "startOffset": 51423,
                     "endColumn": 54,
-                    "endOffset": 51373
+                    "endOffset": 51473
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14218,11 +14256,11 @@
             },
             {
                 "to": {
-                    "startLine": 778,
+                    "startLine": 780,
                     "startColumn": 4,
-                    "startOffset": 51378,
+                    "startOffset": 51478,
                     "endColumn": 52,
-                    "endOffset": 51426
+                    "endOffset": 51526
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14237,11 +14275,11 @@
             },
             {
                 "to": {
-                    "startLine": 779,
+                    "startLine": 781,
                     "startColumn": 4,
-                    "startOffset": 51431,
+                    "startOffset": 51531,
                     "endColumn": 56,
-                    "endOffset": 51483
+                    "endOffset": 51583
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14256,11 +14294,11 @@
             },
             {
                 "to": {
-                    "startLine": 780,
+                    "startLine": 782,
                     "startColumn": 4,
-                    "startOffset": 51488,
+                    "startOffset": 51588,
                     "endColumn": 51,
-                    "endOffset": 51535
+                    "endOffset": 51635
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14275,11 +14313,11 @@
             },
             {
                 "to": {
-                    "startLine": 781,
+                    "startLine": 783,
                     "startColumn": 4,
-                    "startOffset": 51540,
+                    "startOffset": 51640,
                     "endColumn": 47,
-                    "endOffset": 51583
+                    "endOffset": 51683
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14294,11 +14332,11 @@
             },
             {
                 "to": {
-                    "startLine": 782,
+                    "startLine": 784,
                     "startColumn": 4,
-                    "startOffset": 51588,
+                    "startOffset": 51688,
                     "endColumn": 52,
-                    "endOffset": 51636
+                    "endOffset": 51736
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14313,11 +14351,11 @@
             },
             {
                 "to": {
-                    "startLine": 783,
+                    "startLine": 785,
                     "startColumn": 4,
-                    "startOffset": 51641,
+                    "startOffset": 51741,
                     "endColumn": 54,
-                    "endOffset": 51691
+                    "endOffset": 51791
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14332,11 +14370,11 @@
             },
             {
                 "to": {
-                    "startLine": 784,
+                    "startLine": 786,
                     "startColumn": 4,
-                    "startOffset": 51696,
+                    "startOffset": 51796,
                     "endColumn": 61,
-                    "endOffset": 51753
+                    "endOffset": 51853
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14351,11 +14389,11 @@
             },
             {
                 "to": {
-                    "startLine": 785,
+                    "startLine": 787,
                     "startColumn": 4,
-                    "startOffset": 51758,
+                    "startOffset": 51858,
                     "endColumn": 58,
-                    "endOffset": 51812
+                    "endOffset": 51912
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14370,11 +14408,11 @@
             },
             {
                 "to": {
-                    "startLine": 786,
+                    "startLine": 788,
                     "startColumn": 4,
-                    "startOffset": 51817,
+                    "startOffset": 51917,
                     "endColumn": 56,
-                    "endOffset": 51869
+                    "endOffset": 51969
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14389,11 +14427,11 @@
             },
             {
                 "to": {
-                    "startLine": 787,
+                    "startLine": 789,
                     "startColumn": 4,
-                    "startOffset": 51874,
+                    "startOffset": 51974,
                     "endColumn": 48,
-                    "endOffset": 51918
+                    "endOffset": 52018
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14408,11 +14446,11 @@
             },
             {
                 "to": {
-                    "startLine": 788,
+                    "startLine": 790,
                     "startColumn": 4,
-                    "startOffset": 51923,
+                    "startOffset": 52023,
                     "endColumn": 49,
-                    "endOffset": 51968
+                    "endOffset": 52068
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14427,11 +14465,11 @@
             },
             {
                 "to": {
-                    "startLine": 789,
+                    "startLine": 791,
                     "startColumn": 4,
-                    "startOffset": 51973,
+                    "startOffset": 52073,
                     "endColumn": 50,
-                    "endOffset": 52019
+                    "endOffset": 52119
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14446,11 +14484,11 @@
             },
             {
                 "to": {
-                    "startLine": 790,
+                    "startLine": 792,
                     "startColumn": 4,
-                    "startOffset": 52024,
+                    "startOffset": 52124,
                     "endColumn": 54,
-                    "endOffset": 52074
+                    "endOffset": 52174
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14465,11 +14503,11 @@
             },
             {
                 "to": {
-                    "startLine": 791,
+                    "startLine": 793,
                     "startColumn": 4,
-                    "startOffset": 52079,
+                    "startOffset": 52179,
                     "endColumn": 55,
-                    "endOffset": 52130
+                    "endOffset": 52230
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14484,11 +14522,11 @@
             },
             {
                 "to": {
-                    "startLine": 792,
+                    "startLine": 794,
                     "startColumn": 4,
-                    "startOffset": 52135,
+                    "startOffset": 52235,
                     "endColumn": 66,
-                    "endOffset": 52197
+                    "endOffset": 52297
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14503,11 +14541,11 @@
             },
             {
                 "to": {
-                    "startLine": 793,
+                    "startLine": 795,
                     "startColumn": 4,
-                    "startOffset": 52202,
+                    "startOffset": 52302,
                     "endColumn": 75,
-                    "endOffset": 52273
+                    "endOffset": 52373
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14522,11 +14560,11 @@
             },
             {
                 "to": {
-                    "startLine": 794,
+                    "startLine": 796,
                     "startColumn": 4,
-                    "startOffset": 52278,
+                    "startOffset": 52378,
                     "endColumn": 56,
-                    "endOffset": 52330
+                    "endOffset": 52430
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14541,11 +14579,11 @@
             },
             {
                 "to": {
-                    "startLine": 795,
+                    "startLine": 797,
                     "startColumn": 4,
-                    "startOffset": 52335,
+                    "startOffset": 52435,
                     "endColumn": 54,
-                    "endOffset": 52385
+                    "endOffset": 52485
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14560,11 +14598,11 @@
             },
             {
                 "to": {
-                    "startLine": 796,
+                    "startLine": 798,
                     "startColumn": 4,
-                    "startOffset": 52390,
+                    "startOffset": 52490,
                     "endColumn": 35,
-                    "endOffset": 52421
+                    "endOffset": 52521
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14579,11 +14617,11 @@
             },
             {
                 "to": {
-                    "startLine": 797,
+                    "startLine": 799,
                     "startColumn": 4,
-                    "startOffset": 52426,
+                    "startOffset": 52526,
                     "endColumn": 49,
-                    "endOffset": 52471
+                    "endOffset": 52571
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
@@ -14598,11 +14636,11 @@
             },
             {
                 "to": {
-                    "startLine": 798,
+                    "startLine": 800,
                     "startColumn": 4,
-                    "startOffset": 52476,
+                    "startOffset": 52576,
                     "endColumn": 31,
-                    "endOffset": 52503
+                    "endOffset": 52603
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\style_switch.xml",
@@ -14617,11 +14655,11 @@
             },
             {
                 "to": {
-                    "startLine": 799,
+                    "startLine": 801,
                     "startColumn": 4,
-                    "startOffset": 52508,
+                    "startOffset": 52608,
                     "endColumn": 30,
-                    "endOffset": 52534
+                    "endOffset": 52634
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\style_switch.xml",
@@ -14636,12 +14674,50 @@
             },
             {
                 "to": {
-                    "startLine": 800,
+                    "startLine": 802,
                     "startColumn": 4,
-                    "startOffset": 52539,
-                    "endLine": 834,
+                    "startOffset": 52639,
+                    "endColumn": 38,
+                    "endOffset": 52673
+                },
+                "from": {
+                    "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 4172,
+                        "endColumn": 38,
+                        "endOffset": 4206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 803,
+                    "startColumn": 4,
+                    "startOffset": 52678,
+                    "endColumn": 37,
+                    "endOffset": 52711
+                },
+                "from": {
+                    "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 4,
+                        "startOffset": 4212,
+                        "endColumn": 37,
+                        "endOffset": 4245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 804,
+                    "startColumn": 4,
+                    "startOffset": 52716,
+                    "endLine": 838,
                     "endColumn": 12,
-                    "endOffset": 52853
+                    "endOffset": 53030
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14657,12 +14733,12 @@
             },
             {
                 "to": {
-                    "startLine": 835,
+                    "startLine": 839,
                     "startColumn": 4,
-                    "startOffset": 52858,
-                    "endLine": 839,
+                    "startOffset": 53035,
+                    "endLine": 843,
                     "endColumn": 12,
-                    "endOffset": 53069
+                    "endOffset": 53246
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14678,12 +14754,12 @@
             },
             {
                 "to": {
-                    "startLine": 840,
+                    "startLine": 844,
                     "startColumn": 4,
-                    "startOffset": 53074,
-                    "endLine": 843,
+                    "startOffset": 53251,
+                    "endLine": 847,
                     "endColumn": 12,
-                    "endOffset": 53307
+                    "endOffset": 53484
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14699,12 +14775,12 @@
             },
             {
                 "to": {
-                    "startLine": 844,
+                    "startLine": 848,
                     "startColumn": 4,
-                    "startOffset": 53312,
-                    "endLine": 855,
+                    "startOffset": 53489,
+                    "endLine": 859,
                     "endColumn": 12,
-                    "endOffset": 53916
+                    "endOffset": 54093
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\style_switch.xml",
@@ -14720,12 +14796,12 @@
             },
             {
                 "to": {
-                    "startLine": 856,
+                    "startLine": 860,
                     "startColumn": 4,
-                    "startOffset": 53921,
-                    "endLine": 868,
+                    "startOffset": 54098,
+                    "endLine": 872,
                     "endColumn": 12,
-                    "endOffset": 54631
+                    "endOffset": 54808
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14741,12 +14817,12 @@
             },
             {
                 "to": {
-                    "startLine": 869,
+                    "startLine": 873,
                     "startColumn": 4,
-                    "startOffset": 54636,
-                    "endLine": 877,
+                    "startOffset": 54813,
+                    "endLine": 881,
                     "endColumn": 12,
-                    "endOffset": 55119
+                    "endOffset": 55296
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14762,12 +14838,12 @@
             },
             {
                 "to": {
-                    "startLine": 878,
+                    "startLine": 882,
                     "startColumn": 4,
-                    "startOffset": 55124,
-                    "endLine": 880,
+                    "startOffset": 55301,
+                    "endLine": 884,
                     "endColumn": 12,
-                    "endOffset": 55284
+                    "endOffset": 55461
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14783,12 +14859,12 @@
             },
             {
                 "to": {
-                    "startLine": 881,
+                    "startLine": 885,
                     "startColumn": 4,
-                    "startOffset": 55289,
-                    "endLine": 883,
+                    "startOffset": 55466,
+                    "endLine": 887,
                     "endColumn": 12,
-                    "endOffset": 55411
+                    "endOffset": 55588
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14804,12 +14880,12 @@
             },
             {
                 "to": {
-                    "startLine": 884,
+                    "startLine": 888,
                     "startColumn": 4,
-                    "startOffset": 55416,
-                    "endLine": 887,
+                    "startOffset": 55593,
+                    "endLine": 891,
                     "endColumn": 12,
-                    "endOffset": 55630
+                    "endOffset": 55807
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14825,12 +14901,12 @@
             },
             {
                 "to": {
-                    "startLine": 888,
+                    "startLine": 892,
                     "startColumn": 4,
-                    "startOffset": 55635,
-                    "endLine": 890,
+                    "startOffset": 55812,
+                    "endLine": 894,
                     "endColumn": 12,
-                    "endOffset": 55793
+                    "endOffset": 55970
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14846,12 +14922,12 @@
             },
             {
                 "to": {
-                    "startLine": 891,
+                    "startLine": 895,
                     "startColumn": 4,
-                    "startOffset": 55798,
-                    "endLine": 894,
+                    "startOffset": 55975,
+                    "endLine": 898,
                     "endColumn": 12,
-                    "endOffset": 55964
+                    "endOffset": 56141
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14867,12 +14943,12 @@
             },
             {
                 "to": {
-                    "startLine": 895,
+                    "startLine": 899,
                     "startColumn": 4,
-                    "startOffset": 55969,
-                    "endLine": 908,
+                    "startOffset": 56146,
+                    "endLine": 912,
                     "endColumn": 12,
-                    "endOffset": 56722
+                    "endOffset": 56899
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14888,12 +14964,12 @@
             },
             {
                 "to": {
-                    "startLine": 909,
+                    "startLine": 913,
                     "startColumn": 4,
-                    "startOffset": 56727,
-                    "endLine": 912,
+                    "startOffset": 56904,
+                    "endLine": 916,
                     "endColumn": 12,
-                    "endOffset": 56887
+                    "endOffset": 57064
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14909,12 +14985,12 @@
             },
             {
                 "to": {
-                    "startLine": 913,
+                    "startLine": 917,
                     "startColumn": 4,
-                    "startOffset": 56892,
-                    "endLine": 915,
+                    "startOffset": 57069,
+                    "endLine": 919,
                     "endColumn": 12,
-                    "endOffset": 57079
+                    "endOffset": 57256
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14930,12 +15006,12 @@
             },
             {
                 "to": {
-                    "startLine": 916,
+                    "startLine": 920,
                     "startColumn": 4,
-                    "startOffset": 57084,
-                    "endLine": 919,
+                    "startOffset": 57261,
+                    "endLine": 923,
                     "endColumn": 12,
-                    "endOffset": 57241
+                    "endOffset": 57418
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14951,12 +15027,12 @@
             },
             {
                 "to": {
-                    "startLine": 920,
+                    "startLine": 924,
                     "startColumn": 4,
-                    "startOffset": 57246,
-                    "endLine": 923,
+                    "startOffset": 57423,
+                    "endLine": 927,
                     "endColumn": 12,
-                    "endOffset": 57406
+                    "endOffset": 57583
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14972,12 +15048,12 @@
             },
             {
                 "to": {
-                    "startLine": 924,
+                    "startLine": 928,
                     "startColumn": 4,
-                    "startOffset": 57411,
-                    "endLine": 927,
+                    "startOffset": 57588,
+                    "endLine": 931,
                     "endColumn": 12,
-                    "endOffset": 57583
+                    "endOffset": 57760
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -14993,12 +15069,12 @@
             },
             {
                 "to": {
-                    "startLine": 928,
+                    "startLine": 932,
                     "startColumn": 4,
-                    "startOffset": 57588,
-                    "endLine": 933,
+                    "startOffset": 57765,
+                    "endLine": 937,
                     "endColumn": 12,
-                    "endOffset": 57916
+                    "endOffset": 58093
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15014,12 +15090,12 @@
             },
             {
                 "to": {
-                    "startLine": 934,
+                    "startLine": 938,
                     "startColumn": 4,
-                    "startOffset": 57921,
-                    "endLine": 938,
+                    "startOffset": 58098,
+                    "endLine": 942,
                     "endColumn": 12,
-                    "endOffset": 58131
+                    "endOffset": 58308
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15035,12 +15111,12 @@
             },
             {
                 "to": {
-                    "startLine": 939,
+                    "startLine": 943,
                     "startColumn": 4,
-                    "startOffset": 58136,
-                    "endLine": 943,
+                    "startOffset": 58313,
+                    "endLine": 947,
                     "endColumn": 12,
-                    "endOffset": 58366
+                    "endOffset": 58543
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15056,12 +15132,12 @@
             },
             {
                 "to": {
-                    "startLine": 944,
+                    "startLine": 948,
                     "startColumn": 4,
-                    "startOffset": 58371,
-                    "endLine": 947,
+                    "startOffset": 58548,
+                    "endLine": 951,
                     "endColumn": 12,
-                    "endOffset": 58539
+                    "endOffset": 58716
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15077,12 +15153,12 @@
             },
             {
                 "to": {
-                    "startLine": 948,
+                    "startLine": 952,
                     "startColumn": 4,
-                    "startOffset": 58544,
-                    "endLine": 951,
+                    "startOffset": 58721,
+                    "endLine": 955,
                     "endColumn": 12,
-                    "endOffset": 58707
+                    "endOffset": 58884
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15098,12 +15174,12 @@
             },
             {
                 "to": {
-                    "startLine": 952,
+                    "startLine": 956,
                     "startColumn": 4,
-                    "startOffset": 58712,
-                    "endLine": 955,
+                    "startOffset": 58889,
+                    "endLine": 959,
                     "endColumn": 12,
-                    "endOffset": 58866
+                    "endOffset": 59043
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15119,12 +15195,12 @@
             },
             {
                 "to": {
-                    "startLine": 956,
+                    "startLine": 960,
                     "startColumn": 4,
-                    "startOffset": 58871,
-                    "endLine": 959,
+                    "startOffset": 59048,
+                    "endLine": 963,
                     "endColumn": 12,
-                    "endOffset": 59056
+                    "endOffset": 59233
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15140,12 +15216,12 @@
             },
             {
                 "to": {
-                    "startLine": 960,
+                    "startLine": 964,
                     "startColumn": 4,
-                    "startOffset": 59061,
-                    "endLine": 968,
+                    "startOffset": 59238,
+                    "endLine": 972,
                     "endColumn": 12,
-                    "endOffset": 59534
+                    "endOffset": 59711
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15161,12 +15237,12 @@
             },
             {
                 "to": {
-                    "startLine": 969,
+                    "startLine": 973,
                     "startColumn": 4,
-                    "startOffset": 59539,
-                    "endLine": 973,
+                    "startOffset": 59716,
+                    "endLine": 977,
                     "endColumn": 12,
-                    "endOffset": 59782
+                    "endOffset": 59959
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15182,12 +15258,12 @@
             },
             {
                 "to": {
-                    "startLine": 974,
+                    "startLine": 978,
                     "startColumn": 4,
-                    "startOffset": 59787,
-                    "endLine": 983,
+                    "startOffset": 59964,
+                    "endLine": 987,
                     "endColumn": 12,
-                    "endOffset": 60310
+                    "endOffset": 60487
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15203,12 +15279,12 @@
             },
             {
                 "to": {
-                    "startLine": 984,
+                    "startLine": 988,
                     "startColumn": 4,
-                    "startOffset": 60315,
-                    "endLine": 991,
+                    "startOffset": 60492,
+                    "endLine": 995,
                     "endColumn": 12,
-                    "endOffset": 60714
+                    "endOffset": 60891
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15224,12 +15300,12 @@
             },
             {
                 "to": {
-                    "startLine": 992,
+                    "startLine": 996,
                     "startColumn": 4,
-                    "startOffset": 60719,
-                    "endLine": 998,
+                    "startOffset": 60896,
+                    "endLine": 1002,
                     "endColumn": 12,
-                    "endOffset": 61057
+                    "endOffset": 61234
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15245,12 +15321,12 @@
             },
             {
                 "to": {
-                    "startLine": 999,
+                    "startLine": 1003,
                     "startColumn": 4,
-                    "startOffset": 61062,
-                    "endLine": 1001,
+                    "startOffset": 61239,
+                    "endLine": 1005,
                     "endColumn": 12,
-                    "endOffset": 61183
+                    "endOffset": 61360
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15266,12 +15342,12 @@
             },
             {
                 "to": {
-                    "startLine": 1002,
+                    "startLine": 1006,
                     "startColumn": 4,
-                    "startOffset": 61188,
-                    "endLine": 1007,
+                    "startOffset": 61365,
+                    "endLine": 1011,
                     "endColumn": 12,
-                    "endOffset": 61549
+                    "endOffset": 61726
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15287,12 +15363,12 @@
             },
             {
                 "to": {
-                    "startLine": 1008,
+                    "startLine": 1012,
                     "startColumn": 4,
-                    "startOffset": 61554,
-                    "endLine": 1011,
+                    "startOffset": 61731,
+                    "endLine": 1015,
                     "endColumn": 12,
-                    "endOffset": 61718
+                    "endOffset": 61895
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15308,12 +15384,12 @@
             },
             {
                 "to": {
-                    "startLine": 1012,
+                    "startLine": 1016,
                     "startColumn": 4,
-                    "startOffset": 61723,
-                    "endLine": 1014,
+                    "startOffset": 61900,
+                    "endLine": 1018,
                     "endColumn": 12,
-                    "endOffset": 61862
+                    "endOffset": 62039
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15329,12 +15405,12 @@
             },
             {
                 "to": {
-                    "startLine": 1015,
+                    "startLine": 1019,
                     "startColumn": 4,
-                    "startOffset": 61867,
-                    "endLine": 1024,
+                    "startOffset": 62044,
+                    "endLine": 1028,
                     "endColumn": 12,
-                    "endOffset": 62402
+                    "endOffset": 62579
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15350,12 +15426,12 @@
             },
             {
                 "to": {
-                    "startLine": 1025,
+                    "startLine": 1029,
                     "startColumn": 4,
-                    "startOffset": 62407,
-                    "endLine": 1027,
+                    "startOffset": 62584,
+                    "endLine": 1031,
                     "endColumn": 12,
-                    "endOffset": 62544
+                    "endOffset": 62721
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15371,12 +15447,12 @@
             },
             {
                 "to": {
-                    "startLine": 1028,
+                    "startLine": 1032,
                     "startColumn": 4,
-                    "startOffset": 62549,
-                    "endLine": 1034,
+                    "startOffset": 62726,
+                    "endLine": 1038,
                     "endColumn": 12,
-                    "endOffset": 62902
+                    "endOffset": 63079
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15392,12 +15468,12 @@
             },
             {
                 "to": {
-                    "startLine": 1035,
+                    "startLine": 1039,
                     "startColumn": 4,
-                    "startOffset": 62907,
-                    "endLine": 1042,
+                    "startOffset": 63084,
+                    "endLine": 1046,
                     "endColumn": 12,
-                    "endOffset": 63324
+                    "endOffset": 63501
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15413,12 +15489,12 @@
             },
             {
                 "to": {
-                    "startLine": 1043,
+                    "startLine": 1047,
                     "startColumn": 4,
-                    "startOffset": 63329,
-                    "endLine": 1050,
+                    "startOffset": 63506,
+                    "endLine": 1054,
                     "endColumn": 12,
-                    "endOffset": 63740
+                    "endOffset": 63917
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15434,12 +15510,12 @@
             },
             {
                 "to": {
-                    "startLine": 1051,
+                    "startLine": 1055,
                     "startColumn": 4,
-                    "startOffset": 63745,
-                    "endLine": 1054,
+                    "startOffset": 63922,
+                    "endLine": 1058,
                     "endColumn": 12,
-                    "endOffset": 63958
+                    "endOffset": 64135
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15455,12 +15531,12 @@
             },
             {
                 "to": {
-                    "startLine": 1055,
+                    "startLine": 1059,
                     "startColumn": 4,
-                    "startOffset": 63963,
-                    "endLine": 1058,
+                    "startOffset": 64140,
+                    "endLine": 1062,
                     "endColumn": 12,
-                    "endOffset": 64170
+                    "endOffset": 64347
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15476,12 +15552,12 @@
             },
             {
                 "to": {
-                    "startLine": 1059,
+                    "startLine": 1063,
                     "startColumn": 4,
-                    "startOffset": 64175,
-                    "endLine": 1064,
+                    "startOffset": 64352,
+                    "endLine": 1068,
                     "endColumn": 12,
-                    "endOffset": 64467
+                    "endOffset": 64644
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15497,12 +15573,12 @@
             },
             {
                 "to": {
-                    "startLine": 1065,
+                    "startLine": 1069,
                     "startColumn": 4,
-                    "startOffset": 64472,
-                    "endLine": 1073,
+                    "startOffset": 64649,
+                    "endLine": 1077,
                     "endColumn": 12,
-                    "endOffset": 64957
+                    "endOffset": 65134
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15518,12 +15594,12 @@
             },
             {
                 "to": {
-                    "startLine": 1074,
+                    "startLine": 1078,
                     "startColumn": 4,
-                    "startOffset": 64962,
-                    "endLine": 1081,
+                    "startOffset": 65139,
+                    "endLine": 1085,
                     "endColumn": 12,
-                    "endOffset": 65381
+                    "endOffset": 65558
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15539,12 +15615,12 @@
             },
             {
                 "to": {
-                    "startLine": 1082,
+                    "startLine": 1086,
                     "startColumn": 4,
-                    "startOffset": 65386,
-                    "endLine": 1085,
+                    "startOffset": 65563,
+                    "endLine": 1089,
                     "endColumn": 12,
-                    "endOffset": 65628
+                    "endOffset": 65805
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15560,12 +15636,12 @@
             },
             {
                 "to": {
-                    "startLine": 1086,
+                    "startLine": 1090,
                     "startColumn": 4,
-                    "startOffset": 65633,
-                    "endLine": 1089,
+                    "startOffset": 65810,
+                    "endLine": 1093,
                     "endColumn": 12,
-                    "endOffset": 65872
+                    "endOffset": 66049
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15581,12 +15657,12 @@
             },
             {
                 "to": {
-                    "startLine": 1090,
+                    "startLine": 1094,
                     "startColumn": 4,
-                    "startOffset": 65877,
-                    "endLine": 1095,
+                    "startOffset": 66054,
+                    "endLine": 1099,
                     "endColumn": 12,
-                    "endOffset": 66139
+                    "endOffset": 66316
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15602,12 +15678,12 @@
             },
             {
                 "to": {
-                    "startLine": 1096,
+                    "startLine": 1100,
                     "startColumn": 4,
-                    "startOffset": 66144,
-                    "endLine": 1100,
+                    "startOffset": 66321,
+                    "endLine": 1104,
                     "endColumn": 12,
-                    "endOffset": 66350
+                    "endOffset": 66527
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15623,12 +15699,12 @@
             },
             {
                 "to": {
-                    "startLine": 1101,
+                    "startLine": 1105,
                     "startColumn": 4,
-                    "startOffset": 66355,
-                    "endLine": 1105,
+                    "startOffset": 66532,
+                    "endLine": 1109,
                     "endColumn": 12,
-                    "endOffset": 66580
+                    "endOffset": 66757
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15644,12 +15720,12 @@
             },
             {
                 "to": {
-                    "startLine": 1106,
+                    "startLine": 1110,
                     "startColumn": 4,
-                    "startOffset": 66585,
-                    "endLine": 1108,
+                    "startOffset": 66762,
+                    "endLine": 1112,
                     "endColumn": 12,
-                    "endOffset": 66726
+                    "endOffset": 66903
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15665,12 +15741,12 @@
             },
             {
                 "to": {
-                    "startLine": 1109,
+                    "startLine": 1113,
                     "startColumn": 4,
-                    "startOffset": 66731,
-                    "endLine": 1115,
+                    "startOffset": 66908,
+                    "endLine": 1119,
                     "endColumn": 12,
-                    "endOffset": 67080
+                    "endOffset": 67257
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15686,12 +15762,12 @@
             },
             {
                 "to": {
-                    "startLine": 1116,
+                    "startLine": 1120,
                     "startColumn": 4,
-                    "startOffset": 67085,
-                    "endLine": 1122,
+                    "startOffset": 67262,
+                    "endLine": 1126,
                     "endColumn": 12,
-                    "endOffset": 67457
+                    "endOffset": 67634
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15707,12 +15783,12 @@
             },
             {
                 "to": {
-                    "startLine": 1123,
+                    "startLine": 1127,
                     "startColumn": 4,
-                    "startOffset": 67462,
-                    "endLine": 1127,
+                    "startOffset": 67639,
+                    "endLine": 1131,
                     "endColumn": 12,
-                    "endOffset": 67665
+                    "endOffset": 67842
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15728,12 +15804,12 @@
             },
             {
                 "to": {
-                    "startLine": 1128,
+                    "startLine": 1132,
                     "startColumn": 4,
-                    "startOffset": 67670,
-                    "endLine": 1136,
+                    "startOffset": 67847,
+                    "endLine": 1140,
                     "endColumn": 12,
-                    "endOffset": 68145
+                    "endOffset": 68322
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15749,12 +15825,12 @@
             },
             {
                 "to": {
-                    "startLine": 1137,
+                    "startLine": 1141,
                     "startColumn": 4,
-                    "startOffset": 68150,
-                    "endLine": 1141,
+                    "startOffset": 68327,
+                    "endLine": 1145,
                     "endColumn": 12,
-                    "endOffset": 68397
+                    "endOffset": 68574
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15770,12 +15846,12 @@
             },
             {
                 "to": {
-                    "startLine": 1142,
+                    "startLine": 1146,
                     "startColumn": 4,
-                    "startOffset": 68402,
-                    "endLine": 1145,
+                    "startOffset": 68579,
+                    "endLine": 1149,
                     "endColumn": 12,
-                    "endOffset": 68568
+                    "endOffset": 68745
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15791,12 +15867,12 @@
             },
             {
                 "to": {
-                    "startLine": 1146,
+                    "startLine": 1150,
                     "startColumn": 4,
-                    "startOffset": 68573,
-                    "endLine": 1154,
+                    "startOffset": 68750,
+                    "endLine": 1158,
                     "endColumn": 12,
-                    "endOffset": 69008
+                    "endOffset": 69185
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15812,12 +15888,12 @@
             },
             {
                 "to": {
-                    "startLine": 1155,
+                    "startLine": 1159,
                     "startColumn": 4,
-                    "startOffset": 69013,
-                    "endLine": 1170,
+                    "startOffset": 69190,
+                    "endLine": 1174,
                     "endColumn": 12,
-                    "endOffset": 69893
+                    "endOffset": 70070
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15833,12 +15909,12 @@
             },
             {
                 "to": {
-                    "startLine": 1171,
+                    "startLine": 1175,
                     "startColumn": 4,
-                    "startOffset": 69898,
-                    "endLine": 1175,
+                    "startOffset": 70075,
+                    "endLine": 1179,
                     "endColumn": 12,
-                    "endOffset": 70114
+                    "endOffset": 70291
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15854,12 +15930,12 @@
             },
             {
                 "to": {
-                    "startLine": 1176,
+                    "startLine": 1180,
                     "startColumn": 4,
-                    "startOffset": 70119,
-                    "endLine": 1182,
+                    "startOffset": 70296,
+                    "endLine": 1186,
                     "endColumn": 12,
-                    "endOffset": 70423
+                    "endOffset": 70600
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",
@@ -15875,12 +15951,12 @@
             },
             {
                 "to": {
-                    "startLine": 1183,
+                    "startLine": 1187,
                     "startColumn": 4,
-                    "startOffset": 70428,
-                    "endLine": 1186,
+                    "startOffset": 70605,
+                    "endLine": 1190,
                     "endColumn": 12,
-                    "endOffset": 70579
+                    "endOffset": 70756
                 },
                 "from": {
                     "file": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\values\\styles.xml",

@@ -27,4 +27,5 @@
         <attr name="siRadiusMin" format="dimension"/>
 
     </declare-styleable>
+
 </resources>
