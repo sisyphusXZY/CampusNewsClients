@@ -5,33 +5,57 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1394782766407792"
+    timestamp="85966821007349"
     token="801623605105588978"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="1353" />
+        duration="259" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="446" />
     <task
         name="instant-run-transform"
-        duration="2326" />
+        duration="23" />
     <task
         name="verifier"
-        duration="591" />
+        duration="1" />
 
     <artifact
-        location="D:\Github\CampusNewsClients\CampusNewsClients\build\outputs\apk\CampusNewsClients-debug.apk"
-        type="MAIN" />
+        location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="1394782766407792"
+        timestamp="85005619328952"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Github\CampusNewsClients\CampusNewsClients\build\outputs\apk\CampusNewsClients-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="85659620982283"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="85908385986596"
+        verifier="METHOD_DELETED" >
+        <artifact
+            location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="85966821007349"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

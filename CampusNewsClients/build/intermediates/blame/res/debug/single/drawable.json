@@ -16,12 +16,12 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\listpage_more_close.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_titlebar.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\bg_titlebar.xml"
-    },
-    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_drawer_message.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\ic_drawer_message.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_titlebar.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\bg_titlebar.xml"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_large_holo.xml",

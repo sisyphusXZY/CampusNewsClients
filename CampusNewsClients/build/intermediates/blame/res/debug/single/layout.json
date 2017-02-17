@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_bubble.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_bubble.xml"
-    },
-    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview3.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview3.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_bubble.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_bubble.xml"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\register_layout.xml",
@@ -76,6 +76,14 @@
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city_category_list_tip.xml"
     },
     {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\forums_layout.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\forums_layout.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\homepage_layout.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\homepage_layout.xml"
+    },
+    {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview2.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview2.xml"
     },
@@ -106,6 +114,14 @@
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\news_fragment.xml",
         "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\news_fragment.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\find_layout.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\find_layout.xml"
+    },
+    {
+        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\periodicals_layout.xml",
+        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\periodicals_layout.xml"
     },
     {
         "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_toast.xml",

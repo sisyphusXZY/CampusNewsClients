@@ -10,79 +10,94 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <include layout="@layout/main_head" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40.0dip"
-                android:background="#fff3f3f3"
-                android:orientation="horizontal" >
-
-                <RelativeLayout
-                    android:id="@+id/rl_column"
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_marginBottom="60dp"
+                    android:id="@+id/content"
                     android:layout_width="match_parent"
-                    android:layout_height="40.0dip"
-                    android:layout_weight="1.0" >
+                    android:layout_height="wrap_content">
+                </FrameLayout>
 
-                    <com.baibian.view.ColumnHorizontalScrollView
-                        android:id="@+id/mColumnHorizontalScrollView"
-                        android:layout_width="match_parent"
-                        android:layout_height="40.0dip"
-                        android:scrollbars="none" >
 
-                        <LinearLayout
-                            android:id="@+id/mRadioGroup_content"
-                            android:layout_width="fill_parent"
-                            android:layout_height="40.0dip"
-                            android:layout_centerVertical="true"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:paddingLeft="10.0dip"
-                            android:paddingRight="10.0dip" />
-                    </com.baibian.view.ColumnHorizontalScrollView>
-
-                    <ImageView
-                        android:id="@+id/shade_left"
-                        android:layout_width="10.0dip"
-                        android:layout_height="40.0dip"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:background="@drawable/channel_leftblock"
-                        android:visibility="gone" />
-
-                    <ImageView
-                        android:id="@+id/shade_right"
-                        android:layout_width="10.0dip"
-                        android:layout_height="40.0dip"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:background="@drawable/channel_rightblock"
-                        android:visibility="visible" />
-                </RelativeLayout>
-
+                <!--底部布局部分-->
                 <LinearLayout
-                    android:id="@+id/ll_more_columns"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40.0dip" >
+                    android:layout_alignParentBottom="true"
+                    android:background="#2180dc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+                        <!--第一个碎片按钮部分-->
+                        <RelativeLayout
+                            android:id="@+id/fragment1_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+                            <ImageView
+                                android:id="@+id/fragment1_img"
+                                android:src="@drawable/homefragment"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" />
+                        </RelativeLayout>
+                        <!--第二个碎片按钮部分-->
+                        <RelativeLayout
+                            android:id="@+id/fragment2_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+                            <ImageView
+                                android:id="@+id/fragment2_img"
+                                android:src="@drawable/forumsfragment"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" />
+                        </RelativeLayout>
+                        <!--中间部分-->
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:id="@+id/button_more_columns"
-                        android:layout_width="40.0dip"
-                        android:layout_height="40.0dip"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/channel_glide_day_bg" />
+                        </LinearLayout>
+                        <!--第三个碎片按钮部分-->
+
+                        <RelativeLayout
+                            android:id="@+id/fragment3_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+                            <ImageView
+                                android:id="@+id/fragment3_img"
+                                android:src="@drawable/findfragment"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" />
+                        </RelativeLayout>
+                        <!--第四个碎片按钮部分-->
+
+                        <RelativeLayout
+                            android:id="@+id/fragment4_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+                            <ImageView
+                                android:id="@+id/fragment4_img"
+                                android:src="@drawable/periodicalsfragment"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" />
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
 
-            <View
-                android:id="@+id/category_line"
-                android:layout_width="fill_parent"
-                android:layout_height="0.5dip"
-                android:background="#ffdddddd" />
-
-            <android.support.v4.view.ViewPager
-                android:id="@+id/mViewPager"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+            </RelativeLayout>
         </LinearLayout>
 
 

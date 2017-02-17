@@ -1,4 +1,4 @@
-#Fri Feb 10 20:57:11 CST 2017
+#Wed Feb 15 20:44:34 CST 2017
 base.0=D\:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_033f0f78ebbde162f820ca53afac5af21191e111
 renamed.1=classes2.dex
 renamed.0=classes.dex

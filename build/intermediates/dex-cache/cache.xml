@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="c772e52dc912883d8e83e8704e332f7e5393ef99">
+        sha1="70282be217bfc9ad6ead146ca3c8b882611024b2">
         <dex dex="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cd5ef24a2b85d8043160834caf7bd086decaab34\classes.dex" />
     </item>
     <item
@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="588df413569dbe4892d7964784a16aed6e429543">
+        sha1="e51abbdf1a8fbbf748fb906f4ee54c967d5eb879">
         <dex dex="D:\Github\CampusNewsClients\CampusNewsClients\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_033f0f78ebbde162f820ca53afac5af21191e111\classes.dex" />
     </item>
     <item

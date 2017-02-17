@@ -1,5 +1,7 @@
 package com.baibian;
 
+import android.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -24,6 +26,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.baibian.adapter.Guide_adapter;
+import com.baibian.fragment.FindFragment;
+import com.baibian.fragment.ForumsFragment;
+import com.baibian.fragment.HomepageFragment;
+import com.baibian.fragment.PeriodicalsFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.baibian.adapter.NewsFragmentPagerAdapter;
 import com.baibian.app.AppApplication;
@@ -34,15 +40,30 @@ import com.baibian.load.refresh;
 import com.baibian.tool.BaseTools;
 import com.baibian.view.ColumnHorizontalScrollView;
 import com.baibian.view.DrawerView;
-
-import java.io.OutputStream;
 import java.util.ArrayList;
+import java.io.OutputStream;
 
 /**
  *  模拟还原今日头条 --新闻阅读器
  * author:XZY && RA
  */
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements OnClickListener{
+    /**
+     * 四个碎片布局声明的变量
+     */
+    private HomepageFragment homepageFragment;//第一个碎片
+    private ForumsFragment forumsFragment;//第二个碎片
+    private FindFragment findFragment;//第三个碎片
+    private PeriodicalsFragment periodicalsFragment;//第四个碎片
+    private View fragmentLayout1;
+    private View fragmentLayout2;
+    private View fragmentLayout3;
+    private View fragmentLayout4;
+    private ImageView fragmentImage1;
+    private ImageView fragmentImage2;
+    private ImageView fragmentImage3;
+    private ImageView fragmentImage4;
+    private FragmentManager fragmentManager;
     /**
      * 自定义HorizontalScrollView
      */
@@ -97,6 +118,7 @@ public class MainActivity extends FragmentActivity {
     private ImageView top_more;
     /**
      * ????CODE
+     *
      */
     public final static int CHANNELREQUEST = 1;
     /**
@@ -131,51 +153,40 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.main);
         mScreenWidth = BaseTools.getWindowsWidth(this);
         mItemWidth = mScreenWidth / 4;// ???Item?????????1/4
-        initView();
+
         initSlidingMenu();
         init_guide();//引导界面的初始化
 
+
+        initViews();
+        fragmentManager = getFragmentManager();
+        // 第一次启动时选中第0个tab
+        setTabSelection(0);
+
     }
-
-    public interface OnRefreshListener {
-        public void onRefresh();
-    }
-
-    private MainActivity.OnRefreshListener mListener;
-
-    public void setOnRefreshListener(MainActivity.OnRefreshListener listener) {
-        mListener = listener;
-    }
-
     /**
-     * ?????layout???
+     * 在这里获取到每个需要用到的控件的实例，并给它们设置好必要的点击事件。
      */
-    private void initView() {
-        mColumnHorizontalScrollView = (ColumnHorizontalScrollView) findViewById(R.id.mColumnHorizontalScrollView);
-        mRadioGroup_content = (LinearLayout) findViewById(R.id.mRadioGroup_content);
-        ll_more_columns = (LinearLayout) findViewById(R.id.ll_more_columns);
-        rl_column = (RelativeLayout) findViewById(R.id.rl_column);
-        button_more_columns = (ImageView) findViewById(R.id.button_more_columns);
-        mViewPager = (ViewPager) findViewById(R.id.mViewPager);
-        shade_left = (ImageView) findViewById(R.id.shade_left);
-        shade_right = (ImageView) findViewById(R.id.shade_right);
+    private void initViews() {
+        fragmentLayout1 = findViewById(R.id.fragment1_layout);
+        fragmentLayout2 = findViewById(R.id.fragment2_layout);
+        fragmentLayout3 = findViewById(R.id.fragment3_layout);
+        fragmentLayout4 = findViewById(R.id.fragment4_layout);
+        fragmentImage1 = (ImageView) findViewById(R.id.fragment1_img);
+        fragmentImage2 = (ImageView) findViewById(R.id.fragment2_img);
+        fragmentImage3 = (ImageView) findViewById(R.id.fragment3_img);
+        fragmentImage4 = (ImageView) findViewById(R.id.fragment4_img);
+        fragmentLayout1.setOnClickListener(this);
+        fragmentLayout2.setOnClickListener(this);
+        fragmentLayout3.setOnClickListener(this);
+        fragmentLayout4.setOnClickListener(this);
+
+
         top_head = (ImageView) findViewById(R.id.top_head);
         top_more = (ImageView) findViewById(R.id.top_more);
         top_refresh = (ImageView) findViewById(R.id.top_refresh);
-        top_progress = (ProgressBar) findViewById(R.id.top_progress);
-
-
-//        setChangelView();
-        button_more_columns.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent_channel = new Intent(getApplicationContext(), ChannelActivity.class);
-                startActivityForResult(intent_channel, CHANNELREQUEST);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-            }
-        });
-        top_head.setOnClickListener(new OnClickListener() {
+       top_progress = (ProgressBar) findViewById(R.id.top_progress);
+        top_head.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -187,7 +198,7 @@ public class MainActivity extends FragmentActivity {
                 }
             }
         });
-        top_more.setOnClickListener(new OnClickListener() {
+        top_more.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -199,47 +210,121 @@ public class MainActivity extends FragmentActivity {
                 }
             }
         });
-        top_refresh.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-//                String name = makeFragmentName(container.getId(), itemId);
-//                View viewById = mAdapter.getItem(1).getView().findViewById(R.layout.pull_to_refresh_header);
-//                getFragmentManager().findFragmentByTag()
-//                View viewById = getSupportFragmentManager().findFragmentById(R.layout.news_fragment).getView().findViewById(R.layout.pull_to_refresh_header);
-//                Log.d("position", String.valueOf("android:switcher:" + mViewPager.getId() + ":" + mViewPager.getCurrentItem()));
-//                ???getFragmentManager??getSupportFragmentManager??????????????????????????
-//                Log.d("position1", String.valueOf(getSupportFragmentManager().findFragmentByTag(fragments.get(1).getTag()).getView()));
-//                Animation loadAnimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.refresh_rotate);
-//                ??????????????
-                rotateTopRefresh();
-//                ?Щδ??????????????????????????fragment???????????????
-                NewsFragment fragmentByTag = (NewsFragment) getSupportFragmentManager().findFragmentByTag(fragments.get(mViewPager.getCurrentItem()).getTag());
-//                HeadListView headListView = fragmentByTag.getmHeadListView();
-////                headListView.mCurrentState = STATE_REFRESHING;
-//                ((TextView) headListView.findViewById(R.id.tv_title)).setText("???????...");
-//                (headListView.findViewById(R.id.iv_arrow)).clearAnimation();
-//                (headListView.findViewById(R.id.iv_arrow)).setVisibility(View.INVISIBLE);
-//                headListView.findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
-                refresh.refreshHeadView(fragmentByTag);
-                mListener.onRefresh();
-//                fragmentByTag.refreshData();
-//                top_refresh.clearAnimation();
-//                ivArrow.clearAnimation();
-//                pbProgress.setVisibility(VISIBLE);
-//                ivArrow.setVisibility(INVISIBLE);
-//                if (mAdapter.fragmentTAG == null) {
-//                }
-//                viewById.setPadding(0, 0, 0, 0);
-//                HeadListView listView = currentFragment.mListView;
-////                listView.initHeaderView();
-//                View headerView = listView.getHeaderView();
-////                View headerView = currentFragment.getListView().getHeaderView();
-//                headerView.setPadding(0, 0, 0, 0);
-            }
-        });
-        setChangelView();
     }
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.fragment1_layout:
+                // 当点击了消息tab时，选中第1个tab
+                setTabSelection(0);
+                break;
+            case R.id.fragment2_layout:
+                // 当点击了联系人tab时，选中第2个tab
+                setTabSelection(1);
+                break;
+            case R.id.fragment3_layout:
+                // 当点击了动态tab时，选中第3个tab
+                setTabSelection(2);
+                break;
+            case R.id.fragment4_layout:
+                // 当点击了动态tab时，选中第3个tab
+                setTabSelection(3);
+                break;
+            default:
+                break;
+        }
+    }
+
+    /**
+     * 根据传入的index参数来设置选中的tab页。
+     *
+     */
+    private void setTabSelection(int index) {
+        // 每次选中之前先清楚掉上次的选中状态
+        clearSelection();
+        // 开启一个Fragment事务
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        // 先隐藏掉所有的Fragment，以防止有多个Fragment显示在界面上的情况
+        hideFragments(transaction);
+        switch (index) {
+            case 0:
+                fragmentImage1.setImageResource(R.drawable.homefragment_selected);
+                if (homepageFragment == null) {
+                    homepageFragment = new HomepageFragment();
+                    transaction.add(R.id.content, homepageFragment);
+                } else {
+                    transaction.show(homepageFragment);
+                }
+                break;
+            case 1:
+
+                fragmentImage2.setImageResource(R.drawable.forumsfragment_selected);
+                if (forumsFragment == null) {
+                    forumsFragment = new ForumsFragment();
+                    transaction.add(R.id.content, forumsFragment);
+                } else {
+                    transaction.show(forumsFragment);
+                }
+                break;
+            case 2:
+                fragmentImage3.setImageResource(R.drawable.findfragment_selected);
+                if (findFragment == null) {
+                    findFragment = new FindFragment();
+                    transaction.add(R.id.content, findFragment);
+                } else {
+                    transaction.show(findFragment);
+                }
+                break;
+            case 3:
+                fragmentImage4.setImageResource(R.drawable.periodicalsfragment_selected);
+                if (periodicalsFragment == null) {
+                    // 如果NewsFragment为空，则创建一个并添加到界面上
+                    periodicalsFragment = new PeriodicalsFragment();
+                    transaction.add(R.id.content, periodicalsFragment);
+                } else {
+                    // 如果NewsFragment不为空，则直接将它显示出来
+                    transaction.show(periodicalsFragment);
+                }
+                break;
+        }
+
+
+        transaction.commit();
+    }
+
+    /**
+     * 清除掉所有的选中状态。
+     */
+    private void clearSelection() {
+        fragmentImage1.setImageResource(R.drawable.homefragment);
+     //   fragmentLayout1.setBackgroundColor(getResources().getColor(
+      //          R.color.mainFragment_background
+      //  ));
+        fragmentImage2.setImageResource(R.drawable.forumsfragment);
+        fragmentImage3.setImageResource(R.drawable.findfragment);
+        fragmentImage4.setImageResource(R.drawable.periodicalsfragment);
+    }
+
+    /**
+     * 将所有的Fragment都置为隐藏状态。
+     *
+     *            用于对Fragment执行操作的事务
+     */
+    private void hideFragments(FragmentTransaction transaction) {
+        if (homepageFragment != null) {
+            transaction.hide( homepageFragment);
+        }
+        if (forumsFragment != null) {
+            transaction.hide(forumsFragment);
+        }
+        if (findFragment != null) {
+            transaction.hide(findFragment);
+        }
+        if (periodicalsFragment != null) {
+            transaction.hide(periodicalsFragment);
+        }
+    }
+
+
 
     /**
      * 引导界面初始化部分
@@ -257,148 +342,6 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-    public void rotateTopRefresh() {
-        RotateAnimation rotateAnimation = refresh.refreshAnimation();
-        top_refresh.startAnimation(rotateAnimation);
-        rotateAnimation.startNow();
-    }
-
-    /**
-     * ??????????仯??????
-     */
-    private void setChangelView() {
-        initColumnData();
-        initTabColumn();
-        initFragment();
-    }
-
-    /**
-     * ???Column??? ????
-     */
-    private void initColumnData() {
-        userChannelList = ((ArrayList<ChannelItem>) ChannelManage.getManage(AppApplication.getApp().getSQLHelper()).getUserChannel());
-    }
-
-    /**
-     * ?????Column?????
-     */
-    private void initTabColumn() {
-        mRadioGroup_content.removeAllViews();
-        int count = userChannelList.size();
-        mColumnHorizontalScrollView.setParam(this, mScreenWidth, mRadioGroup_content, shade_left, shade_right, ll_more_columns, rl_column);
-        for (int i = 0; i < count; i++) {
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(mItemWidth, LayoutParams.WRAP_CONTENT);
-            params.leftMargin = 5;
-            params.rightMargin = 5;
-//			TextView localTextView = (TextView) mInflater.inflate(R.layout.column_radio_item, null);
-            TextView columnTextView = new TextView(this);
-            columnTextView.setTextAppearance(this, R.style.top_category_scroll_view_item_text);
-//			localTextView.setBackground(getResources().getDrawable(R.drawable.top_category_scroll_text_view_bg));
-            columnTextView.setBackgroundResource(R.drawable.radio_buttong_bg);
-            columnTextView.setGravity(Gravity.CENTER);
-            columnTextView.setPadding(5, 5, 5, 5);
-            columnTextView.setId(i);
-            columnTextView.setText(userChannelList.get(i).getName());
-            columnTextView.setTextColor(getResources().getColorStateList(R.color.top_category_scroll_text_color_day));
-            if (columnSelectIndex == i) {
-                columnTextView.setSelected(true);
-            }
-            columnTextView.setOnClickListener(new OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    for (int i = 0; i < mRadioGroup_content.getChildCount(); i++) {
-                        View localView = mRadioGroup_content.getChildAt(i);
-                        if (localView != v)
-                            localView.setSelected(false);
-                        else {
-                            localView.setSelected(true);
-                            mViewPager.setCurrentItem(i);
-                        }
-                    }
-                    Toast.makeText(getApplicationContext(), userChannelList.get(v.getId()).getName(), Toast.LENGTH_SHORT).show();
-                }
-            });
-            mRadioGroup_content.addView(columnTextView, i, params);
-        }
-    }
-
-    /**
-     * ????Column????? Tab
-     */
-    private void selectTab(int tab_postion) {
-        columnSelectIndex = tab_postion;
-        for (int i = 0; i < mRadioGroup_content.getChildCount(); i++) {
-            View checkView = mRadioGroup_content.getChildAt(tab_postion);
-            int k = checkView.getMeasuredWidth();
-            int l = checkView.getLeft();
-            int i2 = l + k / 2 - mScreenWidth / 2;
-            // rg_nav_content.getParent()).smoothScrollTo(i2, 0);
-            mColumnHorizontalScrollView.smoothScrollTo(i2, 0);
-            // mColumnHorizontalScrollView.smoothScrollTo((position - 2) *
-            // mItemWidth , 0);
-        }
-        //?ж???????
-        for (int j = 0; j < mRadioGroup_content.getChildCount(); j++) {
-            View checkView = mRadioGroup_content.getChildAt(j);
-            boolean ischeck;
-            if (j == tab_postion) {
-                ischeck = true;
-            } else {
-                ischeck = false;
-            }
-            checkView.setSelected(ischeck);
-        }
-    }
-
-    /**
-     * ?????Fragment
-     */
-    private void initFragment() {
-        fragments.clear();//???
-        int count = userChannelList.size();
-        for (int i = 0; i < count; i++) {
-            Bundle data = new Bundle();
-            data.putString("text", userChannelList.get(i).getName());
-            data.putInt("id", userChannelList.get(i).getId());
-//            data.putString("source", this.getSharedPreferences("channelSource", Context.MODE_PRIVATE).getString(String.valueOf(i+1), "null"));
-            NewsFragment newFragment = new NewsFragment();
-//            currentFragment = newFragment;
-            newFragment.setArguments(data);
-            fragments.add(newFragment);
-        }
-//        getSupportFragmentManager().beginTransaction().add()
-        mAdapter = new NewsFragmentPagerAdapter(getSupportFragmentManager(), fragments);
-//		mViewPager.setOffscreenPageLimit(0);
-        mViewPager.setAdapter(mAdapter);
-        mViewPager.setOnPageChangeListener(pageListener);
-
-    }
-
-    /**
-     * ViewPager?л?????????
-     */
-    public OnPageChangeListener pageListener = new OnPageChangeListener() {
-
-        @Override
-        public void onPageScrollStateChanged(int arg0) {
-        }
-
-        @Override
-        public void onPageScrolled(int arg0, float arg1, int arg2) {
-        }
-
-        @Override
-        public void onPageSelected(int position) {
-            // TODO Auto-generated method stub
-            mViewPager.setCurrentItem(position);
-            selectTab(position);
-            if (position1 != position) {
-                top_refresh.clearAnimation();
-            }
-            position1 = position;
-        }
-    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -454,11 +397,7 @@ public class MainActivity extends FragmentActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
         switch (requestCode) {
-            case CHANNELREQUEST:
-                if (resultCode == CHANNELRESULT) {
-                    setChangelView();
-                }
-                break;
+
             case LOGIN4_REQUEST:
                 if(resultCode==LOGIN4_REQUEST){
                     /**
