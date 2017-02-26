@@ -1,170 +1,178 @@
 [
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview3.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview3.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\details_imageshow_item.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\details_imageshow_item.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_bubble.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_bubble.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_pop.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\list_item_pop.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\register_layout.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\register_layout.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city_item_content.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city_item_content.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\tool_bar.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\tool_bar.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\channel_item.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\channel_item.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview1.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview1.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview1.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview1.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\left_drawer_fragment.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\left_drawer_fragment.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_layout.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\tool_bar.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\tool_bar.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_pop.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\list_item_pop.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\homepage_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\homepage_layout.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\profile_drawer_right.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\profile_drawer_right.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\news_fragment.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\news_fragment.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\settings.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\settings.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\detail_title_bar.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\detail_title_bar.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\details_imageshow.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\details_imageshow.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview2.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview2.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_layout.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_layout.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\list_item.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\login4_layout.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\login4_layout.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\main_head.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\main_head.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\detail_title_bar.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\detail_title_bar.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\login4_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\login4_layout.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\welcome.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\welcome.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city_item_section.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city_item_section.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_header.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\list_item_header.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_base.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_base.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\pull_to_refresh_header.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_header.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\list_item_header.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\channel_item.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\channel_item.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\forums_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\forums_layout.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city_category_list_tip.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city_category_list_tip.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\left_drawer_top_linearlayout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\left_drawer_top_linearlayout.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\forums_layout.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\forums_layout.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\register_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\register_layout.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\homepage_layout.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\homepage_layout.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\periodicals_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\periodicals_layout.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview2.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview2.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\pull_to_refresh_header.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_footer.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\pull_to_refresh_footer.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\channel.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\channel.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\title_bar.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\title_bar.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\profile_drawers_right_pagerview1.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\profile_drawers_right_pagerview1.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\profile_drawers_right_pagerview2.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\profile_drawers_right_pagerview2.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\homepage_list_item.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\homepage_list_item.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_base.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_base.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city_category_list_tip.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city_category_list_tip.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\main.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\left_drawer_fragment.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\left_drawer_fragment.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\main_head.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\main_head.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\news_fragment.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\news_fragment.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_section.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\list_item_section.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\find_layout.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\find_layout.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_bubble.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_bubble.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\periodicals_layout.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\periodicals_layout.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\find_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\find_layout.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_toast.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_toast.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\details.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\details.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\channel.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\channel.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\title_bar.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\title_bar.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_section.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\list_item_section.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\homepage_list_item_viewpager.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\homepage_list_item_viewpager.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\CampusNewsClients\\library_SlidingMenu\\unspecified\\res\\layout\\slidingmenumain.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_footer.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\pull_to_refresh_footer.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city_item_section.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city_item_section.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\popup_toast.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\popup_toast.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\details_imageshow_item.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\details_imageshow_item.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\details_imageshow.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\details_imageshow.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\details.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\details.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\welcome.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\welcome.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\left_drawer_top_linearlayout.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\left_drawer_top_linearlayout.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\CampusNewsClients\\library_SlidingMenu\\unspecified\\res\\layout\\slidingmenumain.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\profile_drawers_right_pagerview1.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\profile_drawers_right_pagerview1.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\profile_drawers_right_pagerview2.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\profile_drawers_right_pagerview2.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\city_item_content.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\city_item_content.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\guide_childview3.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\guide_childview3.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\list_item.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\profile_drawer_right.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\profile_drawer_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\settings.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\main.xml"
     }
 ]

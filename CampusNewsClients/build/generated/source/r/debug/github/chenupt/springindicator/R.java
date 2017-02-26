@@ -53,7 +53,7 @@ public final class R {
 	public static final class drawable {
 	}
 	public static final class id {
-		public static final int icon = 0x7f0900bf;
+		public static final int icon = 0x7f0900c7;
 		public static final int normal = 0x7f090007;
 		public static final int title = 0x7f090025;
 	}

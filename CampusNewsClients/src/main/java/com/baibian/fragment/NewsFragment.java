@@ -167,11 +167,11 @@ public class NewsFragment extends Fragment {
                         mAdapter.notifyDataSetChanged();
                     }
 
-                    ((HomepageFragment) getParentFragment()).setOnRefreshListener(new HomepageFragment.OnRefreshListener() {
+                    ((ForumsFragment) getParentFragment()).setOnRefreshListener(new ForumsFragment.OnRefreshListener() {
 
                         public void onRefresh() {
 //						getDataFromServer();
-                            ((HomepageFragment) getParentFragment()).rotateTopRefresh();
+                            ((ForumsFragment) getParentFragment()).rotateTopRefresh();
                             crawlerChannel.pullToRefresh(channel_id);
                         }
                     });
@@ -206,7 +206,7 @@ public class NewsFragment extends Fragment {
                         @Override
                         public void onRefresh() {
 //						getDataFromServer();
-                            ((HomepageFragment) getParentFragment()).rotateTopRefresh();
+                            ((ForumsFragment) getParentFragment()).rotateTopRefresh();
                             crawlerChannel.pullToRefresh(channel_id);
                         }
 

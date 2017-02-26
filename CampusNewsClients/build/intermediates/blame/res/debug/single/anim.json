@@ -1,34 +1,34 @@
 [
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_out.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_left_out.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_out.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_left_out.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_right.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_in_right.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_left.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_in_left.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_right_out.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_right_out.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_right.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_in_right.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_left.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_out_left.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_right_out.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_right_out.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_left.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_in_left.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_in.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_left_in.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_in.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_left_in.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\refresh_rotate.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\refresh_rotate.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_right.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_out_right.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_right.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_out_right.xml"
     },
     {
-        "merged": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\refresh_rotate.xml",
-        "source": "D:\\Github\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\refresh_rotate.xml"
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_left.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\anim\\slide_out_left.xml"
     }
 ]
