@@ -9,6 +9,10 @@ import android.widget.ImageView;
 
 import java.util.List;
 
+/**
+ * 主页viewpager的adapter
+ */
+
 public class Homepage_ViewpagerAdapter extends PagerAdapter {
 
     public List<ImageView> imageViews;

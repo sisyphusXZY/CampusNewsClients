@@ -22,8 +22,9 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 
-
-
+/**
+ * 主页的Listview的adapter
+ */
 public class Homepage_ListAdapter extends BaseAdapter implements ViewPager.OnPageChangeListener {
 
     private Context mContext;

@@ -9,19 +9,19 @@ import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 
 public class ColumnHorizontalScrollView extends HorizontalScrollView {
-	/** �������岼��  */
+	/** 传入整体布局*/
 	private View ll_content;
-	/** ���������Ŀѡ�񲼾� */
+	/** 传入更多栏目选择布局*/
 	private View ll_more;
-	/** �����϶������� */
+	/** 传入拖动栏布局 */
 	private View rl_column;
-	/** ����ӰͼƬ */
+	/**左阴影图片 */
 	private ImageView leftImage;
-	/** ����ӰͼƬ */
+	/** 右阴影图片 */
 	private ImageView rightImage;
-	/** ��Ļ��� */
+	/** 屏幕宽度 */
 	private int mScreenWitdh = 0;
-	/** ����Ļactivity */
+	/** 父类的活动activity */
 	private Activity activity;
 	private Fragment fragment;
 	
@@ -38,7 +38,7 @@ public class ColumnHorizontalScrollView extends HorizontalScrollView {
 		super(context, attrs, defStyle);
 	}
 	/** 
-	 * ���϶���ʱ��ִ��
+	 * 在拖动的时候执行
 	 * */
 	@Override
 	protected void onScrollChanged(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
@@ -67,7 +67,7 @@ public class ColumnHorizontalScrollView extends HorizontalScrollView {
 	   rightImage.setVisibility(View.VISIBLE);
 	}
 	/** 
-	 * ���븸�಼���е���Դ�ļ�
+	 * 传入父类布局中的资源文件
 	 * */
 	public void setParam(Activity activity, int mScreenWitdh, View paramView1, ImageView paramView2, ImageView paramView3 , View paramView4, View paramView5){
 		this.activity = activity;
@@ -79,12 +79,12 @@ public class ColumnHorizontalScrollView extends HorizontalScrollView {
 		rl_column = paramView5;
 	}
 	/** 
-	 * �ж�������Ӱ����ʾ����Ч��
+	 * 判断左右阴影的显示隐藏效果
 	 * */
 	public void shade_ShowOrHide() {
 		if (!activity.isFinishing() && ll_content != null) {
 			measure(0, 0);
-			//���������С����Ļ��ȵĻ�����������Ӱ������
+			//如果整体宽度小于屏幕宽度的话，那左右阴影都隐藏
 			if (mScreenWitdh >= getMeasuredWidth()) {
 				leftImage.setVisibility(View.GONE);
 				rightImage.setVisibility(View.GONE);
@@ -92,19 +92,19 @@ public class ColumnHorizontalScrollView extends HorizontalScrollView {
 		} else {
 			return;
 		}
-		//��������������ʱ�������Ӱ���أ��ұ���ʾ
+		//如果滑动在最左边的时候，左边阴影隐藏，右边显示
 		if (getLeft() == 0) {
 			leftImage.setVisibility(View.GONE);
 			rightImage.setVisibility(View.VISIBLE);
 			return;
 		}
-		//������������ұ�ʱ�������Ӱ��ʾ���ұ�����
+		//如果滑动在最右边时候，左边阴影显示，右边隐藏
 		if (getRight() == getMeasuredWidth() - mScreenWitdh) {
 			leftImage.setVisibility(View.VISIBLE);
 			rightImage.setVisibility(View.GONE);
 			return;
 		}
-		//����˵�����м�λ�ã�������Ӱ����ʾ
+		//否则，说明在中间位置，左右阴影都显示
 		leftImage.setVisibility(View.VISIBLE);
 		rightImage.setVisibility(View.VISIBLE);
 	}

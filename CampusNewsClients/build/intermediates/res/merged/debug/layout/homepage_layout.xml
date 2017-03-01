@@ -4,6 +4,11 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
+    <Button
+        android:id="@+id/homepage_search_button"
+        android:background="@drawable/top_search_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <com.baibian.view.HomepageListView
         android:id="@+id/homepage_listview"
         android:focusable="true"

@@ -10,9 +10,9 @@ import com.baibian.listener.BackGestureListener;
 
 public class BaseActivity extends Activity {
 
-	/** ÊÖÊÆ¼àÌı */
+	/** æ‰‹åŠ¿ç›‘å¬*/
 	GestureDetector mGestureDetector;
-	/** ÊÇ·ñĞèÒª¼àÌıÊÖÊÆ¹Ø±Õ¹¦ÄÜ */
+	/** æ˜¯å¦éœ€è¦ç›‘å¬æ‰‹åŠ¿å…³é—­åŠŸèƒ½ */
 	private boolean mNeedBackGesture = false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +38,14 @@ public class BaseActivity extends Activity {
 	}
 	
 	/*
-	 * ÉèÖÃÊÇ·ñ½øĞĞÊÖÊÆ¼àÌı
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½ï¿½ï¿½
 	 */
 	public void setNeedBackGesture(boolean mNeedBackGesture){
 		this.mNeedBackGesture = mNeedBackGesture;
 	}
 	
 	/*
-	 * ·µ»Ø
+	 * ï¿½ï¿½ï¿½ï¿½
 	 */
 	public void doBack(View view) {
 		onBackPressed();

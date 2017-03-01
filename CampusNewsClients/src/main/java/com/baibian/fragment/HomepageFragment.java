@@ -3,34 +3,14 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-
-import android.support.v4.view.ViewPager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.RotateAnimation;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.baibian.ChannelActivity;
-import com.baibian.MainActivity;
 import com.baibian.R;
 import com.baibian.adapter.Homepage_ListAdapter;
-import com.baibian.adapter.NewsFragmentPagerAdapter;
-import com.baibian.app.AppApplication;
-import com.baibian.bean.ChannelItem;
-import com.baibian.bean.ChannelManage;
-import com.baibian.load.refresh;
-import com.baibian.view.ColumnHorizontalScrollView;
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,12 +18,13 @@ import java.util.List;
 import java.util.Map;
 
 
-public class HomepageFragment extends Fragment {
-
-    private EditText mEditText;
+public class HomepageFragment extends Fragment  {
+    private Button homepage_search_button;
     private ListView mListView;
     private List<Map<String, Object>> data;
     private Context context;
+
+
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
@@ -55,8 +36,15 @@ public class HomepageFragment extends Fragment {
     View HomepageFragment = inflater.inflate(R.layout.homepage_layout, container, false);
 
         mListView = (ListView) HomepageFragment.findViewById(R.id.homepage_listview);
+        homepage_search_button=(Button) HomepageFragment.findViewById(R.id.homepage_search_button);
         getData();
         mListView.setAdapter(new Homepage_ListAdapter(context, data));
+        homepage_search_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText( getActivity(),"123", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     return HomepageFragment;
 }

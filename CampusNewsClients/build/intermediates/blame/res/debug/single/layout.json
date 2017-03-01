@@ -76,12 +76,12 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\left_drawer_top_linearlayout.xml"
     },
     {
-        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\register_layout.xml",
-        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\register_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\periodicals_layout.xml",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\periodicals_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\register_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\register_layout.xml"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header.xml",
@@ -128,12 +128,12 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\details.xml"
     },
     {
-        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\title_bar.xml",
-        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\title_bar.xml"
-    },
-    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\homepage_list_item_viewpager.xml",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\homepage_list_item_viewpager.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\title_bar.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\title_bar.xml"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_footer.xml",

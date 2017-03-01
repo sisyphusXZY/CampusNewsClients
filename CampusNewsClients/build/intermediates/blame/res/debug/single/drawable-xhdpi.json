@@ -72,6 +72,10 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\channel_leftblock_night.png"
     },
     {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\top_search_focus_img.png",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\top_search_focus_img.png"
+    },
+    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\data_img.png",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\data_img.png"
     },
@@ -328,6 +332,10 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\account_icon_renren.png"
     },
     {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer_wechat.png",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_drawer_wechat.png"
+    },
+    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\listpage_more_close_pressed.png",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\listpage_more_close_pressed.png"
     },
@@ -444,12 +452,12 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_drawer_search_normal.png"
     },
     {
-        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer_favorite_normal.png",
-        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_drawer_favorite_normal.png"
-    },
-    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\imformation_img.png",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\imformation_img.png"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer_favorite_normal.png",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\ic_drawer_favorite_normal.png"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_mark_recommend_night.png",
@@ -646,6 +654,10 @@
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\periodicalsfragment.png",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\periodicalsfragment.png"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\top_search_img.png",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable-xhdpi\\top_search_img.png"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\spinner_76_outer_holo.png",

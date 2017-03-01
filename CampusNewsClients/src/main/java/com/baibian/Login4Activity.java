@@ -11,6 +11,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+/**
+ * 登录界面的活动
+ */
 public class Login4Activity extends Activity {
     protected ImageView imageView11;//第一行第一个图片
     protected ImageView imageView12;

@@ -34,7 +34,7 @@ public class ForumsFragment extends Fragment{
 
     private Context mContext;
     /**
-     * �Զ���HorizontalScrollView
+     * 自定义HorizontalScrollView
      */
     private ColumnHorizontalScrollView mColumnHorizontalScrollView;
     LinearLayout mRadioGroup_content;
@@ -44,54 +44,54 @@ public class ForumsFragment extends Fragment{
     private ImageView button_more_columns;
 
     /**
-     *      * �û�ѡ������ŷ����б�
+     *用户选择的新闻分类列表
      */
     private ArrayList<ChannelItem> userChannelList = new ArrayList<ChannelItem>();
     /**
-     * * ��ǰѡ�е���Ŀ
+     * *当前选中的栏目
      */
     private int columnSelectIndex = 0;
     /**
-     * ����Ӱ����
+     * �左阴影部分
      */
     public ImageView shade_left;
     /**
-     *����Ӱ����
+     *右阴影部分
      */
     public ImageView shade_right;
     /**
-     * ��Ļ���
+     * 屏幕宽度
      */
     private int mScreenWidth = 0;
     /**
-     * Item���
+     * Item宽度
      */
     private int mItemWidth = 0;
     private ArrayList<android.support.v4.app.Fragment> fragments = new ArrayList<android.support.v4.app.Fragment>();
 // protected SlidingMenu side_drawer;
     /**
-     * head ??? ???��??loading
+     * head 头部 的中间的loading
      */
     private ProgressBar top_progress;
     /**
-     * head ??? ?��????��??
+     * head 头部 中间的刷新按钮
      */
     private ImageView top_refresh;
 /**
- * head ??? ??????? ???
+ *  head 头部 的左侧菜单 按钮
  */
 //  private ImageView top_head;
 /**
- * head ??? ??????? ???
+ *head 头部 的右侧菜单 按钮
  */
 // private ImageView top_more;
     /**
-     * ????CODE
+     * 请求CODE
      *
      */
     public final static int CHANNELREQUEST = 1;
     /**
-     * ?????????RESULTCODE
+     * 调整返回的RESULTCODE
      */
     public final static int CHANNELRESULT = 10;
 //    private static final int STATE_REFRESHING = 3;
@@ -128,7 +128,7 @@ public class ForumsFragment extends Fragment{
     }
 
     /**
-     * ?????layout???
+     * 初始化layout控件
      */
     private void initView() {
 
@@ -157,9 +157,9 @@ public class ForumsFragment extends Fragment{
 //                ???getFragmentManager??getSupportFragmentManager??????????????????????????
 //                Log.d("position1", String.valueOf(getSupportFragmentManager().findFragmentByTag(fragments.get(1).getTag()).getView()));
 //                Animation loadAnimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.refresh_rotate);
-//                ??????????????
+//                开启一个动画
                 rotateTopRefresh();
-//                ?����??????????????????????????fragment???????????????
+//               某些未知的情况下，此处会强退。猜测是因为fragment还没有完全加载完成
                 NewsFragment fragmentByTag = (NewsFragment)getChildFragmentManager().findFragmentByTag(fragments.get(mViewPager.getCurrentItem()).getTag());
 //                HeadListView headListView = fragmentByTag.getmHeadListView();
 ////                headListView.mCurrentState = STATE_REFRESHING;
@@ -194,7 +194,7 @@ public class ForumsFragment extends Fragment{
     }
 
     /**
-     * ??????????��??????
+     * 当栏目项发生变化时候调用
      */
     private void setChangelView() {
         initColumnData();
@@ -203,7 +203,7 @@ public class ForumsFragment extends Fragment{
     }
 
     /**
-     * ???Column??? ????
+     * 获取Column栏目 数据
      */
     private void initColumnData() {
         userChannelList = ((ArrayList<ChannelItem>) ChannelManage.getManage(AppApplication.getApp().getSQLHelper()).getUserChannel());
@@ -215,7 +215,7 @@ public class ForumsFragment extends Fragment{
         this.mContext = activity;
     }
     /**
-     * ?????Column?????
+     * 初始化Column栏目项
      */
     private void initTabColumn() {
         mRadioGroup_content.removeAllViews();
@@ -260,7 +260,7 @@ public class ForumsFragment extends Fragment{
     }
 
     /**
-     * ????Column????? Tab
+     * 选择的Column里面的Tab
      */
     private void selectTab(int tab_postion) {
         columnSelectIndex = tab_postion;
@@ -274,7 +274,7 @@ public class ForumsFragment extends Fragment{
             // mColumnHorizontalScrollView.smoothScrollTo((position - 2) *
             // mItemWidth , 0);
         }
-        //?��???????
+        //判断是否选中
         for (int j = 0; j < mRadioGroup_content.getChildCount(); j++) {
             View checkView = mRadioGroup_content.getChildAt(j);
             boolean ischeck;
@@ -288,7 +288,7 @@ public class ForumsFragment extends Fragment{
     }
 
     /**
-     * ?????Fragment
+     * 初始化Fragment
      */
     private void initFragment() {
         fragments.clear();//???
@@ -312,7 +312,7 @@ public class ForumsFragment extends Fragment{
     }
 
     /**
-     * ViewPager?��?????????
+     * ViewPager切换监听方法
      */
     public ViewPager.OnPageChangeListener pageListener = new ViewPager.OnPageChangeListener() {
 

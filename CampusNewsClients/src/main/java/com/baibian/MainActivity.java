@@ -73,13 +73,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
     RelativeLayout rl_column;
     private ViewPager mViewPager;
     private ImageView button_more_columns;
-
     /**
-     *      * 用户选择的新闻分类列表
+     * 用户选择的新闻分类列表
      */
     private ArrayList<ChannelItem> userChannelList = new ArrayList<ChannelItem>();
     /**
-     * * 当前选中的栏目
+     * 当前选中的栏目
      */
     private int columnSelectIndex = 0;
     /**
@@ -87,7 +86,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
      */
     public ImageView shade_left;
     /**
-     *右阴影部分
+     * 右阴影部分
      */
     public ImageView shade_right;
     /**
@@ -101,28 +100,27 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
     private ArrayList<Fragment> fragments = new ArrayList<Fragment>();
     protected SlidingMenu side_drawer;
     /**
-     * head ??? ???м??loading
+     * head 头部 的中间的loading
      */
     private ProgressBar top_progress;
     /**
-     * head ??? ?м????°??
+     * head 头部 中间的刷新按钮
      */
     private ImageView top_refresh;
     /**
-     * head ??? ??????? ???
+     * head 头部 的左侧菜单 按钮
      */
     private ImageView top_head;
     /**
-     * head ??? ??????? ???
+     * head 头部 的右侧菜单 按钮
      */
     private ImageView top_more;
     /**
-     * ????CODE
-     *
+     * 请求CODE
      */
     public final static int CHANNELREQUEST = 1;
     /**
-     * ?????????RESULTCODE
+     * 调整返回的RESULTCODE
      */
     public final static int CHANNELRESULT = 10;
 //    private static final int STATE_REFRESHING = 3;

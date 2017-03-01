@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/res/drawable-xxhdpi/ads0.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/res/drawable-xxhdpi/ads1.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/res/drawable-xxhdpi/ads2.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/res/drawable-xxhdpi/ads3.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/res/drawable-xxhdpi/ads4.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/res/drawable-xxhdpi/dot_focused.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/res/drawable-xxhdpi/dot_normal.xml" charset="UTF-8" />
-    <file url="PROJECT" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

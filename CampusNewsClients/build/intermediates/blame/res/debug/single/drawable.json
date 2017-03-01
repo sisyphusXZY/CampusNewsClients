@@ -48,12 +48,12 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\ic_action_write.xml"
     },
     {
-        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\login4accountback1.png",
-        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\login4accountback1.png"
-    },
-    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\popicon_listpage.xml",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\popicon_listpage.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\login4accountback1.png",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\login4accountback1.png"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\title.png",
@@ -340,12 +340,12 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\right_drawer_top_count_bg.xml"
     },
     {
-        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_common.xml",
-        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\btn_common.xml"
-    },
-    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_back_detail.xml",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\btn_back_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_common.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\btn_common.xml"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_drawer_favorite.xml",

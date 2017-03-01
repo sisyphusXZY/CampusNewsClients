@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Õâ¸ö»î¶¯ÊÇÒıµ¼½çÃæµÄ»î¶¯
+ * å¼•å¯¼ç•Œé¢çš„æ´»åŠ¨
  */
 
 public class GuideActivity extends Activity{
@@ -27,13 +27,16 @@ public class GuideActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guide_layout);
         viewList=new ArrayList<View>();
+        /**
+         * 3ä¸ªViewåˆ†åˆ«å¯¹åº”ä¸‰ä¸ªç•Œé¢
+         */
         View view1=View.inflate(this,R.layout.guide_childview1,null);
         View view2=View.inflate(this,R.layout.guide_childview2,null);
         View view3=View.inflate(this,R.layout.guide_childview3,null);
         viewList.add(view1);
         viewList.add(view2);
         viewList.add(view3);
-        pager=(ViewPager)findViewById(R.id.pager);//Õâ¸öµØ·½Ò»¶¨ÒªÔÚAdapterÊµÀı»¯Ö®Ç°  ·ñÔò»á±ÀÀ£
+        pager=(ViewPager)findViewById(R.id.pager);
         Guide_adapter myPagerAdapter=new Guide_adapter(viewList,this);
         pager.setAdapter(myPagerAdapter);
         springIndicator=(SpringIndicator) findViewById(R.id.indicator);
