@@ -122,8 +122,8 @@
 
     <style name="left_drawer_item_layout">
         <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@drawable/left_drawer_item_bg</item>
         <item name="android:paddingLeft">40.0dip</item>
+        <item name="android:paddingRight">40.0dip</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">50.0dip</item>
@@ -140,6 +140,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:drawablePadding">25.0dip</item>
     </style>
+
 
     <!--<style name="left_drawer_item_line">-->
         <!--<item name="android:background">@color/left_drawer_item_line</item>-->

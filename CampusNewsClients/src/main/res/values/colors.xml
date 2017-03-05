@@ -8,7 +8,7 @@
 
     <color name="gallery_background">#ff111111</color>
     <color name="gallery_alpha">#b0000000</color>
-    <color name="white">#ffffffff</color>
+    <color name="white">#FFFFFF</color>
     <color name="lighter_gray">#ffd3d3d3</color>
     <color name="gray">#ff808080</color>
     <color name="darkgray">#ffa9a9a9</color>
@@ -520,10 +520,11 @@
     <color name="report_btn_stroke_night">#ff999999</color>
     <color name="left_drawer_no_login_tip_text">#ffb8b8b8</color>
     <color name="left_drawer_user_name">#ffd4d4d4</color>
-    <color name="left_drawer_item_text_normal">#ffd4d4d4</color>
-    <color name="left_drawer_item_text_pressed">#ff4e4e4e</color>
+    <color name="left_drawer_item_text_normal">#ff4e4e4e</color>
+    <color name="left_drawer_item_text_pressed">#ffd4d4d4</color>
     <color name="left_drawer_item_text_tip">#fffe3232</color>
-    <color name="left_drawer_item_bg_normal">#ff393939</color>
+    <color name="left_drawer_item_bg_normal">#505254</color>
+    <color name="left_drawer_itme_bg_normal_day">#ffd71b</color>
     <color name="left_drawer_item_bg_pressed">#ff292929</color>
     <color name="left_drawer_item_line">#ff272727</color>
     <color name="left_drawer_offline_line">#ff4bbff6</color>

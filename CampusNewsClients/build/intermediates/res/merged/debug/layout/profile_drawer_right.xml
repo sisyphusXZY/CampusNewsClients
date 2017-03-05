@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@android:color/white" >
+    android:background="@android:color/white">
     <TextView
         android:background="@color/baibian_back_color"
         android:text="更多应用"
@@ -15,48 +16,6 @@
         android:layout_height="100dp">
 
     </android.support.v4.view.ViewPager>
-
-
-
-    <RelativeLayout
-        android:background="@color/baibian_back_color"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="消息"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_alignParentRight="true"
-            android:text="更多>>"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RelativeLayout>
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="130dip">
-
-    </ListView>
-
-    <RelativeLayout
-        android:background="@color/baibian_back_color"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="联系人"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_alignParentRight="true"
-            android:text="更多>>"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RelativeLayout>
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </ListView>
 
 
 </LinearLayout>

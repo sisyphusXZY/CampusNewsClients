@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/left_drawer_all"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/left_drawer_item_bg_normal"
@@ -128,6 +129,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/left_drawer_top_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="13.0dip"
@@ -152,6 +154,8 @@
         android:layout_weight="1.0" >
 
         <LinearLayout
+            android:id="@+id/left_drawer_ScrollView"
+
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
@@ -164,7 +168,7 @@
                 <TextView
                     android:id="@+id/pgc_name"
                     style="@style/left_drawer_item_text"
-                    android:drawableLeft="@drawable/ic_drawer_pgc" />
+                    android:drawableLeft="@drawable/ic_drawer_pgc"/>
             </RelativeLayout>
 
             <ImageView style="@style/left_drawer_item_line" />
@@ -174,9 +178,15 @@
                 style="@style/left_drawer_item_layout" >
 
                 <TextView
+                    android:id="@+id/left_search_text"
                     style="@style/left_drawer_item_text"
                     android:drawableLeft="@drawable/ic_drawer_search"
                     android:text="@string/left_drawer_item_search" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/left_item_right_img"/>
             </RelativeLayout>
 
             <ImageView style="@style/left_drawer_item_line" />
@@ -186,9 +196,15 @@
                 style="@style/left_drawer_item_layout" >
 
                 <TextView
+                    android:id="@+id/left_favorite_text"
                     style="@style/left_drawer_item_text"
                     android:drawableLeft="@drawable/ic_drawer_favorite"
                     android:text="@string/left_drawer_item_favorite" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/left_item_right_img"/>
             </RelativeLayout>
 
             <ImageView style="@style/left_drawer_item_line" />
@@ -214,6 +230,11 @@
                     android:layout_marginTop="6.0dip"
                     android:layout_toRightOf="@id/message_text"
                     android:background="@drawable/left_drawer_count_bg" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/left_item_right_img"/>
             </RelativeLayout>
 
             <ImageView style="@style/left_drawer_item_line" />
@@ -260,6 +281,11 @@
                             android:textColor="@color/left_drawer_offline_hint"
                             android:textSize="7.0sp"
                             android:visibility="gone" />
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/left_item_right_img"/>
                     </RelativeLayout>
                 </RelativeLayout>
 
@@ -306,6 +332,11 @@
                         android:layout_marginTop="6.0dip"
                         android:layout_toRightOf="@id/app_activity_text"
                         android:background="@drawable/left_drawer_count_bg" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/left_item_right_img"/>
                 </RelativeLayout>
 
                 <ImageView style="@style/left_drawer_item_line" />
@@ -316,9 +347,15 @@
                 style="@style/left_drawer_item_layout" >
 
                 <TextView
+                    android:id="@+id/left_drawer_setting_text"
                     style="@style/left_drawer_item_text"
                     android:drawableLeft="@drawable/ic_drawer_setting"
                     android:text="@string/left_drawer_item_setting" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/left_item_right_img"/>
             </RelativeLayout>
 
             <ImageView style="@style/left_drawer_item_line" />
@@ -328,9 +365,15 @@
                 style="@style/left_drawer_item_layout" >
 
                 <TextView
+                    android:id="@+id/left_drawer_feedback_text"
                     style="@style/left_drawer_item_text"
                     android:drawableLeft="@drawable/ic_drawer_feedback"
                     android:text="@string/left_drawer_item_feedback" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/left_item_right_img"/>
             </RelativeLayout>
 
             <ImageView style="@style/left_drawer_item_line" />
@@ -341,9 +384,15 @@
                 android:visibility="visible" >
 
                 <TextView
+                    android:id="@+id/left_drawer_appstore_text"
                     style="@style/left_drawer_item_text"
                     android:drawableLeft="@drawable/ic_drawer_appstore"
                     android:text="@string/left_drawer_item_appstore" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/left_item_right_img"/>
             </RelativeLayout>
 
             <ImageView

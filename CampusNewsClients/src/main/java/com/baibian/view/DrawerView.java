@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.baibian.adapter.Guide_adapter;
 import com.baibian.adapter.Profile_Drawer_Right_ViewPager_Adapter;
+import com.baibian.tool.springindicator.viewpager.ScrollerViewPager;
 import com.flyco.dialog.listener.OnOperItemClickL;
 import com.flyco.dialog.widget.ActionSheetDialog;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
@@ -31,12 +32,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * �Զ���SlidingMenu �����˵���
+ * 自定义SlidingMenu侧啦菜单类
  * */
 public class DrawerView implements OnClickListener{
+	private  LinearLayout left_drawer_ScrollView;
+	private LinearLayout left_drawer_all;//左侧侧滑菜单的全布局，用这个来设置背景颜色
+	private TextView left_drawer_top_text;//左侧顶部的 登录后，将推荐给你更多感兴趣的文章  字体
+	/**
+	 * 左侧侧滑菜单Srollview的item
+	 */
+	//字体部分
+	private  TextView left_search_text;//左侧搜索的字体
+	private TextView left_favorite_text;
+	private TextView message_text;
+	private  TextView offline_btn_text;
+	private TextView app_activity_text;
+	private TextView left_drawer_setting_text;
+	private TextView left_drawer_feedback_text;
+	private TextView left_drawer_appstore_text;
+
+
+
 	private final Activity activity;
 	SlidingMenu localSlidingMenu;
-	private ImageView baibian_btn;//�ٱ��¼��ť
+	private ImageView baibian_btn;//左侧侧滑菜单中百辩登录的按钮
 	private LinearLayout left_top_layout;
 	private SwitchButton night_mode_btn;
 	private TextView night_mode_text;
@@ -54,24 +73,24 @@ public class DrawerView implements OnClickListener{
 	private LinearLayout login_layout;//带有圆形头像的布局，用来更换原来的布局
 
 
-	protected final int REQUESTCODE=11;//baibian_btn��¼�ķ���ֵ
+	protected final int REQUESTCODE=11;//baibian_btn请求码
 	public DrawerView(Activity activity) {
 		this.activity = activity;
 	}
 
 	public SlidingMenu initSlidingMenu() {
 		localSlidingMenu = new SlidingMenu(activity);
-		localSlidingMenu.setMode(SlidingMenu.LEFT_RIGHT);//�������һ��˵�
-		localSlidingMenu.setTouchModeAbove(SlidingMenu.SLIDING_WINDOW);//����Ҫʹ�˵�������������Ļ�ķ�Χ
-//		localSlidingMenu.setTouchModeBehind(SlidingMenu.SLIDING_CONTENT);//������������ȡ�����˵�����Ľ��㣬������ע�͵�
-		localSlidingMenu.setShadowWidthRes(R.dimen.shadow_width);//������ӰͼƬ�Ŀ��
-		localSlidingMenu.setShadowDrawable(R.drawable.shadow);//������ӰͼƬ
-		localSlidingMenu.setBehindOffsetRes(R.dimen.slidingmenu_offset);//SlidingMenu����ʱ��ҳ����ʾ��ʣ����
-		localSlidingMenu.setFadeDegree(0.35F);//SlidingMenu����ʱ�Ľ���̶�
-		localSlidingMenu.attachToActivity(activity, SlidingMenu.RIGHT);//ʹSlidingMenu������Activity�ұ�
-//		localSlidingMenu.setBehindWidthRes(R.dimen.left_drawer_avatar_size);//����SlidingMenu�˵��Ŀ��
-		localSlidingMenu.setMenu(R.layout.left_drawer_fragment);//����menu�Ĳ����ļ�
-//		localSlidingMenu.toggle();//��̬�ж��Զ��رջ���SlidingMenu
+		localSlidingMenu.setMode(SlidingMenu.LEFT_RIGHT);//设置左右滑菜单
+		localSlidingMenu.setTouchModeAbove(SlidingMenu.SLIDING_WINDOW);//设置要使菜单滑动，触碰屏幕的范围
+//		localSlidingMenu.setTouchModeBehind(SlidingMenu.SLIDING_CONTENT);//设置了这个会获取不到菜单里面的焦点，所以先注释掉
+		localSlidingMenu.setShadowWidthRes(R.dimen.shadow_width);//设置阴影图片的宽度
+		localSlidingMenu.setShadowDrawable(R.drawable.shadow);//设置阴影图片
+		localSlidingMenu.setBehindOffsetRes(R.dimen.slidingmenu_offset);//SlidingMenu划出时主页面显示的剩余宽度
+		localSlidingMenu.setFadeDegree(0.35F);//SlidingMenu滑动时渐变程度
+		localSlidingMenu.attachToActivity(activity, SlidingMenu.RIGHT);//使SlidingMenu附加在Activity右边
+//		localSlidingMenu.setBehindWidthRes(R.dimen.left_drawer_avatar_size);//设置SlidingMenu菜单的宽度
+		localSlidingMenu.setMenu(R.layout.left_drawer_fragment);//设置menu布局文件
+//		localSlidingMenu.toggle();//动态判断自动关闭或开启SlidingMenu
 		localSlidingMenu.setSecondaryMenu(R.layout.profile_drawer_right);
 		localSlidingMenu.setSecondaryShadowDrawable(R.drawable.shadowright);
 		/**
@@ -102,7 +121,23 @@ public class DrawerView implements OnClickListener{
 		baibian_btn=(ImageView) localSlidingMenu.findViewById(R.id.baibian_btn);
 		night_mode_btn = (SwitchButton)localSlidingMenu.findViewById(R.id.night_mode_btn);
 		night_mode_text = (TextView)localSlidingMenu.findViewById(R.id.night_mode_text);
-		left_top_layout=(LinearLayout) localSlidingMenu.findViewById(R.id.left_top_layout);
+		left_top_layout=(LinearLayout)localSlidingMenu .findViewById(R.id.left_top_layout);
+		left_drawer_all=(LinearLayout)localSlidingMenu.findViewById(R.id.left_drawer_all);
+		left_drawer_ScrollView=(LinearLayout) localSlidingMenu.findViewById(R.id.left_drawer_ScrollView);
+		left_drawer_top_text=(TextView) localSlidingMenu.findViewById(R.id.left_drawer_top_text);
+		left_search_text=(TextView) localSlidingMenu.findViewById(R.id.left_search_text);
+		left_favorite_text=(TextView)localSlidingMenu.findViewById(R.id.left_favorite_text);
+		message_text =(TextView) localSlidingMenu.findViewById(R.id.message_text);
+		offline_btn_text=(TextView) localSlidingMenu.findViewById(R.id.offline_btn_text);
+		app_activity_text =(TextView) localSlidingMenu.findViewById(R.id.app_activity_text);
+		left_drawer_setting_text=(TextView) localSlidingMenu.findViewById(R.id.left_drawer_setting_text);
+		 left_drawer_feedback_text=(TextView) localSlidingMenu.findViewById(R.id.left_drawer_feedback_text);
+		 left_drawer_appstore_text=(TextView) localSlidingMenu.findViewById(R.id.left_drawer_appstore_text);
+
+
+		/**
+		 * 右侧Viewpager部分
+		 */
 		viewList=new ArrayList<View>();
 		View view1=View.inflate(activity,R.layout.profile_drawers_right_pagerview1,null);
 		View view2=View.inflate(activity,R.layout.profile_drawers_right_pagerview2,null);
@@ -118,17 +153,78 @@ public class DrawerView implements OnClickListener{
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 				// TODO Auto-generated method stub
 				if(isChecked){
+					//日/夜间模式切换按钮的响应
 					night_mode_text.setText(activity.getResources().getString(R.string.action_night_mode));
+					night_mode_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					//背景颜色和中间的srollview的背景颜色切换
+					left_drawer_top_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_no_login_tip_text));//登陆后推荐更多内容
+					left_drawer_all.setBackgroundColor(activity.getResources().getColor(R.color.left_drawer_item_bg_normal));
+					left_drawer_ScrollView.setBackgroundColor(activity.getResources().getColor(R.color.left_drawer_item_bg_normal));
+					//Srollview部分
+					left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					left_favorite_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					message_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					offline_btn_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					app_activity_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					left_drawer_setting_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					left_drawer_feedback_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+					left_drawer_appstore_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+
 				}else{
 					night_mode_text.setText(activity.getResources().getString(R.string.action_day_mode));
+					night_mode_text.setTextColor(activity.getResources().getColor(R.color.black));
+					left_drawer_top_text.setTextColor(activity.getResources().getColor(R.color.black));
+					left_drawer_all.setBackgroundColor(activity.getResources().getColor(R.color.left_drawer_itme_bg_normal_day));
+					left_drawer_ScrollView.setBackgroundColor(activity.getResources().getColor(R.color.white));
+					//Srollview部分
+					left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					left_favorite_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					message_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					offline_btn_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					app_activity_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					left_drawer_setting_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					left_drawer_feedback_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+					left_drawer_appstore_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+
 				}
 			}
 		});
 		night_mode_btn.setChecked(false);
 		if(night_mode_btn.isChecked()){
 			night_mode_text.setText(activity.getResources().getString(R.string.action_night_mode));
+			night_mode_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			left_drawer_top_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_no_login_tip_text));
+			left_drawer_all.setBackgroundColor(activity.getResources().getColor(R.color.left_drawer_item_bg_normal));
+			left_drawer_ScrollView.setBackgroundColor(activity.getResources().getColor(R.color.left_drawer_item_bg_normal));
+			//Srollview部分
+			left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			left_favorite_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			message_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			offline_btn_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			app_activity_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			left_drawer_setting_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			left_drawer_feedback_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
+			left_drawer_appstore_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_night_mode_text));
 		}else{
 			night_mode_text.setText(activity.getResources().getString(R.string.action_day_mode));
+			night_mode_text.setTextColor(activity.getResources().getColor(R.color.black));
+			night_mode_text.setTextColor(activity.getResources().getColor(R.color.black));
+			left_drawer_all.setBackgroundColor(activity.getResources().getColor(R.color.left_drawer_itme_bg_normal_day));
+			left_drawer_ScrollView.setBackgroundColor(activity.getResources().getColor(R.color.white));
+			//Srollview部分
+			left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+			left_favorite_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+			message_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+			offline_btn_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+			app_activity_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+			left_drawer_setting_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+			left_drawer_feedback_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+			left_search_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
+			left_drawer_appstore_text.setTextColor(activity.getResources().getColor(R.color.left_drawer_item_text));
 		}
 		
 		setting_btn =(RelativeLayout)localSlidingMenu.findViewById(R.id.setting_btn);
@@ -137,6 +233,10 @@ public class DrawerView implements OnClickListener{
 		exit_btn.setOnClickListener(this);
 
 	}
+
+	/**
+	 * 退出/注销 按钮的弹窗事件的设置
+	 */
 	private void init_exit_btn(){
 		items=new String[2];
 		items[0]=activity.getString(R.string.close_Baibai);

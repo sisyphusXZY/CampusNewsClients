@@ -266,12 +266,13 @@
     <color name="item_title_disabled_night">#ff505050</color>
     <color name="item_title_normal">#ff444444</color>
     <item name="item_title_normal_night" type="color">@color/default_text_night</item>
-    <color name="left_drawer_item_bg_normal">#ff393939</color>
+    <color name="left_drawer_item_bg_normal">#505254</color>
     <color name="left_drawer_item_bg_pressed">#ff292929</color>
     <color name="left_drawer_item_line">#ff272727</color>
-    <color name="left_drawer_item_text_normal">#ffd4d4d4</color>
-    <color name="left_drawer_item_text_pressed">#ff4e4e4e</color>
+    <color name="left_drawer_item_text_normal">#ff4e4e4e</color>
+    <color name="left_drawer_item_text_pressed">#ffd4d4d4</color>
     <color name="left_drawer_item_text_tip">#fffe3232</color>
+    <color name="left_drawer_itme_bg_normal_day">#ffd71b</color>
     <color name="left_drawer_night_mode_text">#ffb8b8b8</color>
     <color name="left_drawer_no_login_tip_text">#ffb8b8b8</color>
     <color name="left_drawer_offline_hint">#ff6699cc</color>
@@ -576,7 +577,7 @@
     <color name="update_description">#ff999999</color>
     <color name="update_description_night">#ff505050</color>
     <color name="update_item_layout_bg_night">#ff303030</color>
-    <color name="white">#ffffffff</color>
+    <color name="white">#FFFFFF</color>
     <color name="why_indicator_selected">#ff7d7d7d</color>
     <color name="why_indicator_unselected">#ffcecece</color>
     <color name="write_comment_hint_text">#ff999999</color>
@@ -971,8 +972,8 @@
     </style>
     <style name="left_drawer_item_layout">
         <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@drawable/left_drawer_item_bg</item>
         <item name="android:paddingLeft">40.0dip</item>
+        <item name="android:paddingRight">40.0dip</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">50.0dip</item>

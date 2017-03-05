@@ -29,6 +29,7 @@ import com.baibian.adapter.Guide_adapter;
 import com.baibian.fragment.FindFragment;
 import com.baibian.fragment.ForumsFragment;
 import com.baibian.fragment.HomepageFragment;
+import com.baibian.fragment.MyFragment;
 import com.baibian.fragment.PeriodicalsFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.baibian.adapter.NewsFragmentPagerAdapter;
@@ -160,6 +161,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         fragmentManager = getFragmentManager();
         // 第一次启动时选中第0个tab
         setTabSelection(0);
+
+
+        
 
     }
     /**
@@ -384,7 +388,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
             }
             return true;
         }
-        //????MENU??????????????????κβ???
+        //拦截MENU按钮事件，让他无任何操作
         if (keyCode == KeyEvent.KEYCODE_MENU) {
             return true;
         }

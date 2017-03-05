@@ -76,12 +76,12 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\left_drawer_top_linearlayout.xml"
     },
     {
-        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\periodicals_layout.xml",
-        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\periodicals_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\register_layout.xml",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\register_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\periodicals_layout.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\periodicals_layout.xml"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header.xml",
@@ -170,6 +170,10 @@
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\settings.xml",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\myfragment.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\layout\\myfragment.xml"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
