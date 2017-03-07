@@ -50,9 +50,9 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:gravity="center"
+        android:padding="5dp"
         android:scaleType="centerInside"
-        android:paddingRight="15dip"
-        android:src="@drawable/bubble"/>
+        android:src="@mipmap/add_mipmap"/>
 
     <TextView
         android:id="@+id/top_right_count"
@@ -105,7 +105,8 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/title_parent"
             android:padding="5dip"
-            android:src="@drawable/refreshicon_titlebar" />
+            android:src="@drawable/refreshicon_titlebar"
+            android:visibility="gone"/>
 
         <ProgressBar
             android:id="@+id/top_progress"

@@ -77,5 +77,7 @@
 
     <string name="titleA">联系人</string>
     <string name="titleB">消息</string>
+    <string name="tablayout_Contacts">联系人</string>
+    <string name="tablayout_message">消息</string>
 
 </resources>

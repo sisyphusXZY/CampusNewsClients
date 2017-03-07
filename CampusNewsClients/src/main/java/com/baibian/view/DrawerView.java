@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,6 +21,9 @@ import android.widget.Toast;
 
 import com.baibian.adapter.Guide_adapter;
 import com.baibian.adapter.Profile_Drawer_Right_ViewPager_Adapter;
+import com.baibian.adapter.Tablayout_Adapter_Right;
+import com.baibian.fragment.ContactsFragment;
+import com.baibian.fragment.MessageFragment;
 import com.baibian.tool.springindicator.viewpager.ScrollerViewPager;
 import com.flyco.dialog.listener.OnOperItemClickL;
 import com.flyco.dialog.widget.ActionSheetDialog;
@@ -27,7 +32,7 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.OnClosedListener;
 import com.baibian.Login4Activity;
 import com.baibian.R;
 import com.baibian.SettingsActivity;
-
+import android.support.design.widget.TabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +40,10 @@ import java.util.List;
  * 自定义SlidingMenu侧啦菜单类
  * */
 public class DrawerView implements OnClickListener{
+
+	/**
+	 * 设置颜色更改时定义
+	 */
 	private  LinearLayout left_drawer_ScrollView;
 	private LinearLayout left_drawer_all;//左侧侧滑菜单的全布局，用这个来设置背景颜色
 	private TextView left_drawer_top_text;//左侧顶部的 登录后，将推荐给你更多感兴趣的文章  字体
@@ -137,15 +146,17 @@ public class DrawerView implements OnClickListener{
 
 		/**
 		 * 右侧Viewpager部分
+		 *鉴于要直接布局出来，舍弃使用viewpager减少占用空间的方法。
+		 viewList=new ArrayList<View>();
+		 View view1=View.inflate(activity,R.layout.profile_drawers_right_pagerview1,null);
+		 View view2=View.inflate(activity,R.layout.profile_drawers_right_pagerview2,null);
+		 viewList.add(view1);
+		 viewList.add(view2);
+		 profile_drawer_right_viewpager=(ViewPager)localSlidingMenu.findViewById(R.id.profile_drawer_right_viewpager);//这个地方一定要在Adapter实例化之前  否则会崩溃
+		 Profile_Drawer_Right_ViewPager_Adapter myPagerAdapter=new Profile_Drawer_Right_ViewPager_Adapter(viewList,activity);
+		 profile_drawer_right_viewpager.setAdapter(myPagerAdapter);
 		 */
-		viewList=new ArrayList<View>();
-		View view1=View.inflate(activity,R.layout.profile_drawers_right_pagerview1,null);
-		View view2=View.inflate(activity,R.layout.profile_drawers_right_pagerview2,null);
-		viewList.add(view1);
-		viewList.add(view2);
-		profile_drawer_right_viewpager=(ViewPager)localSlidingMenu.findViewById(R.id.profile_drawer_right_viewpager);//这个地方一定要在Adapter实例化之前  否则会崩溃
-		Profile_Drawer_Right_ViewPager_Adapter myPagerAdapter=new Profile_Drawer_Right_ViewPager_Adapter(viewList,activity);
-		profile_drawer_right_viewpager.setAdapter(myPagerAdapter);
+
 
 		night_mode_btn.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			
@@ -213,6 +224,7 @@ public class DrawerView implements OnClickListener{
 			night_mode_text.setText(activity.getResources().getString(R.string.action_day_mode));
 			night_mode_text.setTextColor(activity.getResources().getColor(R.color.black));
 			night_mode_text.setTextColor(activity.getResources().getColor(R.color.black));
+			left_drawer_top_text.setTextColor(activity.getResources().getColor(R.color.black));
 			left_drawer_all.setBackgroundColor(activity.getResources().getColor(R.color.left_drawer_itme_bg_normal_day));
 			left_drawer_ScrollView.setBackgroundColor(activity.getResources().getColor(R.color.white));
 			//Srollview部分
@@ -233,6 +245,7 @@ public class DrawerView implements OnClickListener{
 		exit_btn.setOnClickListener(this);
 
 	}
+
 
 	/**
 	 * 退出/注销 按钮的弹窗事件的设置

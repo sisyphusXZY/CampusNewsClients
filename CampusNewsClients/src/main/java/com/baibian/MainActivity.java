@@ -1,6 +1,8 @@
 package com.baibian;
 
 import android.app.FragmentManager;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
@@ -26,9 +28,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.baibian.adapter.Guide_adapter;
+import com.baibian.adapter.Tablayout_Adapter_Right;
+import com.baibian.fragment.ContactsFragment;
 import com.baibian.fragment.FindFragment;
 import com.baibian.fragment.ForumsFragment;
 import com.baibian.fragment.HomepageFragment;
+import com.baibian.fragment.MessageFragment;
 import com.baibian.fragment.MyFragment;
 import com.baibian.fragment.PeriodicalsFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
@@ -43,12 +48,25 @@ import com.baibian.view.ColumnHorizontalScrollView;
 import com.baibian.view.DrawerView;
 import java.util.ArrayList;
 import java.io.OutputStream;
+import java.util.List;
 
 /**
  *  模拟还原今日头条 --新闻阅读器
  * author:XZY && RA
  */
 public class MainActivity extends FragmentActivity implements OnClickListener{
+    /**
+     * 右边tablayout部分
+     */
+    private TabLayout right_drawer_title;                            //定义TabLayout
+    private ViewPager right_drawer_pager;                             //定义viewPager
+    private FragmentPagerAdapter fAdapter;                               //定义adapter
+
+    private List<Fragment> list_fragment;                                //定义要装fragment的列表
+    private List<String> list_title;                                     //tab名称列表
+
+    private ContactsFragment contactsFragment;              //联系人fragment
+    private MessageFragment messageFragment;            //消息fragment
     /**
      * 四个碎片布局声明的变量
      */
@@ -353,12 +371,18 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
     protected void initSlidingMenu() {
         side_drawer = new DrawerView(this).initSlidingMenu();
+
         /**
          * 登录切换顶部布局
          */
        login_layout=(LinearLayout) side_drawer.findViewById(R.id.login_layout);
         baibian_btn=(ImageView) side_drawer.findViewById(R.id.baibian_btn);//百辩登录按钮
         logout_layout_not_login=(LinearLayout) side_drawer.findViewById(R.id.logout_layout_not_login);//未登录布局
+        //右侧TabLayout部分，联系人。消息
+        right_drawer_title=(TabLayout) side_drawer.findViewById(R.id.right_drawer_title);
+        right_drawer_pager=(ViewPager) side_drawer.findViewById(R.id.right_drawer_pager);
+
+        init_right_Tablayout();
         baibian_btn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -367,6 +391,39 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
                 startActivityForResult(intent_baibian_btn,LOGIN4_REQUEST);
             }
         });
+    }
+    /**
+     * 右侧TabLayout的使用
+     */
+    private void init_right_Tablayout(){
+        //初始化各fragment
+        contactsFragment = new ContactsFragment();
+        messageFragment = new MessageFragment();
+
+        //将fragment装进列表中
+        list_fragment = new ArrayList<Fragment>();
+        list_fragment.add(contactsFragment);
+        list_fragment.add(messageFragment);
+
+        //将名称加载tab名字列表，正常情况下，我们应该在values/arrays.xml中进行定义然后调用
+        list_title = new ArrayList<>();
+        list_title.add(getString(R.string.tablayout_Contacts));
+        list_title.add(getString(R.string.tablayout_message));
+
+        //设置TabLayout的模式
+        right_drawer_title.setTabMode(TabLayout.MODE_FIXED);
+        //为TabLayout添加tab名称
+        right_drawer_title.addTab(right_drawer_title.newTab().setText(list_title.get(0)));
+        right_drawer_title.addTab(right_drawer_title.newTab().setText(list_title.get(1)));
+
+        fAdapter = new Tablayout_Adapter_Right(getSupportFragmentManager(),list_fragment,list_title);
+
+        //viewpager加载adapter
+        right_drawer_pager.setAdapter(fAdapter);
+        //tab_FindFragment_title.setViewPager(vp_FindFragment_pager);
+        //TabLayout加载viewpager
+        right_drawer_title.setupWithViewPager(right_drawer_pager);
+        //tab_FindFragment_title.set
     }
 
     private long mExitTime;
