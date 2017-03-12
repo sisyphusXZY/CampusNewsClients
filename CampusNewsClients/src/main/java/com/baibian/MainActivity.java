@@ -1,5 +1,6 @@
 package com.baibian;
 
+import android.view.MotionEvent;
 import android.app.FragmentManager;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -10,44 +11,32 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.MotionEventCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.view.Gravity;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup.LayoutParams;
-import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.baibian.adapter.Guide_adapter;
 import com.baibian.adapter.Tablayout_Adapter_Right;
 import com.baibian.fragment.ContactsFragment;
 import com.baibian.fragment.FindFragment;
 import com.baibian.fragment.ForumsFragment;
 import com.baibian.fragment.HomepageFragment;
 import com.baibian.fragment.MessageFragment;
-import com.baibian.fragment.MyFragment;
 import com.baibian.fragment.PeriodicalsFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.baibian.adapter.NewsFragmentPagerAdapter;
-import com.baibian.app.AppApplication;
 import com.baibian.bean.ChannelItem;
-import com.baibian.bean.ChannelManage;
-import com.baibian.fragment.NewsFragment;
-import com.baibian.load.refresh;
 import com.baibian.tool.BaseTools;
 import com.baibian.view.ColumnHorizontalScrollView;
-import com.baibian.view.DrawerView;
+import com.baibian.view.SlidingDrawerView;
 import java.util.ArrayList;
-import java.io.OutputStream;
 import java.util.List;
 
 /**
@@ -172,8 +161,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         mItemWidth = mScreenWidth / 4;// ???Item?????????1/4
 
         initSlidingMenu();
-        init_guide();//引导界面的初始化
 
+        init_guide();//引导界面的初始化
 
         initViews();
         fragmentManager = getFragmentManager();
@@ -184,6 +173,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         
 
     }
+
     /**
      * 在这里获取到每个需要用到的控件的实例，并给它们设置好必要的点击事件。
      */
@@ -200,6 +190,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         fragmentLayout2.setOnClickListener(this);
         fragmentLayout3.setOnClickListener(this);
         fragmentLayout4.setOnClickListener(this);
+
 
 
         top_head = (ImageView) findViewById(R.id.top_head);
@@ -268,6 +259,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         switch (index) {
             case 0:
                 fragmentImage1.setImageResource(R.drawable.homefragment_selected);
+                fragmentLayout1.setBackgroundColor(getResources().getColor(R.color.main_layout_selected));
                 if (homepageFragment == null) {
                     homepageFragment = new HomepageFragment();
                     transaction.add(R.id.content, homepageFragment);
@@ -278,6 +270,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
             case 1:
 
                 fragmentImage2.setImageResource(R.drawable.forumsfragment_selected);
+                fragmentLayout2.setBackgroundColor(getResources().getColor(R.color.main_layout_selected));
                 if (forumsFragment == null) {
                     forumsFragment = new ForumsFragment();
                     transaction.add(R.id.content, forumsFragment);
@@ -287,6 +280,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
                 break;
             case 2:
                 fragmentImage3.setImageResource(R.drawable.findfragment_selected);
+                fragmentLayout3.setBackgroundColor(getResources().getColor(R.color.main_layout_selected));
                 if (findFragment == null) {
                     findFragment = new FindFragment();
                     transaction.add(R.id.content, findFragment);
@@ -296,6 +290,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
                 break;
             case 3:
                 fragmentImage4.setImageResource(R.drawable.periodicalsfragment_selected);
+                fragmentLayout4.setBackgroundColor(getResources().getColor(R.color.main_layout_selected));
                 if (periodicalsFragment == null) {
                     // 如果NewsFragment为空，则创建一个并添加到界面上
                     periodicalsFragment = new PeriodicalsFragment();
@@ -316,12 +311,16 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
      */
     private void clearSelection() {
         fragmentImage1.setImageResource(R.drawable.homefragment);
+        fragmentLayout1.setBackgroundColor(getResources().getColor(R.color.main_layout1_unselected));
      //   fragmentLayout1.setBackgroundColor(getResources().getColor(
       //          R.color.mainFragment_background
       //  ));
         fragmentImage2.setImageResource(R.drawable.forumsfragment);
+        fragmentLayout2.setBackgroundColor(getResources().getColor(R.color.main_layout1_unselected));
         fragmentImage3.setImageResource(R.drawable.findfragment);
+        fragmentLayout3.setBackgroundColor(getResources().getColor(R.color.main_layout1_unselected));
         fragmentImage4.setImageResource(R.drawable.periodicalsfragment);
+        fragmentLayout4.setBackgroundColor(getResources().getColor(R.color.main_layout1_unselected));
     }
 
     /**
@@ -368,9 +367,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
+//以后移走
     protected void initSlidingMenu() {
-        side_drawer = new DrawerView(this).initSlidingMenu();
+        side_drawer = new SlidingDrawerView(this).initSlidingMenu();
 
         /**
          * 登录切换顶部布局

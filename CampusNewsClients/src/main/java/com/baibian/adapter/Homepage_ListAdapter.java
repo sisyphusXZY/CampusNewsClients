@@ -24,7 +24,10 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 主页的Listview的adapter
+ * 这部分的代码已经作废，更改成为使用RecyclerView.Adapter这种的方法进行实现，留下这部分代码，只为后来如果有用参考
  */
+
+
 public class Homepage_ListAdapter extends BaseAdapter implements ViewPager.OnPageChangeListener {
 
     private Context mContext;
@@ -135,6 +138,7 @@ public class Homepage_ListAdapter extends BaseAdapter implements ViewPager.OnPag
     }
 
     @Override
+
     public long getItemId(int position) {
         return position;
     }

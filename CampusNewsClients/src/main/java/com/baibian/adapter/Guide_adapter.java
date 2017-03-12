@@ -39,6 +39,8 @@ public class Guide_adapter extends PagerAdapter  {
         return Viewlist.size();
     }
 
+
+
     /**
      *View是否来自对象
      */

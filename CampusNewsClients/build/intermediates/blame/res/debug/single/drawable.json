@@ -240,6 +240,10 @@
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
+        "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\homepage_list_item_bg_change.xml",
+        "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\homepage_list_item_bg_change.xml"
+    },
+    {
         "merged": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_drawer_offline.xml",
         "source": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\src\\main\\res\\drawable\\ic_drawer_offline.xml"
     },

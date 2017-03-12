@@ -41,6 +41,7 @@
                             android:layout_weight="1" >
                             <ImageView
                                 android:id="@+id/fragment1_img"
+                                android:layout_centerHorizontal="true"
                                 android:src="@drawable/homefragment"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp" />
@@ -53,6 +54,7 @@
                             android:layout_weight="1" >
                             <ImageView
                                 android:id="@+id/fragment2_img"
+                                android:layout_centerHorizontal="true"
                                 android:src="@drawable/forumsfragment"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp" />
@@ -73,10 +75,12 @@
                             android:layout_weight="1" >
                             <ImageView
                                 android:id="@+id/fragment3_img"
+                                android:layout_centerHorizontal="true"
                                 android:src="@drawable/findfragment"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp" />
                         </RelativeLayout>
+
                         <!--第四个碎片按钮部分-->
 
                         <RelativeLayout
@@ -86,6 +90,7 @@
                             android:layout_weight="1" >
                             <ImageView
                                 android:id="@+id/fragment4_img"
+                                android:layout_centerHorizontal="true"
                                 android:src="@drawable/periodicalsfragment"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp" />

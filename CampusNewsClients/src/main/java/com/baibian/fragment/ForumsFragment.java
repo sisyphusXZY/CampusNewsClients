@@ -135,6 +135,7 @@ public class ForumsFragment extends Fragment{
 
 
 //        setChangelView();
+        //加号
         button_more_columns.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -288,7 +289,7 @@ public class ForumsFragment extends Fragment{
     }
 
     /**
-     * 初始化Fragment
+     * 初始化Fragment，viewpager
      */
     private void initFragment() {
         fragments.clear();//???

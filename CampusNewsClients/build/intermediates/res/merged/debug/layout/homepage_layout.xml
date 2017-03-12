@@ -9,10 +9,19 @@
         android:background="@drawable/top_search_img"
         android:layout_width="match_parent"
         android:layout_height="45dp"/>
-    <com.baibian.view.HomepageListView
-        android:id="@+id/homepage_listview"
-        android:focusable="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/demo_swiperefreshlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/demo_recycler"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

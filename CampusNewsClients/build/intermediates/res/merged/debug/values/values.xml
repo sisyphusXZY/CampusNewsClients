@@ -361,6 +361,8 @@
     <color name="login_tip_btn_color_night">#ffd7d7d7</color>
     <color name="login_tip_text_color">#ffc5c5c5</color>
     <item name="login_tip_text_color_night" type="color">@color/default_text_night</item>
+    <color name="main_layout1_unselected">#2180dc</color>
+    <color name="main_layout_selected">#fcfdfe</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -1027,10 +1029,13 @@
     <string name="left_drawer_item_search">搜索</string>
     <string name="left_drawer_item_setting">设置</string>
     <string name="left_drawer_no_login_tip">登录后，将推荐给你更多感兴趣的文章</string>
+    <string name="load_more">上拉加载更多...</string>
+    <string name="loading_more">正在加载更多数据...</string>
     <string name="login_succeed">登录成功</string>
     <string name="pattern_update">发现%1$d条更新</string>
     <string name="please7to16">请输入7~16位密码</string>
     <string name="please_account">请输入正确账号</string>
+    <string name="reflesh">更新了5条数据</string>
     <string name="register_name_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ@</string>
     <string name="retry_large_image"><u>加载失败，点击重试</u></string>
     <string name="search_count_fmt">发现%1$s篇文章</string>
