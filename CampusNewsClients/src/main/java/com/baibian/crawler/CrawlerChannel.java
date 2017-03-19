@@ -18,9 +18,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by XZY on 2016/11/8.
- */
 
 public class CrawlerChannel {
 

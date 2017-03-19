@@ -4,10 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,12 +17,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.baibian.adapter.Guide_adapter;
-import com.baibian.adapter.Profile_Drawer_Right_ViewPager_Adapter;
-import com.baibian.adapter.Tablayout_Adapter_Right;
-import com.baibian.fragment.ContactsFragment;
-import com.baibian.fragment.MessageFragment;
-import com.baibian.tool.springindicator.viewpager.ScrollerViewPager;
 import com.flyco.dialog.listener.OnOperItemClickL;
 import com.flyco.dialog.widget.ActionSheetDialog;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
@@ -34,8 +24,7 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.OnClosedListener;
 import com.baibian.Login4Activity;
 import com.baibian.R;
 import com.baibian.SettingsActivity;
-import android.support.design.widget.TabLayout;
-import java.util.ArrayList;
+
 import java.util.List;
 
 /**

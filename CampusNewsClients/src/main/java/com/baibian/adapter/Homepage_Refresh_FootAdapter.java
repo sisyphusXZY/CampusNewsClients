@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
  * 能够实现上啦刷新，下滑加载更多的adapter
  */
 public class Homepage_Refresh_FootAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    private MyItemClickListener mItemClickListener;
     /**
      *
      */
@@ -67,9 +68,6 @@ public class Homepage_Refresh_FootAdapter extends RecyclerView.Adapter<RecyclerV
     /**
      * item显示类型
      *
-     * @param parent
-     * @param viewType
-     * @return
      */
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //进行判断显示类型，来创建返回不同的View
@@ -77,7 +75,7 @@ public class Homepage_Refresh_FootAdapter extends RecyclerView.Adapter<RecyclerV
             View view = mInflater.inflate(R.layout.item_recycler_layout, parent, false);
             //这边可以做一些属性设置，甚至事件监听绑定
             //view.setBackgroundColor(Color.RED);
-            ItemViewHolder itemViewHolder = new ItemViewHolder(view);
+            ItemViewHolder itemViewHolder = new ItemViewHolder(view,mItemClickListener);
             return itemViewHolder;
         } else if (viewType == TYPE_FOOTER) {
             View foot_view = mInflater.inflate(R.layout.recycler_load_more_layout, parent, false);
@@ -149,16 +147,33 @@ public class Homepage_Refresh_FootAdapter extends RecyclerView.Adapter<RecyclerV
 
     @Override
     public int getItemCount() {
-        return mTitles.size() + 1;
+        return mTitles.size()+1 ;
     }
 
     //自定义的ViewHolder，持有每个Item的的所有界面元素
-    public static class ItemViewHolder extends RecyclerView.ViewHolder {
+    public static class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView item_tv;
-
+        private  MyItemClickListener mListener;
         public ItemViewHolder(View view) {
             super(view);
             item_tv = (TextView) view.findViewById(R.id.item_tv);
+        }
+        public ItemViewHolder(View itemView,MyItemClickListener myItemClickListener){
+            super(itemView);
+            item_tv = (TextView) itemView.findViewById(R.id.item_tv);
+            this.mListener=myItemClickListener;
+            itemView.setOnClickListener(this);
+        }
+        /**
+         * 实现OnClickListener接口重写的方法
+         * @param v
+         */
+        @Override
+        public void onClick(View v) {
+            if (mListener != null) {
+                mListener.onItemClick(v, getPosition());
+            }
+
         }
     }
 
@@ -271,24 +286,51 @@ public class Homepage_Refresh_FootAdapter extends RecyclerView.Adapter<RecyclerV
             }
         }, 5, 5, TimeUnit.SECONDS);
     }
+    /**
+     *
+     */
 
 
-/**
- *     @Override public void onPageScrollStateChanged(int arg0) {
-}
 
- @Override public void onPageScrolled(int arg0, float arg1, int arg2) {
- }
 
- @Override public void onPageSelected(int position) {
- currentItem = position;
- dots.get(oldPosition).setBackgroundResource(R.drawable.dot_normal);
- dots.get(position).setBackgroundResource(R.drawable.dot_focused);
- oldPosition = position;
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        private MyItemClickListener mListener;
 
- }
-  * @param arg0
- */
+        public ViewHolder(View itemView, MyItemClickListener myItemClickListener) {
+            super(itemView);
+            //将全局的监听赋值给接口
+            this.mListener = myItemClickListener;
+            itemView.setOnClickListener(this);
+        }
+
+        /**
+         * 实现OnClickListener接口重写的方法
+         * @param v
+         */
+        @Override
+        public void onClick(View v) {
+            if (mListener != null) {
+                mListener.onItemClick(v, getPosition());
+            }
+
+        }
+    }
+
+    /**
+     * 创建一个回调接口
+     */
+    public interface MyItemClickListener {
+        void onItemClick(View view, int position);
+    }
+
+    /**
+     * 在activity里面adapter就是调用的这个方法,将点击事件监听传递过来,并赋值给全局的监听
+     *
+     * @param myItemClickListener
+     */
+    public void setItemClickListener(MyItemClickListener myItemClickListener) {
+        this.mItemClickListener = myItemClickListener;
+    }
 }
 
 

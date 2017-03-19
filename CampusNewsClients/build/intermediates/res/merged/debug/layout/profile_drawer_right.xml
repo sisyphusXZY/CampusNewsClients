@@ -177,30 +177,6 @@
         </TableLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-         <android.support.design.widget.TabLayout
-             android:id="@+id/right_drawer_title"
-             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/baibian_back_color"
-            app:tabIndicatorColor="#062b92"
-            app:tabSelectedTextColor="@color/gray"
-            app:tabTextColor="@color/white"
-         />
-
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/right_drawer_pager"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            />
-
-    </LinearLayout>
 
 
 

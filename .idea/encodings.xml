@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/java/com/baibian/adapter/Homepage_Refresh_FootAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/java/com/baibian/adapter/Homepage_ViewpagerAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/java/com/baibian/adapter/OtherAdapter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/java/com/baibian/adapter/RefreshFootAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/java/com/baibian/view/HeadListView.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CampusNewsClients/src/main/res/layout/homepage_list_item_viewpager.xml" charset="UTF-8" />

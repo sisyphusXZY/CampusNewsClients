@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:2:1-54:12
+ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:2:1-56:12
 	package
 		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:3:5-26
 		INJECTED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml
@@ -37,7 +37,7 @@ MERGED from [com.android.support:support-v4:23.2.0] C:\Users\lenovo\Documents\Gi
 		INJECTED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:11:5-44:19
+ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:11:5-46:19
 MERGED from [com.github.chenupt.android:springindicator:1.0.2] C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\build\intermediates\exploded-aar\com.github.chenupt.android\springindicator\1.0.2\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:design:23.2.0] C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\build\intermediates\exploded-aar\com.android.support\design\23.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\AndroidManifest.xml:25:5-20
@@ -106,23 +106,27 @@ activity#com.baibian.GuideActivity
 ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:42:9-43:20
 	android:name
 		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:42:19-59
+activity#com.baibian.ChoiceDirectionActivity
+ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:44:9-45:20
+	android:name
+		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:44:19-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:46:5-79
+ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:48:5-79
 	android:name
-		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:46:22-76
+		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:48:22-76
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:47:5-67
+ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:49:5-67
 	android:name
-		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:47:22-64
+		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:49:22-64
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:49:5-84
+ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:51:5-84
 	android:name
-		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:49:22-81
+		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:51:22-81
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:51:5-81
+ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:53:5-81
 	android:name
-		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:51:22-78
+		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:53:22-78
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:53:5-65
+ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:55:5-65
 	android:name
-		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:53:22-63
+		ADDED from C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\src\main\AndroidManifest.xml:55:22-63

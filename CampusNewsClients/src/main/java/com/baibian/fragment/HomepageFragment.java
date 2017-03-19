@@ -11,11 +11,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import com.baibian.R;
-import com.baibian.adapter.Homepage_ListAdapter;
 import com.baibian.adapter.Homepage_Refresh_FootAdapter;
 import com.baibian.adapter.RefreshFootAdapter;
 
@@ -24,7 +22,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -55,8 +52,8 @@ public class HomepageFragment extends Fragment {
         // top_bar_linear_back.setOnClickListener(new CustomOnClickListener());
         //  top_bar_title=(TextView)this.findViewById(R.id.top_bar_title);
         // top_bar_title.setText("RecyclerView下拉刷新,下拉加载更多...");
-        demo_swiperefreshlayout = (SwipeRefreshLayout) HomepageFragment.findViewById(R.id.demo_swiperefreshlayout);
-        demo_recycler = (RecyclerView) HomepageFragment.findViewById(R.id.demo_recycler);
+        demo_swiperefreshlayout = (SwipeRefreshLayout) HomepageFragment.findViewById(R.id.homepage_swiperefreshlayout);
+        demo_recycler = (RecyclerView) HomepageFragment.findViewById(R.id.homepage_recycler);
         //设置刷新时动画的颜色，可以设置4个
         demo_swiperefreshlayout.setProgressBackgroundColorSchemeResource(android.R.color.white);
         demo_swiperefreshlayout.setColorSchemeResources(android.R.color.holo_blue_light,
@@ -70,7 +67,15 @@ public class HomepageFragment extends Fragment {
         demo_recycler.setLayoutManager(linearLayoutManager);
         //添加分隔线
         // demo_recycler.addItemDecoration(new AdvanceDecoration(this, OrientationHelper.VERTICAL));
-        demo_recycler.setAdapter(adapter = new Homepage_Refresh_FootAdapter(mActivity));
+        demo_recycler.setAdapter(  adapter = new Homepage_Refresh_FootAdapter(mActivity));
+        adapter.setItemClickListener(new Homepage_Refresh_FootAdapter.MyItemClickListener(){
+            public void onItemClick(View view, int position) {
+                Toast.makeText(getActivity(), R.string.drawer_right_logout_hint_text + position, Toast.LENGTH_SHORT).show();
+            }
+        });
+        /**
+         * 刷新监听
+         */
         demo_swiperefreshlayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

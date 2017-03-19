@@ -223,7 +223,7 @@ public class CustomViewBehind extends ViewGroup {
 					(x-getBehindWidth())*mScrollScale), y);
 		} else if (mMode == SlidingMenu.LEFT_RIGHT) {
 			mContent.setVisibility(x >= content.getLeft() ? View.INVISIBLE : View.VISIBLE);
-			mSecondaryContent.setVisibility(x <= content.getLeft() ? View.INVISIBLE : View.VISIBLE);
+//			mSecondaryContent.setVisibility(x <= content.getLeft() ? View.INVISIBLE : View.VISIBLE);
 			vis = x == 0 ? View.INVISIBLE : View.VISIBLE;
 			if (x <= content.getLeft()) {
 				scrollTo((int)((x + getBehindWidth())*mScrollScale), y);				

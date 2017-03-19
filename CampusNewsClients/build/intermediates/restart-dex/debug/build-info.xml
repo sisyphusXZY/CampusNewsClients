@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="23"
-    density="xxhdpi"
+    abi="x86_64,x86"
+    api-level="24"
+    density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="830092927673777"
+    timestamp="244345463791111"
     token="-3144652538020401465"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1914" />
+        duration="820" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1583" />
+        duration="1429" />
     <task
         name="verifier"
-        duration="632" />
+        duration="481" />
 
     <artifact
         location="C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\build\outputs\apk\CampusNewsClients-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="830092927673777"
+        timestamp="244345463791111"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\build\outputs\apk\CampusNewsClients-debug.apk"
