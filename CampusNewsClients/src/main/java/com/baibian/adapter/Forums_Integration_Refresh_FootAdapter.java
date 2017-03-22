@@ -5,30 +5,44 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.widget.ProgressBar;
+import android.widget.Toast;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import com.baibian.MainActivity;
 import com.baibian.R;
-
+import android.util.DisplayMetrics;
+import android.view.WindowManager;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+import static java.security.AccessController.getContext;
+
 
 /**
  * 能够实现上啦刷新，下滑加载更多的adapter
  */
 public class Forums_Integration_Refresh_FootAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
     private MyItemClickListener mItemClickListener;
     /**
-     *
+     *progresstext正方中立，反方的数量的定义,,这里暂时使用初始数值作为测试
      */
+    private float positiveNumber=560;//正方数量
+    private float neutralNumber=234;//中立数量
+    private float negetiveNumber=640;//反方数量
+
     private Context mContext;
     private ScheduledExecutorService scheduledExecutorService;
     private Handler handler;
@@ -72,7 +86,7 @@ public class Forums_Integration_Refresh_FootAdapter extends RecyclerView.Adapter
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //进行判断显示类型，来创建返回不同的View
         if (viewType == TYPE_ITEM) {
-            View view = mInflater.inflate(R.layout.item_recycler_layout, parent, false);
+            View view = mInflater.inflate(R.layout.forums_recycler_item_layout, parent, false);
             //这边可以做一些属性设置，甚至事件监听绑定
             //view.setBackgroundColor(Color.RED);
             ItemViewHolder itemViewHolder = new ItemViewHolder(view,mItemClickListener);
@@ -87,6 +101,9 @@ public class Forums_Integration_Refresh_FootAdapter extends RecyclerView.Adapter
         return null;
     }
 
+
+
+
     /**
      * 数据的绑定显示
      *
@@ -97,6 +114,28 @@ public class Forums_Integration_Refresh_FootAdapter extends RecyclerView.Adapter
         if (holder instanceof ItemViewHolder) {
             ((ItemViewHolder) holder).item_tv.setText(mTitles.get(position));
             holder.itemView.setTag(position);
+            /**
+             * progresstext的算法
+             */
+            WindowManager wm = (WindowManager) mContext
+                    .getSystemService(Context.WINDOW_SERVICE);
+
+            int width = wm.getDefaultDisplay().getWidth();
+            String positiveString=""+(int)positiveNumber;
+            String negetiveString=""+(int)negetiveNumber;
+            String neutralString=""+(int)neutralNumber;
+            float progress_text1width=  (width*positiveNumber/(positiveNumber+negetiveNumber+neutralNumber));
+            float progress_text2width=  (width*neutralNumber/(positiveNumber+negetiveNumber+neutralNumber));
+            float progress_text3width=  width*negetiveNumber/(positiveNumber+negetiveNumber+neutralNumber);
+            ((ItemViewHolder) holder).progress_relativelayout3.setMinimumWidth((int) progress_text3width);
+            ((ItemViewHolder) holder).progress_relativelayout2.setMinimumWidth((int)progress_text2width);
+            ((ItemViewHolder) holder).progress_relativelayout1.setMinimumWidth((int) progress_text1width);
+           ((ItemViewHolder) holder).progress_text3.setText(negetiveString);
+            ((ItemViewHolder) holder).progress_text2.setText(neutralString);
+            ((ItemViewHolder) holder).progress_text1.setText(positiveString);
+
+
+
         } else if (holder instanceof FootViewHolder) {
             FootViewHolder footViewHolder = (FootViewHolder) holder;
             switch (load_more_status) {
@@ -133,15 +172,36 @@ public class Forums_Integration_Refresh_FootAdapter extends RecyclerView.Adapter
 
     //自定义的ViewHolder，持有每个Item的的所有界面元素
     public static class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        public float itemwidth;
+        private LinearLayout forums_item_all_layout;
         public TextView item_tv;
+        private TextView progress_text1;
+        private TextView progress_text2;
+        private TextView progress_text3;
+        private RelativeLayout   progress_relativelayout1;
+
+        private RelativeLayout   progress_relativelayout2;
+        private RelativeLayout   progress_relativelayout3;
+
         private  MyItemClickListener mListener;
+     //   private ProgressBar forums_item_progressBar;
         public ItemViewHolder(View view) {
             super(view);
             item_tv = (TextView) view.findViewById(R.id.item_tv);
+          //  forums_item_progressBar=(ProgressBar) view.findViewById(R.id.forums_item_progressBar);
         }
         public ItemViewHolder(View itemView,MyItemClickListener myItemClickListener){
             super(itemView);
+
             item_tv = (TextView) itemView.findViewById(R.id.item_tv);
+            forums_item_all_layout=(LinearLayout) itemView.findViewById(R.id.forums_item_all_layout);
+            progress_text1=(TextView) itemView.findViewById(R.id.progress_text1);
+            progress_text2=(TextView) itemView.findViewById(R.id.progress_text2);
+            progress_text3=(TextView)itemView.findViewById(R.id.progress_text3);
+            progress_relativelayout1=(RelativeLayout) itemView.findViewById(R.id.progress_relativelayout1);
+            progress_relativelayout2=(RelativeLayout) itemView.findViewById(R.id.progress_relativelayout2);
+            progress_relativelayout3=(RelativeLayout) itemView.findViewById(R.id.progress_relativelayout3);
+         //   forums_item_progressBar=(ProgressBar) itemView.findViewById(R.id.forums_item_progressBar);
             this.mListener=myItemClickListener;
             itemView.setOnClickListener(this);
         }

@@ -52,6 +52,8 @@
         </activity>
         <activity android:name="com.baibian.ChoiceDirectionActivity" >
         </activity>
+        <activity android:name="com.baibian.UsersImformationActivity" >
+        </activity>
     </application>
 
 </manifest>

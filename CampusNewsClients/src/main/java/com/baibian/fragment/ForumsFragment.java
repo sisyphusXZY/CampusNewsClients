@@ -75,7 +75,6 @@ public class ForumsFragment extends Fragment{
         forums_title.addTab(forums_title.newTab().setText(list_title.get(2)));
         forums_title.addTab(forums_title.newTab().setText(list_title.get(3)));
         forums_title.addTab(forums_title.newTab().setText(list_title.get(4)));
-
         fAdapter = new Tablayout_Adapter_Right(getChildFragmentManager(),list_fragment,list_title);
 
         //viewpager加载adapter

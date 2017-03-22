@@ -195,14 +195,14 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
             @Override
             public void onClick(View v) {
                 /**
-                 *
+                 * if (side_drawer.isSecondaryMenuShowing()) {
+                 side_drawer.showContent();
+                 } else {
+                 side_drawer.showSecondaryMenu();
+                 }
                  */
                 // TODO Auto-generated method stub
-                if (side_drawer.isSecondaryMenuShowing()) {
-                    side_drawer.showContent();
-                } else {
-                    side_drawer.showSecondaryMenu();
-                }
+
             }
         });
     }
@@ -370,6 +370,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
                 Intent intent_baibian_btn=new Intent(MainActivity.this,Login4Activity.class);
                 startActivityForResult(intent_baibian_btn,LOGIN4_REQUEST);
+            }
+        });
+        login_layout.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MainActivity.this,UsersImformationActivity.class);
+                startActivity(intent);
             }
         });
     }

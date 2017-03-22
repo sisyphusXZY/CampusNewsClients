@@ -42,16 +42,16 @@ public class ChoiceDirectionActivity extends Activity {
         /**
          * 从左边进入的
          */
-        TranslateAnimation translateAnimationleft=new TranslateAnimation(-300,0,0,0);
-        translateAnimationleft.setDuration(700);
+        TranslateAnimation translateAnimationleft=new TranslateAnimation(-400,0,0,0);
+        translateAnimationleft.setDuration(1000);
         frameLayout21.startAnimation(translateAnimationleft);//开始动画
         frameLayout31.startAnimation(translateAnimationleft);//开始动画
 
         /**
          * 从右边进入的
          */
-        TranslateAnimation translateAnimationright=new TranslateAnimation(300,0,0,0);
-        translateAnimationright.setDuration(700);
+        TranslateAnimation translateAnimationright=new TranslateAnimation(400,0,0,0);
+        translateAnimationright.setDuration(1000);
         frameLayout22.startAnimation(translateAnimationright);//开始动画
         frameLayout32.startAnimation(translateAnimationright);//开始动画
     }

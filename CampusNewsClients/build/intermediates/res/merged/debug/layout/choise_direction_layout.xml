@@ -74,7 +74,8 @@
                 android:id="@+id/framelayoute21"
                 android:background="#9940de5a"
                 android:layout_marginLeft="30dp"
-                android:layout_width="180dp"
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="match_parent">
                 <TextView
                     android:padding="40dp"
@@ -85,13 +86,14 @@
                     android:layout_height="wrap_content"/>
             </FrameLayout>
             <LinearLayout
-                android:layout_width="20dp"
+                android:layout_width="10dp"
                 android:layout_height="match_parent"/>
             <FrameLayout
                 android:id="@+id/framelayoute22"
 
                 android:background="#99ffd71b"
-                android:layout_width="180dp"
+                android:layout_width="0dp"
+                android:layout_weight="5"
                 android:layout_height="match_parent">
                 <TextView
                     android:padding="40dp"
@@ -118,7 +120,9 @@
                 android:id="@+id/framelayoute31"
 
                 android:background="#9acc99cc"
-                android:layout_width="180dp"
+
+                android:layout_width="0dp"
+                android:layout_weight="5"
                 android:layout_height="match_parent">
                 <TextView
                     android:padding="40dp"
@@ -130,14 +134,16 @@
             </FrameLayout>
 
             <LinearLayout
-                android:layout_width="20dp"
+                android:layout_width="10dp"
                 android:layout_height="match_parent"/>
             <FrameLayout
                 android:id="@+id/framelayoute32"
 
                 android:background="#984e6cef"
                 android:layout_marginRight="30dp"
-                android:layout_width="140dp"
+
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="match_parent">
                 <TextView
                     android:padding="40dp"

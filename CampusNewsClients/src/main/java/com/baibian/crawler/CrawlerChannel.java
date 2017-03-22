@@ -62,7 +62,7 @@ public class CrawlerChannel {
                 int num = 1;
 //-----------------------------�����ǰû���������ӵ������û��
                 if (li.size() == 0) {
-                    Toast.makeText(channelActivity, "��ǰû����������", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(channelActivity, "��ǰû����������", Toast.LENGTH_SHORT).show();
                 } else {
                     for (int i = 8; i < 13; i++) {
                         Element child = li.get(i).child(0);

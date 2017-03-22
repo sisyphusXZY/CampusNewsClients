@@ -5,29 +5,29 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="244345463791111"
+    timestamp="1154324540588"
     token="-3144652538020401465"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="820" />
+        duration="2608" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1429" />
+        duration="2276" />
     <task
         name="verifier"
-        duration="481" />
+        duration="502" />
 
     <artifact
         location="C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\build\outputs\apk\CampusNewsClients-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="244345463791111"
+        timestamp="1154324540588"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\lenovo\Documents\GitHub\CampusNewsClients\CampusNewsClients\build\outputs\apk\CampusNewsClients-debug.apk"

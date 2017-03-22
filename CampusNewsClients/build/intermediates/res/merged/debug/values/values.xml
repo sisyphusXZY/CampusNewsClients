@@ -315,7 +315,7 @@
     <item name="item_title_normal_night" type="color">@color/default_text_night</item>
     <color name="left_drawer_item_bg_normal">#505254</color>
     <color name="left_drawer_item_bg_pressed">#ff292929</color>
-    <color name="left_drawer_item_line">#ff272727</color>
+    <color name="left_drawer_item_line">#c4c2c4</color>
     <color name="left_drawer_item_text_normal">#ff4e4e4e</color>
     <color name="left_drawer_item_text_pressed">#ffd4d4d4</color>
     <color name="left_drawer_item_text_tip">#fffe3232</color>
@@ -447,6 +447,9 @@
     <color name="profile_titlebar_text">#ff000000</color>
     <item name="profile_titlebar_text_night" type="color">@color/default_text_night</item>
     <color name="progressbar_app">#ff666666</color>
+    <color name="progressbar_first">#ffa726</color>
+    <color name="progressbar_secondary">#29b6f6</color>
+    <color name="progressbar_third">#ff7043</color>
     <color name="pull_list_head_text">#ff444444</color>
     <item name="pull_list_head_text_night" type="color">@color/default_text_night</item>
     <color name="pull_to_refresh_label_color">#ff737373</color>
@@ -969,6 +972,8 @@
     <integer name="config_slideAnimTime">300</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="BBimformation">BB资料</string>
+    <string name="BBstate">BB发言</string>
     <string name="Press_again_to_exit">再按一次退出</string>
     <string name="REGISTER">注册</string>
     <string name="abc_action_bar_home_description">Navigate home</string>

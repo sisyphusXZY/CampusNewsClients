@@ -84,5 +84,7 @@
     <string name="reflesh">更新了5条数据</string>
     <string name="load_more">上拉加载更多...</string>
     <string name="loading_more">正在加载更多数据...</string>
+    <string name="BBstate">BB发言</string>
+    <string name="BBimformation">BB资料</string>
 
 </resources>

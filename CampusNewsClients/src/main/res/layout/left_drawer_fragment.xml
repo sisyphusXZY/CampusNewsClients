@@ -13,8 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.0"
             android:minHeight="102.0dip"
-            android:orientation="horizontal"
-            android:visibility="gone" >
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -84,6 +83,8 @@
 
 
         <LinearLayout
+
+            android:visibility="gone"
             android:id="@+id/logout_layout_not_login"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

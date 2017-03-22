@@ -526,7 +526,7 @@
     <color name="left_drawer_item_bg_normal">#505254</color>
     <color name="left_drawer_itme_bg_normal_day">#ffd71b</color>
     <color name="left_drawer_item_bg_pressed">#ff292929</color>
-    <color name="left_drawer_item_line">#ff272727</color>
+    <color name="left_drawer_item_line">#c4c2c4</color>
     <color name="left_drawer_offline_line">#ff4bbff6</color>
     <color name="left_drawer_offline_hint">#ff6699cc</color>
     <color name="left_drawer_night_mode_text">#ffb8b8b8</color>
@@ -724,5 +724,9 @@
     <!--<item name="bg_row_normal_start" type="color">@color/bg_row_normal</item>-->
     <!--<item name="bg_row_normal_center" type="color">@color/bg_row_normal</item>-->
     <!--<item name="bg_row_normal_end" type="color">@color/bg_row_normal</item>-->
+    <!--progressbar的三个颜色-->
+    <color name="progressbar_first">#ffa726</color>
+    <color name="progressbar_secondary">#29b6f6</color>
+    <color name="progressbar_third">#ff7043</color>
 
 </resources>
