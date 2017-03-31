@@ -70,21 +70,5 @@
     <string name="frindly_reminder">友情提示</string>
     <string name="sure">确定</string>
     <string name="cancel">取消</string>
-    <string name="Press_again_to_exit">再按一次退出</string>
-    <string name="close_Baibai">关闭Bai辩</string>
-    <string name="exit_not_account">注销当前账号</string>
-
-
-    <string name="integration">综合</string>
-    <string name="hot">热门</string>
-    <string name="real_time">实时</string>
-    <string name="classification">分类</string>
-    <string name="focus">关注</string>
-
-    <string name="reflesh">更新了5条数据</string>
-    <string name="load_more">上拉加载更多...</string>
-    <string name="loading_more">正在加载更多数据...</string>
-    <string name="BBstate">BB发言</string>
-    <string name="BBimformation">BB资料</string>
 
 </resources>

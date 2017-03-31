@@ -18,6 +18,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Created by XZY on 2016/11/8.
+ */
 
 public class CrawlerChannel {
 
@@ -27,7 +30,7 @@ public class CrawlerChannel {
     private static ArrayList<Elements> items = new ArrayList<Elements>();
     private static Map firstItems = new HashMap();
     private Activity channelActivity;
-    //    ï¿½ï¿½Îªï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½Ì¬
+    //    ÒòÎª»áÔ¤¼ÓÔØÏÂÒ»Ò³£¬´Ë´¦²»ÄÜÓÃ¾²Ì¬
     private int refreshPage = 1;
     private static Elements item;
     private static String channelURL;
@@ -60,13 +63,13 @@ public class CrawlerChannel {
 //                Elements ul = nav2.get(0).getElementsByTag("ul");
 //                Elements li = ul.get(0).getElementsByTag("li");
                 int num = 1;
-//-----------------------------ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½
+//-----------------------------Èç¹ûµ±Ç°Ã»ÓÐÍøÂçÁ¬½ÓµÄÇé¿ö»¹Ã»×ö
                 if (li.size() == 0) {
-//                    Toast.makeText(channelActivity, "ï¿½ï¿½Ç°Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(channelActivity, "µ±Ç°Ã»ÓÐÍøÂçÁ¬½Ó", Toast.LENGTH_SHORT).show();
                 } else {
                     for (int i = 8; i < 13; i++) {
                         Element child = li.get(i).child(0);
-      //                  Element child1 = li.get(i).child(1);
+                        Element child1 = li.get(i).child(1);
 //                    System.out.println(child.attr("href"));
 //                    String text2 = child.text();
                         String text = child.text();
@@ -75,14 +78,14 @@ public class CrawlerChannel {
 //                    channelActivity.getSharedPreferences("channelSource", Context.MODE_PRIVATE).edit().putString(String.valueOf(num), BASE_URL1 + href).commit();
                         channelList.add(BASE_URL1 + href);
                         num++;
-       //                 text = child1.text();
-       //                 href = child1.attr("href");
+                        text = child1.text();
+                        href = child1.attr("href");
                         channelActivity.getSharedPreferences("channel", Context.MODE_PRIVATE).edit().putString(String.valueOf(num), text).commit();
 //                    channelActivity.getSharedPreferences("channelSource", Context.MODE_PRIVATE).edit().putString(String.valueOf(num), BASE_URL1 + href).commit();
                         channelList.add(BASE_URL1 + href);
                         num++;
                     }
-//__________________ï¿½Ú»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½Ö®ï¿½ï¿½ï¿½Ù³ï¿½Ê¼ï¿½ï¿½channel
+//__________________ÔÚ»ñµÃÍêÕûÁÐ±íÖ®ºóÔÙ³õÊ¼»¯channel
                     new ChannelManage(channelActivity);
 
                     for (int i = 0; i < channelList.size(); i++) {
@@ -145,13 +148,13 @@ public class CrawlerChannel {
         }
         new Thread() {
             public void run() {
-                /*ï¿½È´ï¿½Ö±ï¿½ï¿½itemsï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ò³*/
+                /*µÈ´ýÖ±µ½items¼ÓÔØ³öÁËÇ°Á½Ò³*/
                 while (items.size() <= 7) {
 //                    Log.d("1111", String.valueOf(111111));
                 }
                 item = items.get(index);
                 List<String> url_list = new ArrayList<String>();
-                //                ï¿½ï¿½ï¿½ï¿½ifï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ò³
+                //                ÒÔÏÂifÄÚÓÃÓÚ¼ÓÔØÏÂÒ»¸öÍøÒ³
                 if (itemId % 30 == 0 && itemId != 0) {
 //                    refreshPage++;
 //                    Log.d("itemsize", String.valueOf(item.size() - item.size()%30));
@@ -164,11 +167,11 @@ public class CrawlerChannel {
                 }
 
 //                    int indexOf = refreshItem.indexOf(item.get(0));
-//                    /*ï¿½ï¿½ï¿½Ô­ï¿½ÐµÄµï¿½Ò»ï¿½ï¿½itemï¿½ï¿½ï¿½Âµï¿½RefreshItemï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Ç¾Í³ï¿½ï¿½×³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+//                    /*Èç¹ûÔ­ÓÐµÄµÚÒ»¸öitemÔÚÐÂµÄRefreshItemÖÐ²»´æÔÚ£¬ÄÇ¾Í³¹µ×³õÊ¼»¯ÖØÀ´*/
 //                    if (indexOf != -1) {
 //                        item = refreshItem;
 //                    }
-//                     /*ï¿½ï¿½ï¿½Ô­ï¿½ÐµÄµï¿½Ò»ï¿½ï¿½itemï¿½ï¿½ï¿½Âµï¿½RefreshItemï¿½Ð´ï¿½ï¿½Ú£ï¿½ï¿½Ç¾Í°ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½itemï¿½Å½ï¿½Ô·itemï¿½ï¿½Í·ï¿½ï¿½*/
+//                     /*Èç¹ûÔ­ÓÐµÄµÚÒ»¸öitemÔÚÐÂµÄRefreshItemÖÐ´æÔÚ£¬ÄÇ¾Í°ÑÐÂ¶à³öÀ´µÄitem·Å½øÔ·itemµÄÍ·²¿*/
 //                    else {
 //                        for (int i = 0; i <= refreshItem.size()-indexOf; i++) {
 //                            refreshItem.remove(indexOf);
@@ -177,8 +180,8 @@ public class CrawlerChannel {
 //                        mListener.refreshItem(0);
 //                    }
 //                } else {
-                    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½30ï¿½ï¿½itemÖ®ï¿½ó£¬µÈ´ï¿½ï¿½ï¿½Ö±ï¿½ï¿½itemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½30ï¿½ï¿½itemï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
-                    * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½itemï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ï£ï¿½ï¿½Ðµï¿½itemï¿½Ä³ï¿½Ê¼ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    /*ÏÂÀ­ÁË30¸öitemÖ®ºó£¬µÈ´ý£¬Ö±µ½item¼ÓÔØÍêÁËÒ»¸öÍêÕûµÄÓÐ30¸öitemµÄÍøÒ³£¬
+                    * Èç¹û²»µÈ£¬¿ÉÄÜÏÂÒ»Ò³µÄitem»¹Ã»¼ÓÉÏ£¬ÓÐµÄitemµÄ³õÊ¼»¯ÒÑ¾­µ½µ½ÕâÀï
                     * */
 //                    Log.d("1@@@1", String.valueOf(refreshPage));
                 while (item.size() / 30 < refreshPage && itemId >= 30 * (refreshPage - 1)) {
@@ -196,7 +199,7 @@ public class CrawlerChannel {
 
                 news.setNewsAbstract(element.getElementsByClass("blog_list_c").text());
                 Elements label = element.getElementsByTag("label");
-                //                    ï¿½ï¿½ï¿½ï¿½Çµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½titleï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½Úºï¿½ï¿½ï¿½È½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ÒªË¢ï¿½ï¿½
+                //                    Èç¹ûÊÇµÚÒ»¸öÏîÄ¿£¬½«Æätitle´æÏÂ£¬ÓÃÓÚºóÃæ±È½ÏÊÇ·ñÐèÒªË¢ÐÂ
                 if (itemId == 0) {
                     firstItems.put(index, a.get(2).text());
                 }
@@ -215,8 +218,8 @@ public class CrawlerChannel {
                     news.setCommentNum(Integer.valueOf(element.getElementsByTag("em").get(0).text()));
                 }
 //                Log.d("img", String.valueOf(index));
-//                    Ä³Ð©Ê±ï¿½ï¿½mlistenerï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶Ï¡ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ò»¹²ï¿½ï¿½ï¿½ï¿½
-//                Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½newsItemÖ®ï¿½ï¿½Í»Øµï¿½Ë¢ï¿½ï¿½Ò»ï¿½ï¿½
+//                    Ä³Ð©Ê±ºòmlistener¿ÉÄÜÎª¿Õ£¬±ØÐëÅÐ¶Ï¡£¾ßÌåÔ­Òò»¹²»Çå³þ
+//                Ã¿µ±»ñµÃÒ»¸önewsItemÖ®ºó¾Í»Øµ÷Ë¢ÐÂÒ»´Î
                 if (mListener != null) {
                     mListener.refreshItem(1);
                 }
@@ -232,7 +235,7 @@ public class CrawlerChannel {
         return news;
     }
 
-    //                ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½Â¹ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+    //                ÏÂÀ­Ë¢ÐÂ¹¦ÄÜÄ£¿é
     public void pullToRefresh(final int channelId) {
         final String[] htmlStr = new String[1];
         final int index = channelId - 1;
@@ -241,7 +244,7 @@ public class CrawlerChannel {
             public void run() {
                 ArrayList<String> titleList = new ArrayList<String>();
 
-//                    ï¿½ï¿½ï¿½Â»ï¿½ï¿½Ò»ï¿½Îµï¿½Ò»Ò³ï¿½ï¿½itemï¿½Ð±ï¿½
+//                    ÖØÐÂ»ñµÃÒ»´ÎµÚÒ»Ò³µÄitemÁÐ±í
                 htmlStr[0] = HttpTool.doGet(channelList.get(index) + "?&page=" + 1);
                 Document doc = Jsoup.parse(htmlStr[0]);
                 Elements refreshItem = doc.getElementsByTag("dl");
@@ -256,10 +259,10 @@ public class CrawlerChannel {
 //                Log.d("refresh", String.valueOf(titleList));
 //                Log.d("index", String.valueOf(index));
 //                Log.d("item", String.valueOf(firstItems.get(index)));
-//                Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ÎªviewpagerÔ¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½itemï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½Ò»Ò³ï¿½ï¿½itemï¿½Ë£ï¿½ï¿½ï¿½ï¿½ÇµÚ¶ï¿½Ò³ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ï¿½
-//                ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-1
+//                Ò»ÏÂÕâ¾äÎÞÐ§£¡ÒòÎªviewpagerÔ¤¼ÓÔØÁËÏÂÒ»Ò³£¬ÕâÀïµÄitem²»ÔÙÊÇµÚÒ»Ò³µÄitemÁË£¬¶øÊÇµÚ¶þÒ³µÄ¡£ËùÒÔ
+//                ²»ÂÛÔõÑù¶¼ÊÇ-1
 //                int indexOf = refreshItem.indexOf(item.get(0));
-//                ï¿½ï¿½Îªï¿½ï¿½
+//                ¸ÄÎª£º
                 int indexOf = titleList.indexOf(firstItems.get(index));
                 items.get(index).clear();
                 items.get(index).addAll(0, refreshItem);

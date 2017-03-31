@@ -39,12 +39,6 @@
         </activity>
         <activity android:name="com.baibian.registerActivity">
         </activity>
-        <activity android:name="com.baibian.GuideActivity">
-        </activity>
-        <activity android:name="com.baibian.ChoiceDirectionActivity">
-        </activity>
-        <activity android:name="com.baibian.UsersImformationActivity">
-        </activity>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
