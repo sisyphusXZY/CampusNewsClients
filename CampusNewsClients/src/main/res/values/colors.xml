@@ -8,7 +8,7 @@
 
     <color name="gallery_background">#ff111111</color>
     <color name="gallery_alpha">#b0000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="white">#ffffffff</color>
     <color name="lighter_gray">#ffd3d3d3</color>
     <color name="gray">#ff808080</color>
     <color name="darkgray">#ffa9a9a9</color>
@@ -520,13 +520,12 @@
     <color name="report_btn_stroke_night">#ff999999</color>
     <color name="left_drawer_no_login_tip_text">#ffb8b8b8</color>
     <color name="left_drawer_user_name">#ffd4d4d4</color>
-    <color name="left_drawer_item_text_normal">#ff4e4e4e</color>
-    <color name="left_drawer_item_text_pressed">#ffd4d4d4</color>
+    <color name="left_drawer_item_text_normal">#ffd4d4d4</color>
+    <color name="left_drawer_item_text_pressed">#ff4e4e4e</color>
     <color name="left_drawer_item_text_tip">#fffe3232</color>
-    <color name="left_drawer_item_bg_normal">#505254</color>
-    <color name="left_drawer_itme_bg_normal_day">#ffd71b</color>
+    <color name="left_drawer_item_bg_normal">#ff393939</color>
     <color name="left_drawer_item_bg_pressed">#ff292929</color>
-    <color name="left_drawer_item_line">#c4c2c4</color>
+    <color name="left_drawer_item_line">#ff272727</color>
     <color name="left_drawer_offline_line">#ff4bbff6</color>
     <color name="left_drawer_offline_hint">#ff6699cc</color>
     <color name="left_drawer_night_mode_text">#ffb8b8b8</color>
@@ -699,34 +698,8 @@
     <color name="ss_top_progressbar_start">#10ffffff</color>
     <color name="ss_top_progressbar_end">#ffffffff</color>
 
-    <color name="si_default_text_color">#FF0000</color>
-    <color name="si_default_text_color_selected">#FF00FF</color>
-    <color name="si_default_indicator_bg">#ee9999</color>
-    <color name="colorPrimary">#607d8b</color>
-    <color name="colorPrimaryDark">#455a64</color>
-    <color name="colorPrimaryLight">#cfd8dc</color>
-    <color name="colorAccent">#ffc107</color>
-
-    <color name="black_light">#99444444</color>
-    <color name="gray_dark">#616161</color>
-    <color name="gray_light">#9e9e9e</color>
-    <color name="brown">#5d4037</color>
-
-    <color name="indicator_1">#00a0e9</color>
-    <color name="indicator_2">#2dde80</color>
-    <color name="indicator_3">#c2e72e</color>
-    <color name="indicator_4">#FDBC7D</color>
-
-    <!--main的四个layout的颜色库-->
-    <color name="main_layout_selected">#fcfdfe</color>
-    <color name="main_layout1_unselected">#2180dc</color>
-
     <!--<item name="bg_row_normal_start" type="color">@color/bg_row_normal</item>-->
     <!--<item name="bg_row_normal_center" type="color">@color/bg_row_normal</item>-->
     <!--<item name="bg_row_normal_end" type="color">@color/bg_row_normal</item>-->
-    <!--progressbar的三个颜色-->
-    <color name="progressbar_first">#ffa726</color>
-    <color name="progressbar_secondary">#29b6f6</color>
-    <color name="progressbar_third">#ff7043</color>
 
 </resources>

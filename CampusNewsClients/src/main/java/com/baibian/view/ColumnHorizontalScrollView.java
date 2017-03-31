@@ -2,28 +2,26 @@ package com.baibian.view;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v4.app.Fragment;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 
 public class ColumnHorizontalScrollView extends HorizontalScrollView {
-	/** ä¼ å…¥æ•´ä½“å¸ƒå±€*/
+	/** ´«ÈëÕûÌå²¼¾Ö  */
 	private View ll_content;
-	/** ä¼ å…¥æ›´å¤šæ ç›®é€‰æ‹©å¸ƒå±€*/
+	/** ´«Èë¸ü¶àÀ¸Ä¿Ñ¡Ôñ²¼¾Ö */
 	private View ll_more;
-	/** ä¼ å…¥æ‹–åŠ¨æ å¸ƒå±€ */
+	/** ´«ÈëÍÏ¶¯À¸²¼¾Ö */
 	private View rl_column;
-	/**å·¦é˜´å½±å›¾ç‰‡ */
+	/** ×óÒõÓ°Í¼Æ¬ */
 	private ImageView leftImage;
-	/** å³é˜´å½±å›¾ç‰‡ */
+	/** ÓÒÒõÓ°Í¼Æ¬ */
 	private ImageView rightImage;
-	/** å±å¹•å®½åº¦ */
+	/** ÆÁÄ»¿í¶È */
 	private int mScreenWitdh = 0;
-	/** çˆ¶ç±»çš„æ´»åŠ¨activity */
+	/** ¸¸ÀàµÄ»î¶¯activity */
 	private Activity activity;
-	private Fragment fragment;
 	
 	public ColumnHorizontalScrollView(Context context) {
 		super(context);
@@ -38,7 +36,7 @@ public class ColumnHorizontalScrollView extends HorizontalScrollView {
 		super(context, attrs, defStyle);
 	}
 	/** 
-	 * åœ¨æ‹–åŠ¨çš„æ—¶å€™æ‰§è¡Œ
+	 * ÔÚÍÏ¶¯µÄÊ±ºòÖ´ĞĞ
 	 * */
 	@Override
 	protected void onScrollChanged(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
@@ -67,9 +65,9 @@ public class ColumnHorizontalScrollView extends HorizontalScrollView {
 	   rightImage.setVisibility(View.VISIBLE);
 	}
 	/** 
-	 * ä¼ å…¥çˆ¶ç±»å¸ƒå±€ä¸­çš„èµ„æºæ–‡ä»¶
+	 * ´«Èë¸¸Àà²¼¾ÖÖĞµÄ×ÊÔ´ÎÄ¼ş
 	 * */
-	public void setParam(Activity activity, int mScreenWitdh, View paramView1, ImageView paramView2, ImageView paramView3 , View paramView4, View paramView5){
+	public void setParam(Activity activity, int mScreenWitdh,View paramView1,ImageView paramView2, ImageView paramView3 ,View paramView4,View paramView5){
 		this.activity = activity;
 		this.mScreenWitdh = mScreenWitdh;
 		ll_content = paramView1;
@@ -79,12 +77,12 @@ public class ColumnHorizontalScrollView extends HorizontalScrollView {
 		rl_column = paramView5;
 	}
 	/** 
-	 * åˆ¤æ–­å·¦å³é˜´å½±çš„æ˜¾ç¤ºéšè—æ•ˆæœ
+	 * ÅĞ¶Ï×óÓÒÒõÓ°µÄÏÔÊ¾Òş²ØĞ§¹û
 	 * */
 	public void shade_ShowOrHide() {
 		if (!activity.isFinishing() && ll_content != null) {
 			measure(0, 0);
-			//å¦‚æœæ•´ä½“å®½åº¦å°äºå±å¹•å®½åº¦çš„è¯ï¼Œé‚£å·¦å³é˜´å½±éƒ½éšè—
+			//Èç¹ûÕûÌå¿í¶ÈĞ¡ÓÚÆÁÄ»¿í¶ÈµÄ»°£¬ÄÇ×óÓÒÒõÓ°¶¼Òş²Ø
 			if (mScreenWitdh >= getMeasuredWidth()) {
 				leftImage.setVisibility(View.GONE);
 				rightImage.setVisibility(View.GONE);
@@ -92,19 +90,19 @@ public class ColumnHorizontalScrollView extends HorizontalScrollView {
 		} else {
 			return;
 		}
-		//å¦‚æœæ»‘åŠ¨åœ¨æœ€å·¦è¾¹çš„æ—¶å€™ï¼Œå·¦è¾¹é˜´å½±éšè—ï¼Œå³è¾¹æ˜¾ç¤º
+		//Èç¹û»¬¶¯ÔÚ×î×ó±ßÊ±ºò£¬×ó±ßÒõÓ°Òş²Ø£¬ÓÒ±ßÏÔÊ¾
 		if (getLeft() == 0) {
 			leftImage.setVisibility(View.GONE);
 			rightImage.setVisibility(View.VISIBLE);
 			return;
 		}
-		//å¦‚æœæ»‘åŠ¨åœ¨æœ€å³è¾¹æ—¶å€™ï¼Œå·¦è¾¹é˜´å½±æ˜¾ç¤ºï¼Œå³è¾¹éšè—
+		//Èç¹û»¬¶¯ÔÚ×îÓÒ±ßÊ±ºò£¬×ó±ßÒõÓ°ÏÔÊ¾£¬ÓÒ±ßÒş²Ø
 		if (getRight() == getMeasuredWidth() - mScreenWitdh) {
 			leftImage.setVisibility(View.VISIBLE);
 			rightImage.setVisibility(View.GONE);
 			return;
 		}
-		//å¦åˆ™ï¼Œè¯´æ˜åœ¨ä¸­é—´ä½ç½®ï¼Œå·¦å³é˜´å½±éƒ½æ˜¾ç¤º
+		//·ñÔò£¬ËµÃ÷ÔÚÖĞ¼äÎ»ÖÃ£¬×ó¡¢ÓÒÒõÓ°¶¼ÏÔÊ¾
 		leftImage.setVisibility(View.VISIBLE);
 		rightImage.setVisibility(View.VISIBLE);
 	}

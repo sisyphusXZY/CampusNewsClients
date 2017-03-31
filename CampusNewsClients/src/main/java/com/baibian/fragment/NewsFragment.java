@@ -42,14 +42,14 @@ public class NewsFragment extends Fragment {
     ImageView detail_loading;
     public final static int SET_NEWSLIST = 0;
     private static int NEWSITEM_ID = 0;
-    //Toastï¿½ï¿½Ê¾ï¿½ï¿½
+    //ToastÌáÊ¾¿ò
     private RelativeLayout notify_view;
     private TextView notify_view_text;
     private TextView footTitle;
     private int currentPosition;
     private TextView item_title;
     CrawlerChannel crawlerChannel;
-    //    åˆå§‹åŒ–itemæ—¶æ ¹æ®idåˆå§‹åŒ–
+    //    //³õÊ¼»¯itemÊ±¸ù¾İid³õÊ¼»¯
 //    private ArrayList<Integer> isReaded =new ArrayList<Integer>();
 //    private ImageView popicon;
 //
@@ -74,17 +74,17 @@ public class NewsFragment extends Fragment {
     }
 
     /**
-     * æ­¤æ–¹æ³•æ„æ€ä¸ºfragmentæ˜¯å¦å¯è§ï¼Œå¯è§æ—¶åŠ è½½æ•°æ®
+     * ´Ë·½·¨ÒâË¼ÎªfragmentÊÇ·ñ¿É¼û ,¿É¼ûÊ±ºò¼ÓÔØÊı¾İ
      */
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         if (isVisibleToUser) {
-            //fragmentå¯è§æ—¶åŠ è½½æ•°æ®
+            //fragment¿É¼ûÊ±¼ÓÔØÊı¾İ
 //            if (newsList != null && newsList.size() != 0) {
 //                handler.obtainMessage(SET_NEWSLIST).sendToTarget();
 //            } else {
 
-//    æ³¨é‡Šæ‰ä»¥ä¸Šä¸‰è¡Œï¼Œæ˜¯çš„æ¯æ¬¡è½½å…¥å¿…é¡»å»¶æ—¶2ç§’ï¼Œä»¥æ­¤ç­‰å¾…listviewçš„åˆ·æ–°
+//            ×¢ÊÍµôÒÔÉÏ3ĞĞ£¬Ê¹µÃÃ¿´ÎÔØÈë±ØĞëÑÓÊ±2Ãë£¬ÒÔ´ËµÈ´ılistviewµÄË¢ĞÂ
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -100,7 +100,7 @@ public class NewsFragment extends Fragment {
             }).start();
 //            }
         } else {
-            //fragmentä¸å¯è§æ—¶ä¸æ‰§è¡Œæ“ä½œ
+            //fragment²»¿É¼ûÊ±²»Ö´ĞĞ²Ù×÷
         }
         super.setUserVisibleHint(isVisibleToUser);
     }
@@ -122,7 +122,7 @@ public class NewsFragment extends Fragment {
 //        Log.d("position3", String.valueOf(mHeadListView));
         TextView item_textView = (TextView) view.findViewById(R.id.item_textview);
         detail_loading = (ImageView) view.findViewById(R.id.detail_loading);
-        //Toastæç¤ºæ¡†
+        //ToastÌáÊ¾¿ò
         notify_view = (RelativeLayout) view.findViewById(R.id.notify_view);
         notify_view_text = (TextView) view.findViewById(R.id.notify_view_text);
         item_title = (TextView) view.findViewById(R.id.item_title);
@@ -137,9 +137,9 @@ public class NewsFragment extends Fragment {
     }
 
     private void initData() {
-//        ä¸‹é¢ä¿©å¥ä¸èƒ½è°ƒæ¢é¡ºåºï¼Œéœ€è¦å…ˆåˆå§‹åŒ–ï¼ï¼ï¼
+//        ÏÂÃæÕâÁ½¾ä²»ÄÜµ÷»»Ë³Ğò£¬ĞèÒªÏÈ³õÊ¼»¯£¡£¡£¡
         crawlerChannel = new CrawlerChannel(activity);
-//        å…ˆåˆå§‹åŒ–å›è°ƒå‡½æ•°ï¼ï¼å¦åˆ™ç©ºæŒ‡é’ˆ
+//        ÏÈ³õÊ¼»¯»Øµ÷º¯Êı£¡£¡·ñÔò¿ÕÖ¸Õë
         handler.obtainMessage(SET_NEWSLIST).sendToTarget();
         newsList = Constants.getNewsList(NEWSITEM_ID, channel_id, crawlerChannel);
     }
@@ -156,9 +156,9 @@ public class NewsFragment extends Fragment {
                     detail_loading.setVisibility(View.GONE);
                     if (mAdapter == null) {
                         mAdapter = new NewsAdapter(activity, newsList);
-                        //åˆ¤æ–­æ˜¯ä¸æ˜¯åŸå¸‚é¢‘é“
+                        //ÅĞ¶ÏÊÇ²»ÊÇ³ÇÊĞµÄÆµµÀ
                         if (channel_id == Constants.CHANNEL_CITY) {
-                            //æ˜¯åŸå¸‚é¢‘é“
+                            //ÊÇ³ÇÊĞÆµµÀ
                             mAdapter.setCityChannel(true);
                             initCityChannel();
                         }
@@ -167,25 +167,25 @@ public class NewsFragment extends Fragment {
                         mAdapter.notifyDataSetChanged();
                     }
 
-                    ((FindFragment) getParentFragment()).setOnRefreshListener(new FindFragment.OnRefreshListener() {
-
+                    ((MainActivity) activity).setOnRefreshListener(new MainActivity.OnRefreshListener() {
+                        @Override
                         public void onRefresh() {
 //						getDataFromServer();
-                            ((FindFragment) getParentFragment()).rotateTopRefresh();
+                            ((MainActivity) getActivity()).rotateTopRefresh();
                             crawlerChannel.pullToRefresh(channel_id);
                         }
                     });
 
-//                  è®¾ç½®æ»‘åŠ¨channelï¼ˆé¢‘é“ï¼‰æ¡
+//                  ÉèÖÃ»¬¶¯channel£¨ÆµµÀ£©Ìõ
                     mHeadListView.setPinnedHeaderView(LayoutInflater.from(activity).inflate(R.layout.list_item_section, mHeadListView, false));
 
                     crawlerChannel.setOnRefreshListener(new CrawlerChannel.OnRefreshListener() {
 
                         @Override
                         public void refreshItem(int i) {
-//                            0ä»£è¡¨ä¸‹æ¥åˆ·æ–°æ²¡æœ‰æ–°çš„åŠ¨æ€äº†
+//                            0´ú±íÏÂÀ´Ë¢ĞÂÃ»ÓĞĞÂµÄ¶¯Ì¬ÁË
                             if (i == 0) {
-                                Toast.makeText(activity, "Ã»ï¿½Ğ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½~", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(activity, "Ã»ÓĞ¸ü¶àĞÂÎÅÀ²~", Toast.LENGTH_SHORT).show();
                             }
 
                             handler.obtainMessage(SET_NEWSLIST).sendToTarget();
@@ -206,18 +206,18 @@ public class NewsFragment extends Fragment {
                         @Override
                         public void onRefresh() {
 //						getDataFromServer();
-                            ((FindFragment) getParentFragment()).rotateTopRefresh();
+                            ((MainActivity) getActivity()).rotateTopRefresh();
                             crawlerChannel.pullToRefresh(channel_id);
                         }
 
                         @Override
                         public void onLoadMore() {
-//  -------------------------  loadTimeè¡¨ç¤ºä¸‹æ¥2æ¬¡ï¼Œå¾…ä¼šæ”¹æˆæœ‰æ•°æ®å°±ç»§ç»­åˆ·æ–°
+//  -------------------------  loadTime±íÊ¾ÏÂÀ´2´Î£¬´ı»á¸Ä³ÉÓĞÊı¾İ¾Í¼ÌĞøË¢ĞÂ
 //                            if (loadTime++ <= 1) {
                             NEWSITEM_ID += 10;
                             newsList.addAll(Constants.getNewsList(NEWSITEM_ID, channel_id, crawlerChannel));
 //                            } else {
-//                                Toast.makeText(activity, "æ²¡æœ‰æ–°é—»å•¦~", Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(activity, "Ã»ÓĞĞÂÎÅÀ²~", Toast.LENGTH_SHORT).show();
 //                            }
                             mHeadListView.onRefreshComplete();
                             handler.obtainMessage(SET_NEWSLIST).sendToTarget();
@@ -234,7 +234,7 @@ public class NewsFragment extends Fragment {
                             currentPosition = position - 1;
 //                            Log.d("position", String.valueOf(position));
 //                            Log.d("position", String.valueOf(newsList.size()));
-//                            ç¦ç‚¹ç¬¬ä¸€ä¸ªå’Œæœ€åä¸€ä¸ª
+//                            ½ûµãµÚÒ»¸öºÍ×îºóÒ»¸ö
                             if (currentPosition >= 0 && currentPosition != newsList.size()) {
 
 //                                mHeadListView.findViewWithTag()
@@ -243,7 +243,7 @@ public class NewsFragment extends Fragment {
 //                                isReaded.add(mAdapter.getItem(currentPosition).getId());
 
 //                                mAdapter.getItem(currentPosition).setReadStatus(true);
-//                              æœ¬åº”è¯¥ç”¨getSharedPreferencesè®°å½•ç‚¹å‡»è¿‡ä¸å¦ï¼Œä½†æ˜¯å› ä¸ºæ˜¯å†…ç½®æ•°æ®æ²¡æœ‰ä½ç§»çš„itemæ ‡è¯†ç¬¦ï¼Œæ— æ³•ä¿è¯æ ‡è®°å‡†ç¡®ï¼Œæš‚æ—¶ä¸è€ƒè™‘ã€‚
+//                                ±¾Ó¦¸ÃÓÃgetSharedPreferences¼ÇÂ¼µã»÷¹ıÓë·ñ£¬µ«ÊÇÒòÎªÊÇÄÚÖÃÊı¾İÃ»ÓĞÎ¨Ò»µÄitem±êÊ¶·û£¬ÎŞ·¨±£Ö¤±ê¼Ç×¼È·¡£ÔİÊ±²»¿¼ÂÇ¡£
 //                                Log.d("itemId", String.valueOf(mAdapter.getItem(currentPosition).getId()));
                                 activity.getSharedPreferences("publishTime", Context.MODE_PRIVATE).edit().putBoolean(String.valueOf(mAdapter.getItem(currentPosition).getId()), true).commit();
 //                                item_title.setTextColor(Color.GRAY);
@@ -268,7 +268,7 @@ public class NewsFragment extends Fragment {
                             }
                         }
                     });
-//                   è¿™å¥åé¢è¦æ”¹ï¼Œåº”è¯¥æ˜¯æœ‰åˆ·æ–°çš„æ—¶å€™æ‰è°ƒç”¨InitNotify();
+//                    Õâ¾äºóÃæÒª¸Ä£¬Ó¦¸ÃÊÇÓĞË¢ĞÂµÄÊ±ºò²Åµ÷ÓÃinitNotify£¨£©£¬
 //                    if (channel_id == 1) {
 //                    initNotify();
 //                    }
@@ -294,7 +294,7 @@ public class NewsFragment extends Fragment {
 //        mHeadListView.onRefreshComplete();
 //    }
 
-    /* åˆå§‹åŒ–é€‰æ‹©åŸå¸‚çš„header*/
+    /* ³õÊ¼»¯Ñ¡Ôñ³ÇÊĞµÄheader*/
     public void initCityChannel() {
         View headView = LayoutInflater.from(activity).inflate(R.layout.city_category_list_tip, null);
         TextView chose_city_tip = (TextView) headView.findViewById(R.id.chose_city_tip);
@@ -310,7 +310,7 @@ public class NewsFragment extends Fragment {
         mHeadListView.addHeaderView(headView);
     }
 
-    /* åˆå§‹åŒ–é€šçŸ¥æ ç›®ï¼Œå‘é€åˆ·æ–°é€šçŸ¥Í¨Öª*/
+    /* ³õÊ¼»¯Í¨ÖªÀ¸Ä¿£¬·¢ËÍË¢ĞÂÍ¨Öª*/
     private void initNotify(final int count) {
         new Handler(activity.getMainLooper()).postDelayed(new Runnable() {
 
@@ -318,7 +318,7 @@ public class NewsFragment extends Fragment {
             public void run() {
                 // TODO Auto-generated method stub
                 if (count == 0) {
-                    notify_view_text.setText("ï¿½ï¿½ï¿½Ş¸ï¿½ï¿½ï¿½");
+                    notify_view_text.setText("ÔİÎŞ¸üĞÂ");
                 } else {
                     notify_view_text.setText(String.format(getString(R.string.ss_pattern_update), count));
                 }
@@ -336,7 +336,7 @@ public class NewsFragment extends Fragment {
     }
 
 
-    /* æ‘§æ¯è§†å›¾Í¼ */
+    /* ´İ»ÙÊÓÍ¼ */
     @Override
     public void onDestroyView() {
         // TODO Auto-generated method stub
@@ -345,7 +345,7 @@ public class NewsFragment extends Fragment {
         mAdapter = null;
     }
 
-    /* æ‘§æ¯è¯¥Fragmentï¼Œä¸€èˆ¬æ˜¯FragmentActivityè¢«æ‘§æ¯çš„æ—¶å€™ä¼´éšç€æ‘§æ¯ */
+    /* ´İ»Ù¸ÃFragment£¬Ò»°ãÊÇFragmentActivity ±»´İ»ÙµÄÊ±ºò°éËæ×Å´İ»Ù */
     @Override
     public void onDestroy() {
         // TODO Auto-generated method stub

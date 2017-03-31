@@ -26,12 +26,12 @@ public class AppApplication extends Application {
 		mAppApplication = this;
 	}
 	
-	/** è·å–Application */
+	/** »ñÈ¡Application */
 	public static AppApplication getApp() {
 		return mAppApplication;
 	}
 	
-	/** è·å–æ•°æ®åº“Helper */
+	/** »ñÈ¡Êı¾İ¿âHelper */
 	public SQLHelper getSQLHelper() {
 		if (sqlHelper == null)
 			sqlHelper = new SQLHelper(mAppApplication);
@@ -44,33 +44,33 @@ public class AppApplication extends Application {
 		if (sqlHelper != null)
 			sqlHelper.close();
 		super.onTerminate();
-		//æ•´ä½“æ‘§æ¯çš„æ—¶å€™è°ƒç”¨è¿™ä¸ªæ–¹æ³•
+		//ÕûÌå´İ»ÙµÄÊ±ºòµ÷ÓÃÕâ¸ö·½·¨
 	}
-	/** åˆå§‹åŒ–ImageLoader */
+	/** ³õÊ¼»¯ImageLoader */
 	public static void initImageLoader(Context context) {
-		File cacheDir = StorageUtils.getOwnCacheDirectory(context, "baibian/Cache");//è·å–åˆ°ç¼“å­˜çš„ç›®å½•åœ°å€
+		File cacheDir = StorageUtils.getOwnCacheDirectory(context, "baibian/Cache");//»ñÈ¡µ½»º´æµÄÄ¿Â¼µØÖ·
 		Log.d("cacheDir", cacheDir.getPath());
-		//åˆ›å»ºé…ç½®ImageLoader(æ‰€æœ‰çš„é€‰é¡¹éƒ½æ˜¯å¯é€‰çš„ï¼Œåªæ˜¯ç”¨é‚£äº›ä½ çœŸçš„æƒ³å®šåˆ¶)ï¼Œè¿™ä¸ªå¯ä»¥è®¾å®šåœ¨APPLACATIONé‡Œé¢ã€‚è®¾ç½®ä¸ºå…¨å±€çš„é…ç½®å‚æ•°
+		//´´½¨ÅäÖÃImageLoader(ËùÓĞµÄÑ¡Ïî¶¼ÊÇ¿ÉÑ¡µÄ,Ö»Ê¹ÓÃÄÇĞ©ÄãÕæµÄÏë¶¨ÖÆ)£¬Õâ¸ö¿ÉÒÔÉè¶¨ÔÚAPPLACATIONÀïÃæ£¬ÉèÖÃÎªÈ«¾ÖµÄÅäÖÃ²ÎÊı
 		ImageLoaderConfiguration config = new ImageLoaderConfiguration
 				.Builder(context)
-				//.memoryCacheExtraOptions(480, 800) // max width, max heightï¼Œå³ä¿å­˜çš„æ¯ä¸ªç¼“å­˜æ–‡ä»¶çš„æœ€å¤§é•¿å®½
-				//.discCacheExtraOptions(480, 800, CompressFormat.JPEG, 75, null) // Can slow ImageLoader, use it carefully (Better don't use it)è®¾ç½®ç¼“å­˜çš„è¯¦ç»†ä¿¡æ¯ï¼Œæœ€å¥½ä¸è¦è®¾ç½®è¿™ä¸ª
-				.threadPoolSize(3)//çº¿ç¨‹æ± å†…åŠ è½½çš„æ•°é‡
+				//.memoryCacheExtraOptions(480, 800) // max width, max height£¬¼´±£´æµÄÃ¿¸ö»º´æÎÄ¼şµÄ×î´ó³¤¿í
+				//.discCacheExtraOptions(480, 800, CompressFormat.JPEG, 75, null) // Can slow ImageLoader, use it carefully (Better don't use it)ÉèÖÃ»º´æµÄÏêÏ¸ĞÅÏ¢£¬×îºÃ²»ÒªÉèÖÃÕâ¸ö
+				.threadPoolSize(3)//Ïß³Ì³ØÄÚ¼ÓÔØµÄÊıÁ¿
 				.threadPriority(Thread.NORM_PRIORITY - 2)
 				.denyCacheImageMultipleSizesInMemory()
-				//.memoryCache(new UsingFreqLimitedMemoryCache(2 * 1024 * 1024)) // You can pass your own memory cache implementationä½ å¯ä»¥é€šè¿‡è‡ªå·±çš„å†…å­˜ç¼“å­˜å®ç°
+				//.memoryCache(new UsingFreqLimitedMemoryCache(2 * 1024 * 1024)) // You can pass your own memory cache implementationÄã¿ÉÒÔÍ¨¹ı×Ô¼ºµÄÄÚ´æ»º´æÊµÏÖ
 				//.memoryCacheSize(2 * 1024 * 1024)  
 				///.discCacheSize(50 * 1024 * 1024)  
-				.discCacheFileNameGenerator(new Md5FileNameGenerator())//å°†ä¿å­˜çš„æ—¶å€™URIåç§°ç”¨MD5åŠ å¯†
-				//.discCacheFileNameGenerator(new HashCodeFileNameGenerator())//å°†ä¿å­˜çš„æ—¶å€™çš„URIåç§°ç”¨HASHCODEåŠ å¯†
+				.discCacheFileNameGenerator(new Md5FileNameGenerator())//½«±£´æµÄÊ±ºòµÄURIÃû³ÆÓÃMD5 ¼ÓÃÜ
+				//.discCacheFileNameGenerator(new HashCodeFileNameGenerator())//½«±£´æµÄÊ±ºòµÄURIÃû³ÆÓÃHASHCODE¼ÓÃÜ
 				.tasksProcessingOrder(QueueProcessingType.LIFO)
-				//.discCacheFileCount(100) //ç¼“å­˜çš„FILEçš„æ•°é‡
-				.discCache(new UnlimitedDiscCache(cacheDir))//è‡ªå®šä¹‰ç¼“å­˜è·¯å¾„
+				//.discCacheFileCount(100) //»º´æµÄFileÊıÁ¿
+				.discCache(new UnlimitedDiscCache(cacheDir))//×Ô¶¨Òå»º´æÂ·¾¶
 				//.defaultDisplayImageOptions(DisplayImageOptions.createSimple())
-				//.imageDownloader(new BaseImageDownloader(context, 5 * 1000, 30 * 1000)) // connectTimeout (5 s), readTimeout (30 s)è¶…è¿‡æ—¶é—´
+				//.imageDownloader(new BaseImageDownloader(context, 5 * 1000, 30 * 1000)) // connectTimeout (5 s), readTimeout (30 s)³¬Ê±Ê±¼ä
 				.writeDebugLogs() // Remove for release app
 				.build();
 		// Initialize ImageLoader with configuration.
-		ImageLoader.getInstance().init(config);//å…¨å±€åˆå§‹åŒ–æ­¤é…ç½®
+		ImageLoader.getInstance().init(config);//È«¾Ö³õÊ¼»¯´ËÅäÖÃ
 	}
 }

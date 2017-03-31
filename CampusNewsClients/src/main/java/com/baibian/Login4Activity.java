@@ -11,9 +11,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-/**
- * 登录界面的活动
- */
 public class Login4Activity extends Activity {
     protected ImageView imageView11;//第一行第一个图片
     protected ImageView imageView12;
@@ -63,6 +60,7 @@ public class Login4Activity extends Activity {
                     Toast.makeText(Login4Activity.this, R.string.please7to16,Toast.LENGTH_SHORT).show();
                 }
                 else{
+                     Toast.makeText(Login4Activity.this, R.string.login_succeed,Toast.LENGTH_SHORT).show();
                      Intent intent1=new Intent();
                      setResult(LOGIN4_REQUEST,intent1);
                      finish();

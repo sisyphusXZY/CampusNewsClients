@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-/**
- * 注册界面的活动
- */
 public class registerActivity extends Activity  implements View.OnClickListener {
     protected ImageView register_imageView;//头像部分
     protected EditText register_AccountEdit;//账号
