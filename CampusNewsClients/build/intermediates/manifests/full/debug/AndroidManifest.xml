@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="17"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -47,6 +47,12 @@
         <activity android:name="com.baibian.Login4Activity" >
         </activity>
         <activity android:name="com.baibian.registerActivity" >
+        </activity>
+        <activity android:name="com.baibian.GuideActivity" >
+        </activity>
+        <activity android:name="com.baibian.ChoiceDirectionActivity" >
+        </activity>
+        <activity android:name="com.baibian.UsersImformationActivity" >
         </activity>
     </application>
 

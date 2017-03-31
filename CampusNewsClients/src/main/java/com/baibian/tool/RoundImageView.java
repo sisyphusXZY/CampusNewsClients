@@ -15,10 +15,6 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-/**
- * 这个类实现了将矩形ImageView裁剪成为圆形ImageView，可以直接使用
- */
-
 public class RoundImageView extends ImageView {
 
     public RoundImageView(Context context) {

@@ -14,10 +14,10 @@
 
     <ImageView
         android:id="@+id/detail_loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:src="@drawable/detail_loading" />
+        android:background="@drawable/detail_loading" />
 
     <com.baibian.view.HeadListView
         android:id="@+id/mListView"
@@ -30,7 +30,7 @@
 
     <RelativeLayout
         android:id="@+id/notify_view"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="25.0dip"
         android:layout_marginLeft="6.0dip"
         android:layout_marginRight="6.0dip"

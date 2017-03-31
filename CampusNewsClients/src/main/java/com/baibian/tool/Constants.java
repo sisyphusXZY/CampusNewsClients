@@ -1,5 +1,6 @@
 package com.baibian.tool;
 
+
 import com.baibian.bean.CityEntity;
 import com.baibian.bean.NewsEntity;
 import com.baibian.crawler.CrawlerChannel;
@@ -17,8 +18,7 @@ public class Constants {
         ArrayList<NewsEntity> newsList = new ArrayList<NewsEntity>();
         for (int i = position; i < 10 + position; i++) {
             NewsEntity news = new NewsEntity();
-//            这里原为：            news.setId(position)，会导致后面的重大问题
-            news.setId(i);
+            news.setId(position);
 //			news.setNewsId(i);
             news.setCollectStatus(false);
 //			news.setCommentNum(i + 115);
@@ -87,7 +87,6 @@ public class Constants {
 //			以上是基本设置，以下是爬虫设置。
             newsList.add(crawlerChannel.ConstantsAdapter(i, channelID, news));
         }
-//        以下部分用于：每10页加一个广告
         NewsEntity adsItem = new NewsEntity();
         adsItem.setTitle("Android系统源代码情景分析(修订版)");
 //        adsItem.setSource("亚马逊");
