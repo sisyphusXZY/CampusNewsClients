@@ -8,6 +8,8 @@
 
 
         <LinearLayout
+            android:visibility="gone"
+
             android:id="@+id/login_layout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -84,7 +86,6 @@
 
         <LinearLayout
 
-            android:visibility="gone"
             android:id="@+id/logout_layout_not_login"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

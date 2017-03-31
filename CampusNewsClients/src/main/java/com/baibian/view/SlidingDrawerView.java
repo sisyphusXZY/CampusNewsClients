@@ -308,8 +308,6 @@ public class SlidingDrawerView implements OnClickListener{
 			activity.startActivityForResult(intent_baibian_btn,REQUESTCODE);
 			break;
 		case R.id.setting_btn:
-			activity.startActivity(new Intent(activity,SettingsActivity.class));
-			activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 			break;
 		case R.id.exit_btn:
 			init_exit_btn();

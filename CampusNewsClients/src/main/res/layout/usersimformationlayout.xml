@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <LinearLayout
+
+    <RelativeLayout
         android:id="@+id/choise_direction_all_layout"
         android:background="@color/transparent"
         android:layout_width="match_parent"
@@ -15,7 +16,16 @@
             android:layout_width="44dp"
             android:layout_height="fill_parent"
             android:background="@mipmap/back_mipmap_yellow"/>
-    </LinearLayout>
+        <Button
+            android:textColor="#ffd71b"
+            android:background="@color/transparent"
+            android:textSize="32sp"
+            android:layout_alignParentEnd="true"
+            android:text="···"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
     <!--顶部的个人资料部分-->
     <LinearLayout
         android:orientation="vertical"
@@ -71,27 +81,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
     <ImageView style="@style/left_drawer_item_line" />
     <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:background="#ffffff"
+        android:paddingTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:background="@color/transparent"
         android:layout_height="45dp">
         <!--这里采用一次嵌套的方法来解决背景正方形铺屏的问题，如果以后有优化的方法请解决-->
-        <android.support.design.widget.TabLayout
-            android:id="@+id/users_imformation_title"
-            app:tabPadding="5dp"
+        <Button
+            android:id="@+id/BB_state_btn"
+            android:text="BB发言"
+            android:background="#FFFFFF"
+            android:layout_marginRight="40dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="200dp"
-            android:background="@color/transparent"
-            android:layout_height="match_parent"
-            app:tabIndicatorColor="@color/transparent"
-            app:tabSelectedTextColor="#454545"
-            app:tabTextColor="#454545"
-            app:tabGravity="center"
-            app:tabPaddingTop="5dp"
-            app:tabBackground="@drawable/users_imformation_tab_background"/>
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/BB_imformation_btn"
+            android:text="BB资料"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"/>
     </LinearLayout>
     <ImageView style="@style/left_drawer_item_line" />
 

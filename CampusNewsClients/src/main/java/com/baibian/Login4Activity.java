@@ -77,7 +77,7 @@ public class Login4Activity extends Activity {
                 login4RegisterButton.setTextColor(0xFF003399);
                 Intent intent=new Intent(Login4Activity.this,registerActivity.class);
                 startActivity(intent);
-                Toast.makeText(Login4Activity.this, R.string.REGISTER,Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(Login4Activity.this, R.string.REGISTER,Toast.LENGTH_SHORT).show();
 
             }
         });
