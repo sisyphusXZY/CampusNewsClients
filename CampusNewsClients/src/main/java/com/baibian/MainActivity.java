@@ -377,8 +377,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,UsersImformationActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-
             }
         });
     }

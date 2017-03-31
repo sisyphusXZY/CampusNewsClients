@@ -11,13 +11,13 @@
                     "endOffset": 112
                 },
                 "from": {
-                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-land\\values-land.xml",
+                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-land\\values-land.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 291,
+                        "startOffset": 55,
                         "endColumn": 61,
-                        "endOffset": 348
+                        "endOffset": 112
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-land\\values-land.xml",
+                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-land\\values-land.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 590,
+                        "startOffset": 117,
                         "endColumn": 71,
-                        "endOffset": 657
+                        "endOffset": 184
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 254
                 },
                 "from": {
-                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-land\\values-land.xml",
+                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-land\\values-land.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 908,
+                        "startOffset": 189,
                         "endColumn": 69,
-                        "endOffset": 973
+                        "endOffset": 254
                     }
                 }
             },
@@ -64,17 +64,17 @@
                     "startLine": 5,
                     "startColumn": 4,
                     "startOffset": 259,
-                    "endColumn": 69,
-                    "endOffset": 324
+                    "endColumn": 63,
+                    "endOffset": 318
                 },
                 "from": {
-                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-land\\values-land.xml",
+                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-land\\values-land.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 978,
-                        "endColumn": 69,
-                        "endOffset": 1043
+                        "startOffset": 259,
+                        "endColumn": 63,
+                        "endOffset": 318
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 329,
-                    "endColumn": 63,
-                    "endOffset": 388
+                    "startOffset": 323,
+                    "endColumn": 70,
+                    "endOffset": 389
                 },
                 "from": {
-                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-land\\values-land.xml",
+                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-land\\values-land.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 1285,
-                        "endColumn": 63,
-                        "endOffset": 1344
+                        "startOffset": 323,
+                        "endColumn": 70,
+                        "endOffset": 389
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 393,
-                    "endColumn": 70,
-                    "endOffset": 459
+                    "startOffset": 394,
+                    "endColumn": 67,
+                    "endOffset": 457
                 },
                 "from": {
-                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-land\\values-land.xml",
+                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-land\\values-land.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 1595,
-                        "endColumn": 70,
-                        "endOffset": 1661
+                        "startOffset": 394,
+                        "endColumn": 67,
+                        "endOffset": 457
                     }
                 }
             },
@@ -120,39 +120,20 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 464,
-                    "endColumn": 67,
-                    "endOffset": 527
-                },
-                "from": {
-                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-land\\values-land.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1666,
-                        "endColumn": 67,
-                        "endOffset": 1729
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 532,
-                    "endLine": 12,
+                    "startOffset": 462,
+                    "endLine": 11,
                     "endColumn": 12,
-                    "endOffset": 709
+                    "endOffset": 639
                 },
                 "from": {
-                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.0\\res\\values-land\\values-land.xml",
+                    "file": "C:\\Users\\lenovo\\Documents\\GitHub\\CampusNewsClients\\CampusNewsClients\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.0\\res\\values-land\\values-land.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 286,
-                        "endLine": 7,
+                        "startOffset": 55,
+                        "endLine": 5,
                         "endColumn": 12,
-                        "endOffset": 463
+                        "endOffset": 232
                     }
                 }
             }

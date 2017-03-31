@@ -2,6 +2,8 @@ package com.baibian;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.widget.ContentFrameLayout;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.view.View;
 import android.view.Window;
 import android.widget.FrameLayout;
@@ -38,19 +40,19 @@ public class ChoiceDirectionActivity extends Activity {
     }
     protected void  ImageViewAnimation(){
         /**
-         * ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½ï¿½ï¿½
+         * ´Ó×ó±ß½øÈëµÄ
          */
         TranslateAnimation translateAnimationleft=new TranslateAnimation(-400,0,0,0);
         translateAnimationleft.setDuration(1000);
-        frameLayout21.startAnimation(translateAnimationleft);//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
-        frameLayout31.startAnimation(translateAnimationleft);//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+        frameLayout21.startAnimation(translateAnimationleft);//¿ªÊ¼¶¯»­
+        frameLayout31.startAnimation(translateAnimationleft);//¿ªÊ¼¶¯»­
 
         /**
-         * ï¿½ï¿½ï¿½Ò±ß½ï¿½ï¿½ï¿½ï¿½
+         * ´ÓÓÒ±ß½øÈëµÄ
          */
         TranslateAnimation translateAnimationright=new TranslateAnimation(400,0,0,0);
         translateAnimationright.setDuration(1000);
-        frameLayout22.startAnimation(translateAnimationright);//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
-        frameLayout32.startAnimation(translateAnimationright);//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+        frameLayout22.startAnimation(translateAnimationright);//¿ªÊ¼¶¯»­
+        frameLayout32.startAnimation(translateAnimationright);//¿ªÊ¼¶¯»­
     }
 }

@@ -1,19 +1,15 @@
 package com.baibian;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.baibian.base.BaseActivity;
-import com.baibian.fragment.IntegrationFragment;
 
-public class SettingsActivity extends BaseActivity {
-private RelativeLayout message_setting;
-	private Button choise_direction_back;
-	private RelativeLayout push_layout;
+public class SettingsActivity extends BaseActivity implements OnClickListener{
+	TextView title;
+	TextView right_text;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -21,35 +17,19 @@ private RelativeLayout message_setting;
 		setContentView(R.layout.settings);
 		initView();
 		initData();
-		message_setting.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Intent intent=new Intent(SettingsActivity.this,MessageSettingAcitivity.class);
-				startActivity(intent);
-			}
-		});
-		choise_direction_back.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				finish();
-			}
-		});
-		push_layout.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Intent intent=new Intent(SettingsActivity.this,PushSetting.class);
-				startActivity(intent);
-			}
-		});
 	}
 	
 	private void initView() {
-		message_setting=(RelativeLayout) findViewById(R.id.message_setting);
-		choise_direction_back=(Button) findViewById(R.id.choise_direction_back);
-		push_layout=(RelativeLayout) findViewById(R.id.push_layout);
+		title = (TextView)findViewById(R.id.title);
+		right_text = (TextView)findViewById(R.id.right_text);
+		right_text.setVisibility(View.VISIBLE);
+		right_text.setClickable(true);
+		right_text.setOnClickListener(this);
 	}
 
 	private void initData() {
+		title.setText("设置");
+		right_text.setText("意见反馈");
 	}
 	
 	@Override
@@ -60,5 +40,14 @@ private RelativeLayout message_setting;
 		overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
 	}
 
-
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.right_text:
+			
+			break;
+		default:
+			break;
+		}
+	}
 }

@@ -725,8 +725,8 @@
     <!--<item name="bg_row_normal_center" type="color">@color/bg_row_normal</item>-->
     <!--<item name="bg_row_normal_end" type="color">@color/bg_row_normal</item>-->
     <!--progressbar的三个颜色-->
-    <color name="progressbar_first">#00a0e9</color>
-    <color name="progressbar_secondary">#ffff33 </color>
-    <color name="progressbar_third">#ff6666</color>
+    <color name="progressbar_first">#ffa726</color>
+    <color name="progressbar_secondary">#29b6f6</color>
+    <color name="progressbar_third">#ff7043</color>
 
 </resources>
